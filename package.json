@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "name": "imagemin-min",
+  "version": "0.0.0-dev.0",
+  "description": "Like imagemin but batteries-included",
+  "author": "dr-js",
+  "license": "MIT",
+  "repository": "github:dr-js/imagemin-min",
+  "main": "./library/index",
+  "scripts": {
+    "// script ======================": "",
+    "script-pack": "node -r @babel/register ./script quiet pack",
+    "script-pack-test": "node -r @babel/register ./script verbose pack test",
+    "script-publish": "node -r @babel/register ./script pack publish",
+    "script-publish-dev": "node -r @babel/register ./script pack publish-dev",
+    "script-generate-spec": "node -r @babel/register ./script/generateSpec",
+    "script-generate-battery-svgo": "node -r @babel/register ./script/generateBatterySVGO.js",
+    "// build =======================": "",
+    "build-library": "babel ./source --out-dir ./output-gitignore/library --copy-files",
+    "// test ========================": "",
+    "test-dev": "dr-dev --TR @babel/register -T source/battery/cjpeg.test.js",
+    "test-source": "dr-dev --TR @babel/register -T source/ --TFS .test.js",
+    "// =============================": "",
+    "test": "npm run script-pack-test",
+    "lint": "eslint ./source/ ./script/",
+    "prepack": "echo \"Error: pack with script-*\" && exit 1"
+  },
+  "engines": {
+    "node": ">=12.13",
+    "npm": ">=6.12"
+  },
+  "dependencies": {
+    "file-type": "^14.1.4",
+    "is-svg": "^4.2.1"
+  },
+  "devDependencies": {
+    "@dr-js/core": "0.3.0-dev.1",
+    "@dr-js/dev": "0.3.0-dev.1",
+    "@dr-js/dev-babel": "0.3.0-dev.1",
+    "libsvgo": "^1.3.2"
+  }
+}
