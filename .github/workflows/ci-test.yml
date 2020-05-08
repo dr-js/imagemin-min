@@ -5,18 +5,24 @@ on: [ push ]
 jobs:
   build:
     strategy:
+      fail-fast: false # allow all test to run to the end
       matrix:
         os: [ ubuntu-latest, windows-latest, macos-latest ]
-        node-version: [ 12.x, 13.x ]
+        node-version: [ 12.x, 14.x ]
 
     runs-on: ${{ matrix.os }}
 
     steps:
+      - name: Reset Git config # fix win32 CI cause `something to commit` test error: https://github.com/actions/checkout/issues/135#issuecomment-602171132
+        run: |
+          git config --global core.autocrlf false
+          git config --global core.eol lf
+
       - name: Setup Git repo
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2 # https://github.com/actions/checkout
 
       - name: Setup Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v1 # https://github.com/actions/setup-node
         with:
           node-version: ${{ matrix.node-version }}
 
@@ -29,5 +35,3 @@ jobs:
       - run: npm ci
 
       - run: npm test
-        env:
-          CI: true

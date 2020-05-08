@@ -21,10 +21,10 @@ currently support:
 - MacOS latest (x64)
 
 currently bundled image optimizer:
-- jpg: [MozJPEG][l:mozjpeg] (through pre-built binary)
-- gif: [Gifsicle][l:gifsicle] (through pre-built binary)
-- png: [Pngquant][l:pngquant] (through pre-built binary)
-- svg: [SVGO][l:svgo] (though [libsvgo][l:libsvgo])
+- jpg: [MozJPEG][l:mozjpeg] (pre-built binary)
+- gif: [Gifsicle][l:gifsicle] (pre-built binary)
+- png: [Pngquant][l:pngquant] (pre-built binary)
+- svg: [SVGO][l:svgo] (from [libsvgo][l:libsvgo])
 
 [l:imagemin]: https://github.com/imagemin
 [l:mozjpeg]: https://github.com/mozilla/mozjpeg
@@ -38,7 +38,7 @@ currently bundled image optimizer:
 - 📁 [source](source)
   - main source code
 - 📄 [SPEC.md](SPEC.md)
-  - list of all directly accessible codes, sort of an API lockfile
+  - list of all directly accessible codes, sort of API lockfile
 
 > Note: use a *nix platform to pack `.tgz` and publish to preserve correct file permission
 > and keep the 755 file permission on executable binary

@@ -1,11 +1,10 @@
 import { resolve } from 'path'
 import { execSync } from 'child_process'
 
-import { modifyDelete } from '@dr-js/core/module/node/file/Modify'
-
-import { getScriptFileListFromPathList } from '@dr-js/dev/module/node/file'
-import { initOutput, packOutput, verifyNoGitignore, verifyGitStatusClean, publishOutput } from '@dr-js/dev/module/output'
+import { getSourceJsFileListFromPathList } from '@dr-js/dev/module/node/filePreset'
+import { initOutput, packOutput, clearOutput, verifyNoGitignore, verifyGitStatusClean, publishOutput } from '@dr-js/dev/module/output'
 import { getTerserOption, minifyFileListWithTerser } from '@dr-js/dev/module/minify'
+import { processFileList, fileProcessorBabel } from '@dr-js/dev/module/fileProcessor'
 import { runMain, argvFlag } from '@dr-js/dev/module/main'
 
 const PATH_ROOT = resolve(__dirname, '..')
@@ -24,16 +23,11 @@ const buildOutput = async ({ logger }) => {
 }
 
 const processOutput = async ({ logger }) => {
-  const fileListLibrary = await getScriptFileListFromPathList([ 'library' ], fromOutput)
+  const fileList = await getSourceJsFileListFromPathList([ 'library' ], fromOutput)
   let sizeReduce = 0
-  sizeReduce += await minifyFileListWithTerser({ fileList: fileListLibrary, option: getTerserOption({ isReadable: true }), rootPath: PATH_OUTPUT, logger })
-  logger.log(`size reduce: ${sizeReduce}B`)
-}
-
-const clearOutput = async ({ logger }) => {
-  logger.padLog('clear output')
-  const fileList = await getScriptFileListFromPathList([ '.' ], fromOutput, (path) => path.endsWith('.test.js'))
-  for (const filePath of fileList) await modifyDelete(filePath)
+  sizeReduce += await minifyFileListWithTerser({ fileList, option: getTerserOption(), rootPath: PATH_OUTPUT, logger })
+  sizeReduce += await processFileList({ fileList, processor: fileProcessorBabel, rootPath: PATH_OUTPUT, logger })
+  logger.padLog(`size reduce: ${sizeReduce}B`)
 }
 
 runMain(async (logger) => {
@@ -45,11 +39,10 @@ runMain(async (logger) => {
   const isTest = argvFlag('test', 'publish', 'publish-dev')
   isTest && logger.padLog('lint source')
   isTest && execShell('npm run lint')
+  isTest && await processOutput({ logger }) // once more
   isTest && logger.padLog('test source')
   isTest && execShell('npm run test-source')
-  isTest && await processOutput({ logger }) // once more
-  await clearOutput({ logger })
-  isTest && await verifyGitStatusClean({ fromRoot, logger })
+  await clearOutput({ fromOutput, logger })
   isTest && await verifyGitStatusClean({ fromRoot, logger })
   const pathPackagePack = await packOutput({ fromRoot, fromOutput, logger })
   if (process.platform === 'win32' && argvFlag('publish', 'publish-dev')) throw new Error('use a *nix platform to pack `.tgz` and publish to preserve correct file permission!')

@@ -1,3 +1,0 @@
-# https://github.community/t5/GitHub-Actions/git-config-core-autocrlf-should-default-to-false/td-p/30445
-# mainly to fix the win32 CI checkout file cause `something to commit` test error
-* -text
