@@ -32,7 +32,7 @@ const processOutput = async ({ logger }) => {
 
 runMain(async (logger) => {
   await verifyNoGitignore({ path: fromRoot('source'), logger })
-  const packageJSON = await initOutput({ fromRoot, fromOutput, logger })
+  const packageJSON = await initOutput({ copyMapPathList: [ [ 'source-bin/test-boot.js', 'bin/test-boot.js' ] ], fromRoot, fromOutput, logger })
   if (!argvFlag('pack')) return
   await buildOutput({ logger })
   await processOutput({ logger })
