@@ -1,15 +1,15 @@
 {
   "private": true,
   "name": "imagemin-min",
-  "version": "0.0.0-dev.4",
+  "version": "0.1.0",
   "description": "Like imagemin but batteries-included",
   "author": "dr-js",
   "license": "MIT",
   "repository": "github:dr-js/imagemin-min",
+  "main": "./library/index",
   "bin": {
     "imagemin-min-test-boot": "bin/test-boot.js"
   },
-  "main": "./library/index",
   "scripts": {
     "// script ======================": "",
     "script-pack": "node -r @babel/register ./script quiet pack",
