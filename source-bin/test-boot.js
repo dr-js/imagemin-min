@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { configBufferProcessorAsync } = require('../library/index.js')
 
 configBufferProcessorAsync().then(
