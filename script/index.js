@@ -20,6 +20,8 @@ const buildOutput = async ({ logger }) => {
   execShell('npm run script-generate-battery-svgo')
   logger.padLog('build library')
   execShell('npm run build-library')
+  logger.padLog('build library-function')
+  execShell('npm run build-library-function')
 }
 
 const processOutput = async ({ logger }) => {

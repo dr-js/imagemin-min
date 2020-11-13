@@ -1,6 +1,10 @@
 import { join } from 'path'
 import { run } from '@dr-js/core/module/node/system/Run'
 import { setupStreamPipe, waitStreamStopAsync, bufferToReadableStream } from '@dr-js/core/module/node/data/Stream'
+import { fromBuffer as fileTypeFromBuffer } from 'file-type'
+import isSvg from 'is-svg'
+
+// TODO: HACK: NOTE: only do package import here, and later this will be webpack-ed to cut depencency
 
 const selectExecutable = (selectMap = {}, relativeToPath = '.') => {
   const platformArchTagCurrent = `${process.platform}|${process.arch}`
@@ -61,5 +65,7 @@ const createBufferProcessorAsync = async (
 
 export {
   selectExecutable,
-  createBufferProcessorAsync
+  createBufferProcessorAsync,
+  fileTypeFromBuffer,
+  isSvg
 }

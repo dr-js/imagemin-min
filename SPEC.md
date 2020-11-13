@@ -4,7 +4,7 @@
 
 #### Export Path
 + 📄 [source/function.js](source/function.js)
-  - `createBufferProcessorAsync`, `selectExecutable`
+  - `createBufferProcessorAsync`, `fileTypeFromBuffer`, `isSvg`, `selectExecutable`
 + 📄 [source/index.js](source/index.js)
   - `configBufferProcessorAsync`, `configBufferProcessorAsyncCjpeg`, `configBufferProcessorAsyncGifsicle`, `configBufferProcessorAsyncPngquant`, `configBufferProcessorAsyncSvgo`
 + 📄 [source/battery/cjpeg.js](source/battery/cjpeg.js)

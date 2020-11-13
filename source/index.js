@@ -1,10 +1,8 @@
-import { fromBuffer } from 'file-type'
-import isSvg from 'is-svg'
-
 import { configBufferProcessorAsync as configBufferProcessorAsyncCjpeg } from './battery/cjpeg'
 import { configBufferProcessorAsync as configBufferProcessorAsyncGifsicle } from './battery/gifsicle'
 import { configBufferProcessorAsync as configBufferProcessorAsyncPngquant } from './battery/pngquant'
 import { configBufferProcessorAsync as configBufferProcessorAsyncSvgo } from './battery/svgo'
+import { fileTypeFromBuffer, isSvg } from './function'
 
 const configBufferProcessorAsync = async ({
   onDetectFail = async (ext, buffer, string) => { throw new Error(`unknown buffer type, detected ext: ${ext}, buffer size: ${buffer.length}B`) },
@@ -20,7 +18,7 @@ const configBufferProcessorAsync = async ({
   const bufferProcessorAsyncSvgo = await configBufferProcessorAsyncSvgo(configSvgo)
 
   return async (buffer) => {
-    const { ext } = (await fromBuffer(buffer)) || {}
+    const { ext } = (await fileTypeFromBuffer(buffer)) || {}
     switch (ext) {
       case 'jpg':
         return bufferProcessorAsyncCjpeg(buffer)
