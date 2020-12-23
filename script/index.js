@@ -48,5 +48,5 @@ runMain(async (logger) => {
   isTest && await verifyGitStatusClean({ fromRoot, logger })
   const pathPackagePack = await packOutput({ fromRoot, fromOutput, logger })
   if (process.platform === 'win32' && argvFlag('publish', 'publish-dev')) throw new Error('use a *nix platform to pack `.tgz` and publish to preserve correct file permission!')
-  await publishOutput({ flagList: process.argv, packageJSON, pathPackagePack, logger })
+  await publishOutput({ packageJSON, pathPackagePack, logger })
 })
