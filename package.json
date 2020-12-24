@@ -1,14 +1,16 @@
 {
   "private": true,
   "name": "imagemin-min",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Like imagemin but batteries-included",
   "author": "dr-js",
   "license": "MIT",
   "repository": "github:dr-js/imagemin-min",
   "main": "./library/index",
   "bin": {
-    "imagemin-min-test-boot": "bin/test-boot.js"
+    "imagemin-min": "bin/min-in-place.js",
+    "imagemin-min-test-boot": "bin/test-boot.js",
+    "imagemin-min-trim-battery": "bin/trim-binary.js"
   },
   "scripts": {
     "// script ======================": "",

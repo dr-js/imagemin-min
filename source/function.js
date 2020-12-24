@@ -4,10 +4,10 @@ import { setupStreamPipe, waitStreamStopAsync, bufferToReadableStream } from '@d
 import { fromBuffer as fileTypeFromBuffer } from 'file-type'
 import isSvg from 'is-svg'
 
-// TODO: HACK: NOTE: only do package import here, and later this will be webpack-ed to cut depencency
+// TODO: HACK: NOTE: only do package import here, and later this will be webpack-ed to cut dependency
 
+const platformArchTagCurrent = `${process.platform}|${process.arch}`
 const selectExecutable = (selectMap = {}, relativeToPath = '.') => {
-  const platformArchTagCurrent = `${process.platform}|${process.arch}`
   for (const [ platformArchTag, executablePath ] of Object.entries(selectMap)) {
     if (platformArchTagCurrent.startsWith(platformArchTag)) return join(relativeToPath, executablePath)
   }

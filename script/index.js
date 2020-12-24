@@ -34,7 +34,14 @@ const processOutput = async ({ logger }) => {
 
 runMain(async (logger) => {
   await verifyNoGitignore({ path: fromRoot('source'), logger })
-  const packageJSON = await initOutput({ copyMapPathList: [ [ 'source-bin/test-boot.js', 'bin/test-boot.js' ] ], fromRoot, fromOutput, logger })
+  const packageJSON = await initOutput({
+    fromRoot, fromOutput, logger,
+    copyMapPathList: [
+      [ 'source-bin/min-in-place.js', 'bin/min-in-place.js' ],
+      [ 'source-bin/test-boot.js', 'bin/test-boot.js' ],
+      [ 'source-bin/trim-battery.js', 'bin/trim-battery.js' ]
+    ]
+  })
   if (!argvFlag('pack')) return
   await buildOutput({ logger })
   await processOutput({ logger })
