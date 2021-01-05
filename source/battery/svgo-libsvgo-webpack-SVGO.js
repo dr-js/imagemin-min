@@ -1,11 +1,11 @@
 /* eslint-disable */
-/* libsvgo@1.3.3 */
+/* libsvgo@1.3.4 */
 e="undefined"!=typeof self?self:this,t=function(){return(()=>{var e={2781:(e,t,r)=>{"use strict"
 r.d(t,{version:()=>n})
 const n="1.1.2"},6012:(e,t,r)=>{"use strict"
 r.d(t,{i:()=>n})
 const n="4.2.0"},1691:(e,t,r)=>{"use strict"
-r.d(t,{default:()=>Il})
+r.d(t,{default:()=>Dl})
 var n={}
 r.r(n)
 r.d(n,{active:()=>je,description:()=>Ue,fn:()=>Qe,name:()=>Fe,params:()=>He,type:()=>Ve})
@@ -26,133 +26,133 @@ r.r(l)
 r.d(l,{active:()=>Mt,description:()=>Rt,fn:()=>jt,name:()=>Wt,params:()=>It,type:()=>Bt})
 var c={}
 r.r(c)
-r.d(c,{active:()=>Yt,description:()=>Xt,fn:()=>Qt,name:()=>Ut,params:()=>Kt,type:()=>Ht})
+r.d(c,{active:()=>Yt,description:()=>Xt,fn:()=>Zt,name:()=>Ut,params:()=>Kt,type:()=>Ht})
 var d={}
 r.r(d)
-r.d(d,{active:()=>Wr,description:()=>Br,fn:()=>jr,name:()=>qr,params:()=>Mr,type:()=>Lr})
+r.d(d,{active:()=>Br,description:()=>Mr,fn:()=>Ur,name:()=>Lr,params:()=>Rr,type:()=>Wr})
 var u={}
 r.r(u)
-r.d(u,{active:()=>on,description:()=>sn,fn:()=>un,name:()=>nn,params:()=>ln,type:()=>an})
+r.d(u,{active:()=>sn,description:()=>ln,fn:()=>pn,name:()=>an,params:()=>cn,type:()=>on})
 var p={}
 r.r(p)
-r.d(p,{active:()=>hn,description:()=>gn,fn:()=>En,name:()=>mn,params:()=>vn,type:()=>fn})
+r.d(p,{active:()=>gn,description:()=>vn,fn:()=>On,name:()=>fn,params:()=>yn,type:()=>hn})
 var m={}
 r.r(m)
-r.d(m,{active:()=>Pn,description:()=>qn,fn:()=>Rn,name:()=>zn,params:()=>Ln,type:()=>_n})
+r.d(m,{active:()=>qn,description:()=>Ln,fn:()=>In,name:()=>_n,params:()=>Wn,type:()=>Pn})
 var f={}
 r.r(f)
-r.d(f,{active:()=>Yn,description:()=>Kn,fn:()=>Qn,name:()=>Un,params:()=>Xn,type:()=>Hn})
+r.d(f,{active:()=>Xn,description:()=>Qn,fn:()=>Zn,name:()=>Hn,params:()=>Kn,type:()=>Yn})
 var h={}
 r.r(h)
-r.d(h,{active:()=>Jn,description:()=>ea,fn:()=>ra,name:()=>Zn,params:()=>ta,type:()=>$n})
+r.d(h,{active:()=>ea,description:()=>ta,fn:()=>na,name:()=>$n,params:()=>ra,type:()=>Jn})
 var g={}
 r.r(g)
-r.d(g,{active:()=>oa,description:()=>sa,fn:()=>ca,name:()=>aa,params:()=>la,type:()=>ia})
+r.d(g,{active:()=>sa,description:()=>la,fn:()=>da,name:()=>ia,params:()=>ca,type:()=>oa})
 var v={}
 r.r(v)
-r.d(v,{active:()=>fa,description:()=>ha,fn:()=>va,name:()=>pa,params:()=>ga,type:()=>ma})
+r.d(v,{active:()=>ha,description:()=>ga,fn:()=>ya,name:()=>ma,params:()=>va,type:()=>fa})
 var y={}
 r.r(y)
-r.d(y,{active:()=>xa,description:()=>ka,fn:()=>Ca,name:()=>ba,params:()=>wa,type:()=>Sa})
+r.d(y,{active:()=>ka,description:()=>wa,fn:()=>Ta,name:()=>Sa,params:()=>Ca,type:()=>xa})
 var b={}
 r.r(b)
-r.d(b,{active:()=>Ea,description:()=>Oa,fn:()=>_a,name:()=>Ta,params:()=>za,type:()=>Aa})
+r.d(b,{active:()=>Oa,description:()=>za,fn:()=>Pa,name:()=>Aa,params:()=>_a,type:()=>Ea})
 var S={}
 r.r(S)
-r.d(S,{active:()=>La,description:()=>Ba,fn:()=>Ra,name:()=>Pa,params:()=>Wa,type:()=>qa})
+r.d(S,{active:()=>Wa,description:()=>Ma,fn:()=>Ia,name:()=>qa,params:()=>Ba,type:()=>La})
 var x={}
 r.r(x)
-r.d(x,{active:()=>Na,description:()=>Ga,fn:()=>Va,name:()=>Ia,params:()=>Fa,type:()=>Da})
+r.d(x,{active:()=>Ga,description:()=>Fa,fn:()=>ja,name:()=>Da,params:()=>Va,type:()=>Na})
 var k={}
 r.r(k)
-r.d(k,{active:()=>Ya,description:()=>Xa,fn:()=>Za,name:()=>Ua,params:()=>Qa,type:()=>Ha})
+r.d(k,{active:()=>Xa,description:()=>Ka,fn:()=>$a,name:()=>Ha,params:()=>Za,type:()=>Ya})
 var w={}
 r.r(w)
-r.d(w,{active:()=>ei,description:()=>ti,fn:()=>ni,name:()=>$a,params:()=>ri,type:()=>Ja})
+r.d(w,{active:()=>ti,description:()=>ri,fn:()=>ai,name:()=>Ja,params:()=>ni,type:()=>ei})
 var C={}
 r.r(C)
-r.d(C,{active:()=>si,description:()=>li,fn:()=>di,name:()=>ii,params:()=>ci,type:()=>oi})
+r.d(C,{active:()=>li,description:()=>ci,fn:()=>ui,name:()=>oi,params:()=>di,type:()=>si})
 var T={}
 r.r(T)
-r.d(T,{active:()=>mi,description:()=>fi,fn:()=>gi,name:()=>ui,params:()=>hi,type:()=>pi})
+r.d(T,{active:()=>fi,description:()=>hi,fn:()=>vi,name:()=>pi,params:()=>gi,type:()=>mi})
 var A={}
 r.r(A)
-r.d(A,{active:()=>bi,description:()=>Si,fn:()=>wi,name:()=>vi,params:()=>xi,type:()=>yi})
+r.d(A,{active:()=>Si,description:()=>xi,fn:()=>Ci,name:()=>yi,params:()=>ki,type:()=>bi})
 var E={}
 r.r(E)
-r.d(E,{active:()=>Ai,description:()=>Ei,fn:()=>zi,name:()=>Ci,params:()=>Oi,type:()=>Ti})
+r.d(E,{active:()=>Ei,description:()=>Oi,fn:()=>_i,name:()=>Ti,params:()=>zi,type:()=>Ai})
 var O={}
 r.r(O)
-r.d(O,{active:()=>qi,description:()=>Li,fn:()=>Bi,name:()=>_i,params:()=>Wi,type:()=>Pi})
+r.d(O,{active:()=>Li,description:()=>Wi,fn:()=>Mi,name:()=>Pi,params:()=>Bi,type:()=>qi})
 var z={}
 r.r(z)
-r.d(z,{active:()=>Ii,description:()=>Di,fn:()=>Gi,name:()=>Mi,params:()=>Ni,type:()=>Ri})
+r.d(z,{active:()=>Di,description:()=>Ni,fn:()=>Fi,name:()=>Ri,params:()=>Gi,type:()=>Ii})
 var _={}
 r.r(_)
-r.d(_,{active:()=>ji,description:()=>Ui,fn:()=>Xi,name:()=>Fi,params:()=>Hi,type:()=>Vi})
+r.d(_,{active:()=>Ui,description:()=>Hi,fn:()=>Ki,name:()=>Vi,params:()=>Yi,type:()=>ji})
 var P={}
 r.r(P)
-r.d(P,{active:()=>Zi,description:()=>$i,fn:()=>eo,name:()=>Ki,params:()=>Ji,type:()=>Qi})
+r.d(P,{active:()=>$i,description:()=>Ji,fn:()=>to,name:()=>Qi,params:()=>eo,type:()=>Zi})
 var q={}
 r.r(q)
-r.d(q,{active:()=>ao,description:()=>io,fn:()=>so,name:()=>ro,params:()=>oo,type:()=>no})
+r.d(q,{active:()=>io,description:()=>oo,fn:()=>lo,name:()=>no,params:()=>so,type:()=>ao})
 var L={}
 r.r(L)
-r.d(L,{active:()=>mo,description:()=>fo,fn:()=>bo,name:()=>uo,params:()=>ho,type:()=>po})
+r.d(L,{active:()=>fo,description:()=>ho,fn:()=>So,name:()=>po,params:()=>go,type:()=>mo})
 var W={}
 r.r(W)
-r.d(W,{active:()=>ko,description:()=>wo,fn:()=>Ao,name:()=>So,params:()=>Co,type:()=>xo})
+r.d(W,{active:()=>wo,description:()=>Co,fn:()=>Eo,name:()=>xo,params:()=>To,type:()=>ko})
 var B={}
 r.r(B)
-r.d(B,{active:()=>zo,description:()=>_o,fn:()=>qo,name:()=>Eo,params:()=>Po,type:()=>Oo})
+r.d(B,{active:()=>_o,description:()=>Po,fn:()=>Lo,name:()=>Oo,params:()=>qo,type:()=>zo})
 var M={}
 r.r(M)
-r.d(M,{active:()=>Bo,description:()=>Mo,fn:()=>Io,name:()=>Lo,params:()=>Ro,type:()=>Wo})
+r.d(M,{active:()=>Mo,description:()=>Ro,fn:()=>Do,name:()=>Wo,params:()=>Io,type:()=>Bo})
 var R={}
 r.r(R)
-r.d(R,{active:()=>Vo,description:()=>jo,fn:()=>Ho,name:()=>Go,params:()=>Uo,type:()=>Fo})
+r.d(R,{active:()=>jo,description:()=>Uo,fn:()=>Yo,name:()=>Fo,params:()=>Ho,type:()=>Vo})
 var I={}
 r.r(I)
-r.d(I,{active:()=>Ko,description:()=>Qo,fn:()=>$o,name:()=>Yo,params:()=>Zo,type:()=>Xo})
+r.d(I,{active:()=>Qo,description:()=>Zo,fn:()=>Jo,name:()=>Xo,params:()=>$o,type:()=>Ko})
 var D={}
 r.r(D)
-r.d(D,{active:()=>ts,description:()=>rs,fn:()=>ss,name:()=>Jo,params:()=>ns,type:()=>es})
+r.d(D,{active:()=>rs,description:()=>ns,fn:()=>ls,name:()=>es,params:()=>as,type:()=>ts})
 var N={}
 r.r(N)
-r.d(N,{active:()=>ds,description:()=>ps,fn:()=>Ss,name:()=>ls,params:()=>us,type:()=>cs})
+r.d(N,{active:()=>us,description:()=>ms,fn:()=>xs,name:()=>cs,params:()=>ps,type:()=>ds})
 var G={}
 r.r(G)
-r.d(G,{active:()=>ws,description:()=>Cs,fn:()=>As,name:()=>xs,params:()=>Ts,type:()=>ks})
+r.d(G,{active:()=>Cs,description:()=>Ts,fn:()=>Es,name:()=>ks,params:()=>As,type:()=>ws})
 var F={}
 r.r(F)
-r.d(F,{active:()=>zs,description:()=>_s,fn:()=>qs,name:()=>Es,params:()=>Ps,type:()=>Os})
+r.d(F,{active:()=>_s,description:()=>Ps,fn:()=>Ls,name:()=>Os,params:()=>qs,type:()=>zs})
 var V={}
 r.r(V)
-r.d(V,{active:()=>Bs,description:()=>Ms,fn:()=>Is,name:()=>Ls,params:()=>Rs,type:()=>Ws})
+r.d(V,{active:()=>Ms,description:()=>Rs,fn:()=>Ds,name:()=>Ws,params:()=>Is,type:()=>Bs})
 var j={}
 r.r(j)
-r.d(j,{active:()=>Gs,description:()=>Fs,fn:()=>js,name:()=>Ds,params:()=>Vs,type:()=>Ns})
+r.d(j,{active:()=>Fs,description:()=>Vs,fn:()=>Us,name:()=>Ns,params:()=>js,type:()=>Gs})
 var U={}
 r.r(U)
-r.d(U,{active:()=>Ys,description:()=>Xs,fn:()=>$s,name:()=>Us,params:()=>Ks,type:()=>Hs})
+r.d(U,{active:()=>Xs,description:()=>Ks,fn:()=>Js,name:()=>Hs,params:()=>Qs,type:()=>Ys})
 var H={}
 r.r(H)
-r.d(H,{active:()=>rl,description:()=>nl,fn:()=>il,name:()=>el,params:()=>al,type:()=>tl})
+r.d(H,{active:()=>nl,description:()=>al,fn:()=>ol,name:()=>tl,params:()=>il,type:()=>rl})
 var Y={}
 r.r(Y)
-r.d(Y,{active:()=>ll,description:()=>cl,fn:()=>ul,name:()=>ol,params:()=>dl,type:()=>sl})
+r.d(Y,{active:()=>cl,description:()=>dl,fn:()=>pl,name:()=>sl,params:()=>ul,type:()=>ll})
 var X={}
 r.r(X)
-r.d(X,{active:()=>fl,description:()=>hl,fn:()=>vl,name:()=>pl,params:()=>gl,type:()=>ml})
+r.d(X,{active:()=>hl,description:()=>gl,fn:()=>yl,name:()=>ml,params:()=>vl,type:()=>fl})
 var K={}
 r.r(K)
-r.d(K,{active:()=>Sl,description:()=>xl,fn:()=>wl,name:()=>yl,params:()=>kl,type:()=>bl})
+r.d(K,{active:()=>xl,description:()=>kl,fn:()=>Cl,name:()=>bl,params:()=>wl,type:()=>Sl})
 var Q={}
 r.r(Q)
-r.d(Q,{active:()=>Al,description:()=>El,fn:()=>zl,name:()=>Cl,params:()=>Ol,type:()=>Tl})
+r.d(Q,{active:()=>El,description:()=>Ol,fn:()=>_l,name:()=>Tl,params:()=>zl,type:()=>Al})
 var Z={}
 r.r(Z)
-r.d(Z,{active:()=>Wl,description:()=>Bl,fn:()=>Rl,name:()=>ql,params:()=>Ml,type:()=>Ll})
+r.d(Z,{active:()=>Bl,description:()=>Ml,fn:()=>Il,name:()=>Ll,params:()=>Rl,type:()=>Wl})
 var $={}
 r.r($)
 r.d($,{addAttributesToSVGElement:()=>R,addClassesToSVGElement:()=>I,cleanupAttrs:()=>n,cleanupEnableBackground:()=>a,cleanupIDs:()=>i,cleanupListOfValues:()=>D,cleanupNumericValues:()=>o,collapseGroups:()=>s,convertColors:()=>l,convertEllipseToCircle:()=>c,convertPathData:()=>d,convertShapeToPath:()=>u,convertStyleToAttrs:()=>p,convertTransform:()=>m,inlineStyles:()=>f,mergePaths:()=>h,minifyStyles:()=>g,moveElemsAttrsToGroup:()=>v,moveGroupAttrsToElems:()=>y,prefixIds:()=>N,removeAttributesBySelector:()=>G,removeAttrs:()=>F,removeComments:()=>b,removeDesc:()=>S,removeDimensions:()=>V,removeDoctype:()=>x,removeEditorsNSData:()=>k,removeElementsByAttr:()=>j,removeEmptyAttrs:()=>w,removeEmptyContainers:()=>C,removeEmptyText:()=>T,removeHiddenElems:()=>A,removeMetadata:()=>E,removeNonInheritableGroupAttrs:()=>O,removeOffCanvasPaths:()=>U,removeRasterImages:()=>H,removeScriptElement:()=>Y,removeStyleElement:()=>X,removeTitle:()=>z,removeUnknownsAndDefaults:()=>_,removeUnusedNS:()=>P,removeUselessDefs:()=>q,removeUselessStrokeAndFill:()=>L,removeViewBox:()=>W,removeXMLNS:()=>K,removeXMLProcInst:()=>B,reusePaths:()=>Q,sortAttrs:()=>Z,sortDefsChildren:()=>M})
@@ -628,38 +628,39 @@ const Ht="perItem"
 const Yt=!0
 const Xt="converts non-eccentric <ellipse>s to <circle>s"
 const Kt={}
-const Qt=function(e){if(e.isElem("ellipse")){const t=e.attr("rx").value||0
-const r=e.attr("ry").value||0
+const Qt={value:0}
+const Zt=function(e){if(e.isElem("ellipse")){const t=(e.attr("rx")||Qt).value||0
+const r=(e.attr("ry")||Qt).value||0
 if(t===r||"auto"===t||"auto"===r){const n="auto"!==t?t:r
 e.renameElem("circle")
 e.removeAttr(["rx","ry"])
 e.addAttr({name:"r",value:n,prefix:"",local:"r"})}}}
-const Zt=/matrix|translate|scale|rotate|skewX|skewY/
-const $t=/\s*(matrix|translate|scale|rotate|skewX|skewY)\s*\(\s*(.+?)\s*\)[\s,]*/
-const Jt=/[-+]?(?:\d*\.\d+|\d+\.?)(?:[eE][-+]?\d+)?/g
-const er=function(e){const t=[]
+const $t=/matrix|translate|scale|rotate|skewX|skewY/
+const Jt=/\s*(matrix|translate|scale|rotate|skewX|skewY)\s*\(\s*(.+?)\s*\)[\s,]*/
+const er=/[-+]?(?:\d*\.\d+|\d+\.?)(?:[eE][-+]?\d+)?/g
+const tr=function(e){const t=[]
 let r
-e.split($t).forEach((function(e){let n
-if(e)if(Zt.test(e))t.push(r={name:e})
-else for(;n=Jt.exec(e);){n=Number(n)
+e.split(Jt).forEach((function(e){let n
+if(e)if($t.test(e))t.push(r={name:e})
+else for(;n=er.exec(e);){n=Number(n)
 r.data?r.data.push(n):r.data=[n]}}))
 return r&&r.data?t:[]}
-const tr=function(e){return{name:"matrix",data:(e=e.map((function(e){return"matrix"===e.name?e.data:function(e){if("matrix"===e.name)return e.data
+const rr=function(e){return{name:"matrix",data:(e=e.map((function(e){return"matrix"===e.name?e.data:function(e){if("matrix"===e.name)return e.data
 let t
 switch(e.name){case"translate":t=[1,0,0,1,e.data[0],e.data[1]||0]
 break
 case"scale":t=[e.data[0],0,0,e.data[1]||e.data[0],0,0]
 break
-case"rotate":{const r=rr.cos(e.data[0])
-const n=rr.sin(e.data[0])
+case"rotate":{const r=nr.cos(e.data[0])
+const n=nr.sin(e.data[0])
 const a=e.data[1]||0
 const i=e.data[2]||0
 t=[r,n,-n,r,(1-r)*a+n*i,(1-r)*i-n*a]
-break}case"skewX":t=[1,0,rr.tan(e.data[0]),1,0,0]
+break}case"skewX":t=[1,0,nr.tan(e.data[0]),1,0,0]
 break
-case"skewY":t=[1,rr.tan(e.data[0]),0,1,0,0]}return t}(e)}))).length>0?e.reduce(ar):[]}}
-const rr={rad:function(e){return e*Math.PI/180},deg:function(e){return 180*e/Math.PI},cos:function(e){return Math.cos(this.rad(e))},acos:function(e,t){return+this.deg(Math.acos(e)).toFixed(t)},sin:function(e){return Math.sin(this.rad(e))},asin:function(e,t){return+this.deg(Math.asin(e)).toFixed(t)},tan:function(e){return Math.tan(this.rad(e))},atan:function(e,t){return+this.deg(Math.atan(e)).toFixed(t)}}
-const nr=function(e,t){const r=t.floatPrecision
+case"skewY":t=[1,nr.tan(e.data[0]),0,1,0,0]}return t}(e)}))).length>0?e.reduce(ir):[]}}
+const nr={rad:function(e){return e*Math.PI/180},deg:function(e){return 180*e/Math.PI},cos:function(e){return Math.cos(this.rad(e))},acos:function(e,t){return+this.deg(Math.acos(e)).toFixed(t)},sin:function(e){return Math.sin(this.rad(e))},asin:function(e,t){return+this.deg(Math.asin(e)).toFixed(t)},tan:function(e){return Math.tan(this.rad(e))},atan:function(e,t){return+this.deg(Math.atan(e)).toFixed(t)}}
+const ar=function(e,t){const r=t.floatPrecision
 const n=e.data
 const a=[]
 let i=+Math.hypot(n[0],n[1]).toFixed(t.transformPrecision)
@@ -667,15 +668,15 @@ let o=+((n[0]*n[3]-n[1]*n[2])/i).toFixed(t.transformPrecision)
 const s=n[0]*n[2]+n[1]*n[3]
 const l=n[0]*n[1]+n[2]*n[3]
 const c=0!==l||i===o;(n[4]||n[5])&&a.push({name:"translate",data:n.slice(4,n[5]?6:5)})
-if(!n[1]&&n[2])a.push({name:"skewX",data:[rr.atan(n[2]/o,r)]})
-else if(n[1]&&!n[2]){a.push({name:"skewY",data:[rr.atan(n[1]/n[0],r)]})
+if(!n[1]&&n[2])a.push({name:"skewX",data:[nr.atan(n[2]/o,r)]})
+else if(n[1]&&!n[2]){a.push({name:"skewY",data:[nr.atan(n[1]/n[0],r)]})
 i=n[0]
 o=n[3]}else if(!s||1===i&&1===o||!c){if(!c){i=(n[0]<0?-1:1)*Math.hypot(n[0],n[2])
 o=(n[3]<0?-1:1)*Math.hypot(n[1],n[3])
 a.push({name:"scale",data:[i,o]})}const e=Math.min(Math.max(-1,n[0]/i),1)
-const t=[rr.acos(e,r)*((c?1:o)*n[1]<0?-1:1)]
+const t=[nr.acos(e,r)*((c?1:o)*n[1]<0?-1:1)]
 t[0]&&a.push({name:"rotate",data:t})
-l&&s&&a.push({name:"skewX",data:[rr.atan(s/(i*i),r)]})
+l&&s&&a.push({name:"skewX",data:[nr.atan(s/(i*i),r)]})
 if(t[0]&&(n[4]||n[5])){a.shift()
 const e=n[0]/i
 const r=n[1]/(c?i:o)
@@ -685,27 +686,27 @@ const d=(Math.pow(1-e,2)+Math.pow(r,2))*(c||i*o)
 t.push(((1-e)*s-r*l)/d)
 t.push(((1-e)*l+r*s)/d)}}else if(n[1]||n[2])return e;(!c||1===i&&1===o)&&a.length||a.push({name:"scale",data:i===o?[i]:[i,o]})
 return a}
-function ar(e,t){return[e[0]*t[0]+e[2]*t[1],e[1]*t[0]+e[3]*t[1],e[0]*t[2]+e[2]*t[3],e[1]*t[2]+e[3]*t[3],e[0]*t[4]+e[2]*t[5]+e[4],e[1]*t[4]+e[3]*t[5]+e[5]]}const ir=Ae.presentation["stroke-width"]
-const or=String.raw`[-+]?(?:\d*\.\d+|\d+\.?)(?:[eE][-+]?\d+)?\s*`
-const sr=String.raw`(?:\s,?\s*|,\s*)`
-const lr=`(${or})`+sr
-const cr=`([01])${sr}?`
-const dr=String.raw`(${or})${sr}?(${or})`
-const ur=(lr+"?").repeat(2)+lr+cr.repeat(2)+dr
-const pr=/([MmLlHhVvCcSsQqTtAaZz])\s*/
-const mr=new RegExp(or,"g")
-const fr=new RegExp(ur,"g")
-const hr=/[-+]?(\d*\.\d+|\d+\.?)(?:[eE][-+]?\d+)?/
-const gr=function(e){if(e.pathJS)return e.pathJS
+function ir(e,t){return[e[0]*t[0]+e[2]*t[1],e[1]*t[0]+e[3]*t[1],e[0]*t[2]+e[2]*t[3],e[1]*t[2]+e[3]*t[3],e[0]*t[4]+e[2]*t[5]+e[4],e[1]*t[4]+e[3]*t[5]+e[5]]}const or=Ae.presentation["stroke-width"]
+const sr=String.raw`[-+]?(?:\d*\.\d+|\d+\.?)(?:[eE][-+]?\d+)?\s*`
+const lr=String.raw`(?:\s,?\s*|,\s*)`
+const cr=`(${sr})`+lr
+const dr=`([01])${lr}?`
+const ur=String.raw`(${sr})${lr}?(${sr})`
+const pr=(cr+"?").repeat(2)+cr+dr.repeat(2)+ur
+const mr=/([MmLlHhVvCcSsQqTtAaZz])\s*/
+const fr=new RegExp(sr,"g")
+const hr=new RegExp(pr,"g")
+const gr=/[-+]?(\d*\.\d+|\d+\.?)(?:[eE][-+]?\d+)?/
+const vr=function(e){if(e.pathJS)return e.pathJS
 const t={H:1,V:1,M:2,L:2,T:2,Q:4,S:4,C:6,A:7,h:1,v:1,m:2,l:2,t:2,q:4,s:4,c:6,a:7}
 const r=[]
 let n
 let a=!1
-e.attr("d").value.split(pr).forEach((function(e){if(e){if(!a){if("M"!==e&&"m"!==e)return
-a=!0}if(pr.test(e)){n=e
+e.attr("d").value.split(mr).forEach((function(e){if(e){if(!a){if("M"!==e&&"m"!==e)return
+a=!0}if(mr.test(e)){n=e
 "Z"!==n&&"z"!==n||r.push({instruction:"z"})}else{if("A"===n||"a"===n){const t=[]
-for(let r;r=fr.exec(e);)for(let e=1;e<r.length;e++)t.push(r[e])
-e=t}else e=e.match(mr)
+for(let r;r=hr.exec(e);)for(let e=1;e<r.length;e++)t.push(r[e])
+e=t}else e=e.match(fr)
 if(!e)return
 e=e.map(Number)
 if("M"===n||"m"===n){r.push({instruction:0===r.length?"M":n,data:e.splice(0,2)})
@@ -713,21 +714,21 @@ n="M"===n?"L":"l"}for(const a=t[n];e.length;)r.push({instruction:n,data:e.splice
 r.length&&"m"===r[0].instruction&&(r[0].instruction="M")
 e.pathJS=r
 return r}
-const vr=function(e){const t=[0,0]
+const yr=function(e){const t=[0,0]
 const r=[0,0]
 let n
 return e.map((function(e){const a=e.instruction
 const i=e.data&&e.data.slice()
-if("M"===a){Sr(t,i)
-Sr(r,i)}else if("mlcsqt".indexOf(a)>-1){for(n=0;n<i.length;n++)i[n]+=t[n%2]
-Sr(t,i)
-"m"===a&&Sr(r,i)}else if("a"===a){i[5]+=t[0]
+if("M"===a){xr(t,i)
+xr(r,i)}else if("mlcsqt".indexOf(a)>-1){for(n=0;n<i.length;n++)i[n]+=t[n%2]
+xr(t,i)
+"m"===a&&xr(r,i)}else if("a"===a){i[5]+=t[0]
 i[6]+=t[1]
-Sr(t,i)}else if("h"===a){i[0]+=t[0]
+xr(t,i)}else if("h"===a){i[0]+=t[0]
 t[0]=i[0]}else if("v"===a){i[0]+=t[1]
-t[1]=i[0]}else"MZLCSQTA".indexOf(a)>-1?Sr(t,i):"H"===a?t[0]=i[0]:"V"===a?t[1]=i[0]:"z"===a&&Sr(t,r)
+t[1]=i[0]}else"MZLCSQTA".indexOf(a)>-1?xr(t,i):"H"===a?t[0]=i[0]:"V"===a?t[1]=i[0]:"z"===a&&xr(t,r)
 return"z"===a?{instruction:"z"}:{instruction:a.toUpperCase(),data:i}}))}
-function yr(e,t,r){return[e[0]*t+e[2]*r+e[4],e[1]*t+e[3]*r+e[5]]}const br=function(e,t,r){e.pathJS=t
+function br(e,t,r){return[e[0]*t+e[2]*r+e[4],e[1]*t+e[3]*r+e[5]]}const Sr=function(e,t,r){e.pathJS=t
 r.collapseRepeated&&(t=function(e){let t
 let r
 return e.reduce((function(e,n){if(t&&n.data&&n.instruction===t.instruction)if("M"!==n.instruction)t=e[r]={instruction:t.instruction,data:t.data.concat(n.data),coords:n.coords,base:t.base}
@@ -738,49 +739,49 @@ r=e.length-1}return e}),[])}(t))
 e.attr("d").value=t.reduce((function(e,t){let n=""
 t.data&&(n=De(t.data,r,t.instruction))
 return e+(t.instruction+n)}),"")}
-function Sr(e,t){e[0]=t[t.length-2]
+function xr(e,t){e[0]=t[t.length-2]
 e[1]=t[t.length-1]
-return e}const xr=function(e,t){if(e.length<3||t.length<3)return!1
-const r=vr(e).reduce(Or,[])
-const n=vr(t).reduce(Or,[])
+return e}const kr=function(e,t){if(e.length<3||t.length<3)return!1
+const r=yr(e).reduce(zr,[])
+const n=yr(t).reduce(zr,[])
 if(r.maxX<=n.minX||n.maxX<=r.minX||r.maxY<=n.minY||n.maxY<=r.minY||r.every((function(e){return n.every((function(t){return e[e.maxX][0]<=t[t.minX][0]||t[t.maxX][0]<=e[e.minX][0]||e[e.maxY][1]<=t[t.minY][1]||t[t.maxY][1]<=e[e.minY][1]}))})))return!1
-const a=r.map(zr)
-const i=n.map(zr)
+const a=r.map(_r)
+const i=n.map(_r)
 return a.some((function(e){return!(e.length<3)&&i.some((function(t){if(t.length<3)return!1
 const r=[o(e,t,[1,0])]
-const n=wr(r[0])
+const n=Cr(r[0])
 let a=1e4
 for(;;){if(0==a--){console.error("Error: infinite loop while processing mergePaths plugin.")
 return!0}r.push(o(e,t,n))
-if(Tr(n,r[r.length-1])<=0)return!1
-if(kr(r,n))return!0}}))}))
-function o(e,t,r){return Cr(s(e,r),s(t,wr(r)))}function s(e,t){let r=t[1]>=0?t[0]<0?e.maxY:e.maxX:t[0]<0?e.minX:e.minY
+if(Ar(n,r[r.length-1])<=0)return!1
+if(wr(r,n))return!0}}))}))
+function o(e,t,r){return Tr(s(e,r),s(t,Cr(r)))}function s(e,t){let r=t[1]>=0?t[0]<0?e.maxY:e.maxX:t[0]<0?e.minX:e.minY
 let n=-1/0
 let a
-for(;(a=Tr(e[r],t))>n;){n=a
+for(;(a=Ar(e[r],t))>n;){n=a
 r=++r%e.length}return e[(r||e.length)-1]}}
-function kr(e,t){if(2===e.length){const r=e[1]
+function wr(e,t){if(2===e.length){const r=e[1]
 const n=e[0]
-const a=wr(e[1])
-const i=Cr(n,r)
-if(Tr(a,i)>0)Sr(t,Ar(i,r))
-else{Sr(t,a)
+const a=Cr(e[1])
+const i=Tr(n,r)
+if(Ar(a,i)>0)xr(t,Er(i,r))
+else{xr(t,a)
 e.shift()}}else{const r=e[2]
 const n=e[1]
 const a=e[0]
-const i=Cr(n,r)
-const o=Cr(a,r)
-const s=wr(r)
-const l=Ar(i,o)
-const c=Ar(o,i)
-if(Tr(l,s)>0)if(Tr(i,s)>0){Sr(t,l)
-e.shift()}else{Sr(t,s)
-e.splice(0,2)}else{if(!(Tr(c,s)>0))return!0
-if(Tr(o,s)>0){Sr(t,c)
-e.splice(1,1)}else{Sr(t,s)
-e.splice(0,2)}}}return!1}function wr(e){return[-e[0],-e[1]]}function Cr(e,t){return[e[0]-t[0],e[1]-t[1]]}function Tr(e,t){return e[0]*t[0]+e[1]*t[1]}function Ar(e,t){const r=[-e[1],e[0]]
-return Tr(r,wr(t))<0?wr(r):r}let Er
-function Or(e,t,r,n){let a=e.length&&e[e.length-1]
+const i=Tr(n,r)
+const o=Tr(a,r)
+const s=Cr(r)
+const l=Er(i,o)
+const c=Er(o,i)
+if(Ar(l,s)>0)if(Ar(i,s)>0){xr(t,l)
+e.shift()}else{xr(t,s)
+e.splice(0,2)}else{if(!(Ar(c,s)>0))return!0
+if(Ar(o,s)>0){xr(t,c)
+e.splice(1,1)}else{xr(t,s)
+e.splice(0,2)}}}return!1}function Cr(e){return[-e[0],-e[1]]}function Tr(e,t){return[e[0]-t[0],e[1]-t[1]]}function Ar(e,t){return e[0]*t[0]+e[1]*t[1]}function Er(e,t){const r=[-e[1],e[0]]
+return Ar(r,Cr(t))<0?Cr(r):r}let Or
+function zr(e,t,r,n){let a=e.length&&e[e.length-1]
 const i=r&&n[r-1]
 let o=a.length&&a[a.length-1]
 const s=t.data
@@ -792,22 +793,22 @@ break
 case"V":d(a,[o[0],s[0]])
 break
 case"Q":d(a,s.slice(0,2))
-Er=[s[2]-s[0],s[3]-s[1]]
+Or=[s[2]-s[0],s[3]-s[1]]
 break
-case"T":if("Q"===i.instruction||"T"===i.instruction){l=[o[0]+Er[0],o[1]+Er[1]]
+case"T":if("Q"===i.instruction||"T"===i.instruction){l=[o[0]+Or[0],o[1]+Or[1]]
 d(a,l)
-Er=[s[0]-l[0],s[1]-l[1]]}break
+Or=[s[0]-l[0],s[1]-l[1]]}break
 case"C":d(a,[.5*(o[0]+s[0]),.5*(o[1]+s[1])])
 d(a,[.5*(s[0]+s[2]),.5*(s[1]+s[3])])
 d(a,[.5*(s[2]+s[4]),.5*(s[3]+s[5])])
-Er=[s[4]-s[2],s[5]-s[3]]
+Or=[s[4]-s[2],s[5]-s[3]]
 break
-case"S":if("C"===i.instruction||"S"===i.instruction){d(a,[o[0]+.5*Er[0],o[1]+.5*Er[1]])
-l=[o[0]+Er[0],o[1]+Er[1]]}d(a,[.5*(l[0]+s[0]),.5*(l[1]+s[1])])
+case"S":if("C"===i.instruction||"S"===i.instruction){d(a,[o[0]+.5*Or[0],o[1]+.5*Or[1]])
+l=[o[0]+Or[0],o[1]+Or[1]]}d(a,[.5*(l[0]+s[0]),.5*(l[1]+s[1])])
 d(a,[.5*(s[0]+s[2]),.5*(s[1]+s[3])])
-Er=[s[2]-s[0],s[3]-s[1]]
+Or=[s[2]-s[0],s[3]-s[1]]
 break
-case"A":{const e=Pr.apply(0,o.concat(s))
+case"A":{const e=qr.apply(0,o.concat(s))
 for(let t;(t=e.splice(0,6).map(c)).length;){d(a,[.5*(o[0]+t[0]),.5*(o[1]+t[1])])
 d(a,[.5*(t[0]+t[2]),.5*(t[1]+t[3])])
 d(a,[.5*(t[2]+t[4]),.5*(t[3]+t[5])])
@@ -817,16 +818,16 @@ function c(e,t){return e+o[t%2]}function d(t,r){if(!t.length||r[1]>t[t.maxY][1])
 e.maxY=e.length?Math.max(r[1],e.maxY):r[1]}if(!t.length||r[0]>t[t.maxX][0]){t.maxX=t.length
 e.maxX=e.length?Math.max(r[0],e.maxX):r[0]}if(!t.length||r[1]<t[t.minY][1]){t.minY=t.length
 e.minY=e.length?Math.min(r[1],e.minY):r[1]}if(!t.length||r[0]<t[t.minX][0]){t.minX=t.length
-e.minX=e.length?Math.min(r[0],e.minX):r[0]}t.push(r)}}function zr(e){e.sort((function(e,t){return e[0]===t[0]?e[1]-t[1]:e[0]-t[0]}))
+e.minX=e.length?Math.min(r[0],e.minX):r[0]}t.push(r)}}function _r(e){e.sort((function(e,t){return e[0]===t[0]?e[1]-t[1]:e[0]-t[0]}))
 const t=[]
 let r=0
 let n=0
-for(let a=0;a<e.length;a++){for(;t.length>=2&&_r(t[t.length-2],t[t.length-1],e[a])<=0;)t.pop()
+for(let a=0;a<e.length;a++){for(;t.length>=2&&Pr(t[t.length-2],t[t.length-1],e[a])<=0;)t.pop()
 if(e[a][1]<e[r][1]){r=a
 n=t.length}t.push(e[a])}const a=[]
 let i=e.length-1
 let o=0
-for(let t=e.length;t--;){for(;a.length>=2&&_r(a[a.length-2],a[a.length-1],e[t])<=0;)a.pop()
+for(let t=e.length;t--;){for(;a.length>=2&&Pr(a[a.length-2],a[a.length-1],e[t])<=0;)a.pop()
 if(e[t][1]>e[i][1]){i=t
 o=a.length}a.push(e[t])}a.pop()
 t.pop()
@@ -835,7 +836,7 @@ s.minX=0
 s.maxX=t.length
 s.minY=n
 s.maxY=(t.length+o)%s.length
-return s}function _r(e,t,r){return(t[0]-e[0])*(r[1]-e[1])-(t[1]-e[1])*(r[0]-e[0])}function Pr(e,t,r,n,a,i,o,s,l,c){const d=120*Math.PI/180
+return s}function Pr(e,t,r){return(t[0]-e[0])*(r[1]-e[1])-(t[1]-e[1])*(r[0]-e[0])}function qr(e,t,r,n,a,i,o,s,l,c){const d=120*Math.PI/180
 const u=Math.PI/180*(+a||0)
 let p=[]
 let m
@@ -870,7 +871,7 @@ if(Math.abs(b)>d){const e=g
 const t=s
 const i=l
 g=h+d*(o&&g>h?1:-1)
-p=Pr(s=f+r*Math.cos(g),l=m+n*Math.sin(g),r,n,a,0,o,t,i,[g,e,f,m])}b=g-h
+p=qr(s=f+r*Math.cos(g),l=m+n*Math.sin(g),r,n,a,0,o,t,i,[g,e,f,m])}b=g-h
 const S=Math.cos(h)
 const x=Math.sin(h)
 const k=Math.cos(g)
@@ -883,27 +884,27 @@ if(c)return E.concat(p)
 {p=E.concat(p)
 const e=[]
 for(let t=0,r=p.length;t<r;t++)e[t]=t%2?y(p[t-1],p[t],u):v(p[t],p[t+1],u)
-return e}}const qr="convertPathData"
-const Lr="perItem"
-const Wr=!0
-const Br="optimizes path data: writes in shorter form, applies transformations"
-const Mr={applyTransforms:!0,applyTransformsStroked:!0,makeArcs:{threshold:2.5,tolerance:.5},straightCurves:!0,lineShorthands:!0,curveSmoothShorthands:!0,floatPrecision:3,transformPrecision:5,removeUseless:!0,collapseRepeated:!0,utilizeAbsolute:!0,leadingZero:!0,negativeExtraSpace:!0,noSpaceAfterFlags:!0,forceAbsolutePath:!1}
-let Rr
+return e}}const Lr="convertPathData"
+const Wr="perItem"
+const Br=!0
+const Mr="optimizes path data: writes in shorter form, applies transformations"
+const Rr={applyTransforms:!0,applyTransformsStroked:!0,makeArcs:{threshold:2.5,tolerance:.5},straightCurves:!0,lineShorthands:!0,curveSmoothShorthands:!0,floatPrecision:3,transformPrecision:5,removeUseless:!0,collapseRepeated:!0,utilizeAbsolute:!0,leadingZero:!0,negativeExtraSpace:!0,noSpaceAfterFlags:!0,forceAbsolutePath:!1}
 let Ir
 let Dr
 let Nr
 let Gr
 let Fr
 let Vr
-const jr=function(e,t){if(e.isElem(Ce)&&e.hasAttr("d")){Ir=t.floatPrecision
-Dr=!1!==Ir?+Math.pow(.1,Ir).toFixed(Ir):.01
-Rr=Ir>0&&Ir<20?Yr:Xr
-if(t.makeArcs){Nr=t.makeArcs.threshold
-Gr=t.makeArcs.tolerance}Fr=e.hasAttr("marker-mid")
+let jr
+const Ur=function(e,t){if(e.isElem(Ce)&&e.hasAttr("d")){Dr=t.floatPrecision
+Nr=!1!==Dr?+Math.pow(.1,Dr).toFixed(Dr):.01
+Ir=Dr>0&&Dr<20?Xr:Kr
+if(t.makeArcs){Gr=t.makeArcs.threshold
+Fr=t.makeArcs.tolerance}Vr=e.hasAttr("marker-mid")
 const r=e.computedAttr("stroke")
 const n=e.computedAttr("stroke")
-Vr=r&&"none"!==r&&n&&"butt"!==n
-let a=gr(e)
+jr=r&&"none"!==r&&n&&"butt"!==n
+let a=vr(e)
 if(a.length){!function(e){const t=[0,0]
 const r=[0,0]
 let n
@@ -951,7 +952,7 @@ a.coords=t.slice(-2)}else if("z"===o){n&&(a.coords=n.coords)
 t[0]=r[0]
 t[1]=r[1]}a.base=i>0?e[i-1].coords:[0,0]}))}(a)
 t.applyTransforms&&(a=function(e,t,r){if(!e.hasAttr("transform")||!e.attr("transform").value||e.someAttr((function(e){return~Oe.indexOf(e.name)&&~e.value.indexOf("url(")})))return t
-const n=tr(er(e.attr("transform").value))
+const n=rr(tr(e.attr("transform").value))
 const a=e.computedAttr("stroke")
 const i=e.computedAttr("id")
 const o=r.transformPrecision
@@ -962,8 +963,8 @@ if(i){let r=e
 let n=!1
 do{r.hasAttr("stroke-width")&&(n=!0)}while(!r.hasAttr("id",i)&&!n&&(r=r.parentNode))
 if(!n)return t}l=+Math.sqrt(n.data[0]*n.data[0]+n.data[1]*n.data[1]).toFixed(o)
-if(1!==l){const t=e.computedAttr("stroke-width")||ir
-e.hasAttr("vector-effect")&&"non-scaling-stroke"===e.attr("vector-effect").value||(e.hasAttr("stroke-width")?e.attrs["stroke-width"].value=e.attrs["stroke-width"].value.trim().replace(hr,(function(e){return Ne(e*l)})):e.addAttr({name:"stroke-width",prefix:"",local:"stroke-width",value:t.replace(hr,(function(e){return Ne(e*l)}))}))}}else if(i)return t
+if(1!==l){const t=e.computedAttr("stroke-width")||or
+e.hasAttr("vector-effect")&&"non-scaling-stroke"===e.attr("vector-effect").value||(e.hasAttr("stroke-width")?e.attrs["stroke-width"].value=e.attrs["stroke-width"].value.trim().replace(gr,(function(e){return Ne(e*l)})):e.addAttr({name:"stroke-width",prefix:"",local:"stroke-width",value:t.replace(gr,(function(e){return Ne(e*l)}))}))}}else if(i)return t
 t.forEach((function(e){if(e.data){if("h"===e.instruction){e.instruction="l"
 e.data[1]=0}else if("v"===e.instruction){e.instruction="l"
 e.data[1]=e.data[0]
@@ -975,7 +976,7 @@ const o=Math.sin(a)
 let s=Math.pow(e[5]*i+e[6]*o,2)/(4*r*r)+Math.pow(e[6]*i-e[5]*o,2)/(4*n*n)
 if(s>1){s=Math.sqrt(s)
 r*=s
-n*=s}const l=ar(t,[r*i,r*o,-n*o,n*i,0,0])
+n*=s}const l=ir(t,[r*i,r*o,-n*o,n*i,0,0])
 const c=l[2]*l[2]+l[3]*l[3]
 const d=l[0]*l[0]+l[1]*l[1]+c
 const u=Math.hypot(l[0]-l[3],l[1]+l[2])*Math.hypot(l[0]+l[3],l[1]-l[2])
@@ -994,19 +995,19 @@ if(Math.abs(e.data[2])>80){const t=e.data[0]
 const r=e.data[2]
 e.data[0]=e.data[1]
 e.data[1]=t
-e.data[2]=r+(r>0?-90:90)}s=yr(n.data,e.data[5],e.data[6])
+e.data[2]=r+(r>0?-90:90)}s=br(n.data,e.data[5],e.data[6])
 e.data[5]=s[0]
-e.data[6]=s[1]}else for(let t=0;t<e.data.length;t+=2){s=yr(n.data,e.data[t],e.data[t+1])
+e.data[6]=s[1]}else for(let t=0;t<e.data.length;t+=2){s=br(n.data,e.data[t],e.data[t+1])
 e.data[t]=s[0]
 e.data[t+1]=s[1]}e.coords[0]=e.base[0]+e.data[e.data.length-2]
-e.coords[1]=e.base[1]+e.data[e.data.length-1]}else{s=yr(n.data,e.data[0],e.data[1])
-Sr(e.data,s)
-Sr(e.coords,s)
+e.coords[1]=e.base[1]+e.data[e.data.length-1]}else{s=br(n.data,e.data[0],e.data[1])
+xr(e.data,s)
+xr(e.coords,s)
 n.data[4]=0
 n.data[5]=0}}}))
 e.removeAttr("transform")
 return t}(e,a,t))
-a=function(e,t){const r=rn.bind(null,t)
+a=function(e,t){const r=nn.bind(null,t)
 const n=[0,0]
 const a=[0,0]
 let i={}
@@ -1019,15 +1020,15 @@ if("s"===l){u=[0,0].concat(c)
 if("cs".indexOf(i.instruction)>-1){const e=i.data
 const t=e.length
 u[0]=e[t-2]-e[t-4]
-u[1]=e[t-1]-e[t-3]}}if(t.makeArcs&&("c"===l||"s"===l)&&Ur(u)&&(p=function(e){const t=$r(e,.5)
+u[1]=e[t-1]-e[t-3]}}if(t.makeArcs&&("c"===l||"s"===l)&&Hr(u)&&(p=function(e){const t=Jr(e,.5)
 const r=[t[0]/2,t[1]/2]
 const n=[(t[0]+e[4])/2,(t[1]+e[5])/2]
-const a=Hr([r[0],r[1],r[0]+r[1],r[1]-r[0],n[0],n[1],n[0]+(n[1]-t[1]),n[1]-(n[0]-t[0])])
-const i=a&&Zr([0,0],a)
-const o=Math.min(Nr*Dr,Gr*i/100)
-if(a&&i<1e15&&[1/4,3/4].every((function(t){return Math.abs(Zr($r(e,t),a)-i)<=o})))return{center:a,radius:i}}(u))){let t
-const a=Rr([p.radius])[0]
-let m=tn(u,p)
+const a=Yr([r[0],r[1],r[0]+r[1],r[1]-r[0],n[0],n[1],n[0]+(n[1]-t[1]),n[1]-(n[0]-t[0])])
+const i=a&&$r([0,0],a)
+const o=Math.min(Gr*Nr,Fr*i/100)
+if(a&&i<1e15&&[1/4,3/4].every((function(t){return Math.abs($r(Jr(e,t),a)-i)<=o})))return{center:a,radius:i}}(u))){let t
+const a=Ir([p.radius])[0]
+let m=rn(u,p)
 const f=u[5]*u[0]-u[4]*u[1]>0?1:0
 let h={instruction:"a",data:[a,a,0,0,f,u[4],u[5]],coords:e.coords.slice(),base:e.base}
 const g=[h]
@@ -1037,19 +1038,19 @@ const b=[e]
 let S=0
 let x=""
 let k
-if("c"===i.instruction&&Ur(i.data)&&en(i.data,p)||"a"===i.instruction&&i.sdata&&en(i.sdata,p)){b.unshift(i)
+if("c"===i.instruction&&Hr(i.data)&&tn(i.data,p)||"a"===i.instruction&&i.sdata&&tn(i.sdata,p)){b.unshift(i)
 h.base=i.base
 h.data[5]=h.coords[0]-h.base[0]
 h.data[6]=h.coords[1]-h.base[1]
 const e="a"===i.instruction?i.sdata:i.data
-m+=tn(e,{center:[e[4]+p.center[0],e[5]+p.center[1]],radius:p.radius})
+m+=rn(e,{center:[e[4]+p.center[0],e[5]+p.center[1]],radius:p.radius})
 m>Math.PI&&(h.data[3]=1)
 S=1}for(t=o;(d=s[++t])&&~"cs".indexOf(d.instruction);){let e=d.data
-if("s"===d.instruction){k=Qr({instruction:"s",data:d.data.slice()},s[t-1].data)
+if("s"===d.instruction){k=Zr({instruction:"s",data:d.data.slice()},s[t-1].data)
 e=k.data
 k.data=e.slice(0,2)
-x=r([k])}if(!Ur(e)||!Jr(e,y))break
-m+=tn(e,y)
+x=r([k])}if(!Hr(e)||!en(e,y))break
+m+=rn(e,y)
 if(m-2*Math.PI>.001)break
 m>Math.PI&&(h.data[3]=1)
 b.push(d)
@@ -1063,9 +1064,9 @@ break}h.coords=d.coords
 h.data[5]=h.coords[0]-h.base[0]
 h.data[6]=h.coords[1]-h.base[1]
 v[0]-=e[4]
-v[1]-=e[5]}if((r(g)+x).length<r(b).length){s[t]&&"s"===s[t].instruction&&Qr(s[t],s[t-1].data)
+v[1]-=e[5]}if((r(g)+x).length<r(b).length){s[t]&&"s"===s[t].instruction&&Zr(s[t],s[t-1].data)
 if(S){const t=g.shift()
-Rr(t.data)
+Ir(t.data)
 n[0]+=t.data[5]-i.data[i.data.length-2]
 n[1]+=t.data[6]-i.data[i.data.length-1]
 i.instruction="a"
@@ -1075,25 +1076,25 @@ e.base=i.coords=t.coords}h=g.shift()
 if(!h)return!1
 l="a"
 c=h.data
-e.coords=h.coords}}if(!1!==Ir){if("mltqsc".indexOf(l)>-1)for(let t=c.length;t--;)c[t]+=e.base[t%2]-n[t%2]
+e.coords=h.coords}}if(!1!==Dr){if("mltqsc".indexOf(l)>-1)for(let t=c.length;t--;)c[t]+=e.base[t%2]-n[t%2]
 else if("h"===l)c[0]+=e.base[0]-n[0]
 else if("v"===l)c[0]+=e.base[1]-n[1]
 else if("a"===l){c[5]+=e.base[0]-n[0]
-c[6]+=e.base[1]-n[1]}Rr(c)
+c[6]+=e.base[1]-n[1]}Ir(c)
 if("h"===l)n[0]+=c[0]
 else if("v"===l)n[1]+=c[0]
 else{n[0]+=c[c.length-2]
-n[1]+=c[c.length-1]}Rr(n)
+n[1]+=c[c.length-1]}Ir(n)
 if("m"===l.toLowerCase()){a[0]=n[0]
-a[1]=n[1]}}if(t.straightCurves)if("c"===l&&Kr(c)||"s"===l&&Kr(u)){d&&"s"===d.instruction&&Qr(d,c)
+a[1]=n[1]}}if(t.straightCurves)if("c"===l&&Qr(c)||"s"===l&&Qr(u)){d&&"s"===d.instruction&&Zr(d,c)
 l="l"
-c=c.slice(-2)}else if("q"===l&&Kr(c)){d&&"t"===d.instruction&&Qr(d,c)
+c=c.slice(-2)}else if("q"===l&&Qr(c)){d&&"t"===d.instruction&&Zr(d,c)
 l="l"
 c=c.slice(-2)}else if("t"===l&&"q"!==i.instruction&&"t"!==i.instruction){l="l"
 c=c.slice(-2)}else if("a"===l&&(0===c[0]||0===c[1])){l="l"
 c=c.slice(-2)}if(t.lineShorthands&&"l"===l)if(0===c[1]){l="h"
 c.pop()}else if(0===c[0]){l="v"
-c.shift()}if(t.collapseRepeated&&!Fr&&"mhv".indexOf(l)>-1&&i.instruction&&l===i.instruction.toLowerCase()&&("h"!==l&&"v"!==l||i.data[0]>=0==c[0]>=0)){i.data[0]+=c[0]
+c.shift()}if(t.collapseRepeated&&!Vr&&"mhv".indexOf(l)>-1&&i.instruction&&l===i.instruction.toLowerCase()&&("h"!==l&&"v"!==l||i.data[0]>=0==c[0]>=0)){i.data[0]+=c[0]
 "h"!==l&&"v"!==l&&(i.data[1]+=c[1])
 i.coords=e.coords
 s[o]=i
@@ -1102,7 +1103,7 @@ c=c.slice(2)}else if("s"===i.instruction&&c[0]===-(i.data[0]-i.data[2])&&c[1]===
 c=c.slice(2)}else if(-1==="cs".indexOf(i.instruction)&&0===c[0]&&0===c[1]){l="s"
 c=c.slice(2)}}else if("q"===l)if("q"===i.instruction&&c[0]===i.data[2]-i.data[0]&&c[1]===i.data[3]-i.data[1]){l="t"
 c=c.slice(2)}else if("t"===i.instruction&&c[2]===i.data[0]&&c[3]===i.data[1]){l="t"
-c=c.slice(2)}if(t.removeUseless&&!Vr){if("lhvqtcs".indexOf(l)>-1&&c.every((function(e){return 0===e}))){s[o]=i
+c=c.slice(2)}if(t.removeUseless&&!jr){if("lhvqtcs".indexOf(l)>-1&&c.every((function(e){return 0===e}))){s[o]=i
 return!1}if("a"===l&&0===c[5]&&0===c[6]){s[o]=i
 return!1}}e.instruction=l
 e.data=c
@@ -1120,15 +1121,15 @@ if("mltqsc".indexOf(a)>-1)for(let t=o.length;t--;)o[t]+=e.base[t%2]
 else if("h"===a)o[0]+=e.base[0]
 else if("v"===a)o[0]+=e.base[1]
 else if("a"===a){o[5]+=e.base[0]
-o[6]+=e.base[1]}Rr(o)
+o[6]+=e.base[1]}Ir(o)
 const s=De(o,t)
 const l=De(i,t)
 if(t.forceAbsolutePath||s.length<l.length&&!(t.negativeExtraSpace&&a===r.instruction&&r.instruction.charCodeAt(0)>96&&s.length===l.length-1&&(i[0]<0||/^0\./.test(i[0])&&r.data[r.data.length-1]%1))){e.instruction=a.toUpperCase()
 e.data=o}r=e
 return!0}))}(a,t))
-br(e,a,t)}}}
-function Ur(e){const t=Hr([0,0,e[2],e[3],e[0],e[1],e[4],e[5]])
-return t&&e[2]<t[0]==t[0]<0&&e[3]<t[1]==t[1]<0&&e[4]<t[0]==t[0]<e[0]&&e[5]<t[1]==t[1]<e[1]}function Hr(e){const t=e[1]-e[3]
+Sr(e,a,t)}}}
+function Hr(e){const t=Yr([0,0,e[2],e[3],e[0],e[1],e[4],e[5]])
+return t&&e[2]<t[0]==t[0]<0&&e[3]<t[1]==t[1]<0&&e[4]<t[0]==t[0]<e[0]&&e[5]<t[1]==t[1]<e[1]}function Yr(e){const t=e[1]-e[3]
 const r=e[2]-e[0]
 const n=e[0]*e[3]-e[2]*e[1]
 const a=e[5]-e[7]
@@ -1137,142 +1138,142 @@ const o=e[4]*e[7]-e[5]*e[6]
 const s=t*i-a*r
 if(!s)return
 const l=[(r*o-i*n)/s,(t*o-a*n)/-s]
-return!isNaN(l[0])&&!isNaN(l[1])&&isFinite(l[0])&&isFinite(l[1])?l:void 0}function Yr(e){for(let t=e.length;t-- >0;)if(e[t].toFixed(Ir)!==e[t]){const r=+e[t].toFixed(Ir-1)
-e[t]=+Math.abs(r-e[t]).toFixed(Ir+1)>=Dr?+e[t].toFixed(Ir):r}return e}function Xr(e){for(let t=e.length;t-- >0;)e[t]=Math.round(e[t])
-return e}function Kr(e){let t=e.length-2
+return!isNaN(l[0])&&!isNaN(l[1])&&isFinite(l[0])&&isFinite(l[1])?l:void 0}function Xr(e){for(let t=e.length;t-- >0;)if(e[t].toFixed(Dr)!==e[t]){const r=+e[t].toFixed(Dr-1)
+e[t]=+Math.abs(r-e[t]).toFixed(Dr+1)>=Nr?+e[t].toFixed(Dr):r}return e}function Kr(e){for(let t=e.length;t-- >0;)e[t]=Math.round(e[t])
+return e}function Qr(e){let t=e.length-2
 const r=-e[t+1]
 const n=e[t]
 const a=1/(r*r+n*n)
 if(t<=1||!isFinite(a))return!1
-for(;(t-=2)>=0;)if(Math.sqrt(Math.pow(r*e[t]+n*e[t+1],2)*a)>Dr)return!1
-return!0}function Qr(e,t){switch(e.instruction){case"s":e.instruction="c"
+for(;(t-=2)>=0;)if(Math.sqrt(Math.pow(r*e[t]+n*e[t+1],2)*a)>Nr)return!1
+return!0}function Zr(e,t){switch(e.instruction){case"s":e.instruction="c"
 break
 case"t":e.instruction="q"}e.data.unshift(t[t.length-2]-t[t.length-4],t[t.length-1]-t[t.length-3])
-return e}function Zr(e,t){return Math.hypot(e[0]-t[0],e[1]-t[1])}function $r(e,t){const r=t*t
+return e}function $r(e,t){return Math.hypot(e[0]-t[0],e[1]-t[1])}function Jr(e,t){const r=t*t
 const n=r*t
 const a=1-t
 const i=a*a
-return[3*i*t*e[0]+3*a*r*e[2]+n*e[4],3*i*t*e[1]+3*a*r*e[3]+n*e[5]]}function Jr(e,t){const r=Math.min(Nr*Dr,Gr*t.radius/100)
-return[0,1/4,.5,3/4,1].every((function(n){return Math.abs(Zr($r(e,n),t.center)-t.radius)<=r}))}function en(e,t){return Jr(e,{center:[t.center[0]+e[4],t.center[1]+e[5]],radius:t.radius})}function tn(e,t){const r=-t.center[0]
+return[3*i*t*e[0]+3*a*r*e[2]+n*e[4],3*i*t*e[1]+3*a*r*e[3]+n*e[5]]}function en(e,t){const r=Math.min(Gr*Nr,Fr*t.radius/100)
+return[0,1/4,.5,3/4,1].every((function(n){return Math.abs($r(Jr(e,n),t.center)-t.radius)<=r}))}function tn(e,t){return en(e,{center:[t.center[0]+e[4],t.center[1]+e[5]],radius:t.radius})}function rn(e,t){const r=-t.center[0]
 const n=-t.center[1]
 const a=e[4]-t.center[0]
 const i=e[5]-t.center[1]
-return Math.acos((r*a+n*i)/Math.sqrt((r*r+n*n)*(a*a+i*i)))}function rn(e,t){return t.reduce((function(t,r){let n=""
-r.data&&(n=De(Rr(r.data.slice()),e))
-return t+r.instruction+n}),"")}const nn="convertShapeToPath"
-const an="perItem"
-const on=!0
-const sn="converts basic shapes to more compact path form"
-const ln={convertArcs:!1}
-const cn={value:0}
-const dn=/[-+]?(?:\d*\.\d+|\d+\.?)(?:[eE][-+]?\d+)?/g
-const un=function(e,t){const r=t&&t.convertArcs
-if(e.isElem("rect")&&e.hasAttr("width")&&e.hasAttr("height")&&!e.hasAttr("rx")&&!e.hasAttr("ry")){const t=+(e.attr("x")||cn).value
-const r=+(e.attr("y")||cn).value
+return Math.acos((r*a+n*i)/Math.sqrt((r*r+n*n)*(a*a+i*i)))}function nn(e,t){return t.reduce((function(t,r){let n=""
+r.data&&(n=De(Ir(r.data.slice()),e))
+return t+r.instruction+n}),"")}const an="convertShapeToPath"
+const on="perItem"
+const sn=!0
+const ln="converts basic shapes to more compact path form"
+const cn={convertArcs:!1}
+const dn={value:0}
+const un=/[-+]?(?:\d*\.\d+|\d+\.?)(?:[eE][-+]?\d+)?/g
+const pn=function(e,t){const r=t&&t.convertArcs
+if(e.isElem("rect")&&e.hasAttr("width")&&e.hasAttr("height")&&!e.hasAttr("rx")&&!e.hasAttr("ry")){const t=+(e.attr("x")||dn).value
+const r=+(e.attr("y")||dn).value
 const n=+e.attr("width").value
 const a=+e.attr("height").value
 if(isNaN(t-r+n-a))return
 const i="M"+t+" "+r+"H"+(t+n)+"V"+(r+a)+"H"+t+"z"
 e.addAttr({name:"d",value:i,prefix:"",local:"d"})
-e.renameElem("path").removeAttr(["x","y","width","height"])}else if(e.isElem("line")){const t=+(e.attr("x1")||cn).value
-const r=+(e.attr("y1")||cn).value
-const n=+(e.attr("x2")||cn).value
-const a=+(e.attr("y2")||cn).value
+e.renameElem("path").removeAttr(["x","y","width","height"])}else if(e.isElem("line")){const t=+(e.attr("x1")||dn).value
+const r=+(e.attr("y1")||dn).value
+const n=+(e.attr("x2")||dn).value
+const a=+(e.attr("y2")||dn).value
 if(isNaN(t-r+n-a))return
 e.addAttr({name:"d",value:"M"+t+" "+r+"L"+n+" "+a,prefix:"",local:"d"})
-e.renameElem("path").removeAttr(["x1","y1","x2","y2"])}else if((e.isElem("polyline")||e.isElem("polygon"))&&e.hasAttr("points")){const t=(e.attr("points").value.match(dn)||[]).map(Number)
+e.renameElem("path").removeAttr(["x1","y1","x2","y2"])}else if((e.isElem("polyline")||e.isElem("polygon"))&&e.hasAttr("points")){const t=(e.attr("points").value.match(un)||[]).map(Number)
 if(t.length<4)return!1
 e.addAttr({name:"d",value:"M"+t.slice(0,2).join(" ")+"L"+t.slice(2).join(" ")+(e.isElem("polygon")?"z":""),prefix:"",local:"d"})
-e.renameElem("path").removeAttr("points")}else if(e.isElem("circle")&&r){const t=+(e.attr("cx")||cn).value
-const r=+(e.attr("cy")||cn).value
-const n=+(e.attr("r")||cn).value
+e.renameElem("path").removeAttr("points")}else if(e.isElem("circle")&&r){const t=+(e.attr("cx")||dn).value
+const r=+(e.attr("cy")||dn).value
+const n=+(e.attr("r")||dn).value
 if(isNaN(t-r+n))return
 const a="M"+t+" "+(r-n)+"A"+n+" "+n+" 0 1 0 "+t+" "+(r+n)+"A"+n+" "+n+" 0 1 0 "+t+" "+(r-n)+"Z"
 e.addAttr({name:"d",value:a,prefix:"",local:"d"})
-e.renameElem("path").removeAttr(["cx","cy","r"])}else if(e.isElem("ellipse")&&r){const t=+(e.attr("cx")||cn).value
-const r=+(e.attr("cy")||cn).value
-const n=+(e.attr("rx")||cn).value
-const a=+(e.attr("ry")||cn).value
+e.renameElem("path").removeAttr(["cx","cy","r"])}else if(e.isElem("ellipse")&&r){const t=+(e.attr("cx")||dn).value
+const r=+(e.attr("cy")||dn).value
+const n=+(e.attr("rx")||dn).value
+const a=+(e.attr("ry")||dn).value
 if(isNaN(t-r+n-a))return
 const i="M"+t+" "+(r-a)+"A"+n+" "+a+" 0 1 0 "+t+" "+(r+a)+"A"+n+" "+a+" 0 1 0 "+t+" "+(r-a)+"Z"
 e.addAttr({name:"d",value:i,prefix:"",local:"d"})
 e.renameElem("path").removeAttr(["cx","cy","rx","ry"])}}
-const pn=Te.presentation
-const mn="convertStyleToAttrs"
-const fn="perItem"
-const hn=!0
-const gn="converts style to attributes"
-const vn={keepImportant:!1}
-const yn="\\\\(?:[0-9a-f]{1,6}\\s?|\\r\\n|.)"
-const bn="\\s*("+On("[^:;\\\\]",yn)+"*?)\\s*"
-const Sn="'(?:[^'\\n\\r\\\\]|"+yn+")*?(?:'|$)"
-const xn='"(?:[^"\\n\\r\\\\]|'+yn+')*?(?:"|$)'
-const kn=new RegExp("^"+On(Sn,xn)+"$")
-const wn="\\("+On("[^'\"()\\\\]+",yn,Sn,xn)+"*?\\)"
-const Cn="\\s*("+On("[^!'\"();\\\\]+?",yn,Sn,xn,wn,"[^;]*?")+"*?)"
-const Tn=new RegExp(bn+":"+Cn+"(\\s*!important(?![-(\\w]))?\\s*(?:;\\s*|$)","ig")
-const An=new RegExp(On(yn,Sn,xn,"/\\*[^]*?\\*/"),"ig")
-const En=function(e,t){if(e.elem&&e.hasAttr("style")){let r=e.attr("style").value
+const mn=Te.presentation
+const fn="convertStyleToAttrs"
+const hn="perItem"
+const gn=!0
+const vn="converts style to attributes"
+const yn={keepImportant:!1}
+const bn="\\\\(?:[0-9a-f]{1,6}\\s?|\\r\\n|.)"
+const Sn="\\s*("+zn("[^:;\\\\]",bn)+"*?)\\s*"
+const xn="'(?:[^'\\n\\r\\\\]|"+bn+")*?(?:'|$)"
+const kn='"(?:[^"\\n\\r\\\\]|'+bn+')*?(?:"|$)'
+const wn=new RegExp("^"+zn(xn,kn)+"$")
+const Cn="\\("+zn("[^'\"()\\\\]+",bn,xn,kn)+"*?\\)"
+const Tn="\\s*("+zn("[^!'\"();\\\\]+?",bn,xn,kn,Cn,"[^;]*?")+"*?)"
+const An=new RegExp(Sn+":"+Tn+"(\\s*!important(?![-(\\w]))?\\s*(?:;\\s*|$)","ig")
+const En=new RegExp(zn(bn,xn,kn,"/\\*[^]*?\\*/"),"ig")
+const On=function(e,t){if(e.elem&&e.hasAttr("style")){let r=e.attr("style").value
 let n=[]
 const a={}
-r=r.replace(An,(function(e){return"/"===e[0]?"":"\\"===e[0]&&/[-g-z]/i.test(e[1])?e[1]:e}))
-Tn.lastIndex=0
-for(let e;e=Tn.exec(r);)t.keepImportant&&e[3]||n.push([e[1],e[2]])
+r=r.replace(En,(function(e){return"/"===e[0]?"":"\\"===e[0]&&/[-g-z]/i.test(e[1])?e[1]:e}))
+An.lastIndex=0
+for(let e;e=An.exec(r);)t.keepImportant&&e[3]||n.push([e[1],e[2]])
 if(n.length){n=n.filter((function(e){if(e[0]){const t=e[0].toLowerCase()
 let r=e[1]
-kn.test(r)&&(r=r.slice(1,-1))
-if(pn.indexOf(t)>-1){a[t]={name:t,value:r,local:t,prefix:""}
+wn.test(r)&&(r=r.slice(1,-1))
+if(mn.indexOf(t)>-1){a[t]={name:t,value:r,local:t,prefix:""}
 return!1}}return!0}))
 Object.assign(e.attrs,a)
 n.length?e.attr("style").value=n.map((function(e){return e.join(":")})).join(";"):e.removeAttr("style")}}}
-function On(){return"(?:"+Array.prototype.join.call(arguments,"|")+")"}const zn="convertTransform"
-const _n="perItem"
-const Pn=!0
-const qn="collapses multiple transformations and optimizes it"
-const Ln={convertToShorts:!0,floatPrecision:3,transformPrecision:5,matrixToTransform:!0,shortTranslate:!0,shortScale:!0,shortRotate:!0,removeUseless:!0,collapseIntoOne:!0,leadingZero:!0,negativeExtraSpace:!1}
-let Wn
+function zn(){return"(?:"+Array.prototype.join.call(arguments,"|")+")"}const _n="convertTransform"
+const Pn="perItem"
+const qn=!0
+const Ln="collapses multiple transformations and optimizes it"
+const Wn={convertToShorts:!0,floatPrecision:3,transformPrecision:5,matrixToTransform:!0,shortTranslate:!0,shortScale:!0,shortRotate:!0,removeUseless:!0,collapseIntoOne:!0,leadingZero:!0,negativeExtraSpace:!1}
 let Bn
 let Mn
-const Rn=function(e,t){if(e.elem){e.hasAttr("transform")&&In(e,"transform",t)
-e.hasAttr("gradientTransform")&&In(e,"gradientTransform",t)
-e.hasAttr("patternTransform")&&In(e,"patternTransform",t)}}
-function In(e,t,r){let n=er(e.attr(t).value);(r=function(e,t){const r=e.reduce(Dn,[])
+let Rn
+const In=function(e,t){if(e.elem){e.hasAttr("transform")&&Dn(e,"transform",t)
+e.hasAttr("gradientTransform")&&Dn(e,"gradientTransform",t)
+e.hasAttr("patternTransform")&&Dn(e,"patternTransform",t)}}
+function Dn(e,t,r){let n=tr(e.attr(t).value);(r=function(e,t){const r=e.reduce(Nn,[])
 let n=t.transformPrecision
 t=Object.assign({},t)
-if(r.length){t.transformPrecision=Math.min(t.transformPrecision,Math.max.apply(Math,r.map(Nn))||t.transformPrecision)
+if(r.length){t.transformPrecision=Math.min(t.transformPrecision,Math.max.apply(Math,r.map(Gn))||t.transformPrecision)
 n=Math.max.apply(Math,r.map((function(e){return String(e).replace(/\D+/g,"").length})))}"degPrecision"in t||(t.degPrecision=Math.max(0,Math.min(t.floatPrecision,n-2)))
-Bn=t.floatPrecision>=1&&t.floatPrecision<20?jn.bind(this,t.floatPrecision):Vn
-Wn=t.degPrecision>=1&&t.floatPrecision<20?jn.bind(this,t.degPrecision):Vn
-Mn=t.transformPrecision>=1&&t.floatPrecision<20?jn.bind(this,t.transformPrecision):Vn
-return t}(n,r)).collapseIntoOne&&n.length>1&&(n=[tr(n)])
+Mn=t.floatPrecision>=1&&t.floatPrecision<20?Un.bind(this,t.floatPrecision):jn
+Bn=t.degPrecision>=1&&t.floatPrecision<20?Un.bind(this,t.degPrecision):jn
+Rn=t.transformPrecision>=1&&t.floatPrecision<20?Un.bind(this,t.transformPrecision):jn
+return t}(n,r)).collapseIntoOne&&n.length>1&&(n=[rr(n)])
 r.convertToShorts?n=function(e,t){for(let r=0;r<e.length;r++){let n=e[r]
-if(t.matrixToTransform&&"matrix"===n.name){const a=nr(n,t)
-a!==n&&Gn(a,t).length<=Gn([n],t).length&&e.splice.apply(e,[r,1].concat(a))
-n=e[r]}Fn(n)
+if(t.matrixToTransform&&"matrix"===n.name){const a=ar(n,t)
+a!==n&&Fn(a,t).length<=Fn([n],t).length&&e.splice.apply(e,[r,1].concat(a))
+n=e[r]}Vn(n)
 t.shortTranslate&&"translate"===n.name&&2===n.data.length&&!n.data[1]&&n.data.pop()
 t.shortScale&&"scale"===n.name&&2===n.data.length&&n.data[0]===n.data[1]&&n.data.pop()
 if(t.shortRotate&&e[r-2]&&"translate"===e[r-2].name&&"rotate"===e[r-1].name&&"translate"===e[r].name&&e[r-2].data[0]===-e[r].data[0]&&e[r-2].data[1]===-e[r].data[1]){e.splice(r-2,3,{name:"rotate",data:[e[r-1].data[0],e[r-2].data[0],e[r-2].data[1]]})
 r-=2
-n=e[r]}}return e}(n,r):n.forEach(Fn)
+n=e[r]}}return e}(n,r):n.forEach(Vn)
 r.removeUseless&&(n=n.filter((function(e){return!(["translate","rotate","skewX","skewY"].indexOf(e.name)>-1&&(1===e.data.length||"rotate"===e.name)&&!e.data[0]||"translate"===e.name&&!e.data[0]&&!e.data[1]||"scale"===e.name&&1===e.data[0]&&(e.data.length<2||1===e.data[1])||"matrix"===e.name&&1===e.data[0]&&1===e.data[3]&&!(e.data[1]||e.data[2]||e.data[4]||e.data[5]))})))
-n.length?e.attr(t).value=Gn(n,r):e.removeAttr(t)}function Dn(e,t){return"matrix"===t.name?e.concat(t.data.slice(0,4)):e}function Nn(e){return(e=String(e)).slice(e.indexOf(".")).length-1}function Gn(e,t){let r=""
-e.forEach((function(e){Fn(e)
+n.length?e.attr(t).value=Fn(n,r):e.removeAttr(t)}function Nn(e,t){return"matrix"===t.name?e.concat(t.data.slice(0,4)):e}function Gn(e){return(e=String(e)).slice(e.indexOf(".")).length-1}function Fn(e,t){let r=""
+e.forEach((function(e){Vn(e)
 r+=(r&&" ")+e.name+"("+De(e.data,t)+")"}))
-return r}function Fn(e){switch(e.name){case"translate":e.data=Bn(e.data)
+return r}function Vn(e){switch(e.name){case"translate":e.data=Mn(e.data)
 break
-case"rotate":e.data=Wn(e.data.slice(0,1)).concat(Bn(e.data.slice(1)))
+case"rotate":e.data=Bn(e.data.slice(0,1)).concat(Mn(e.data.slice(1)))
 break
-case"skewX":case"skewY":e.data=Wn(e.data)
+case"skewX":case"skewY":e.data=Bn(e.data)
 break
-case"scale":e.data=Mn(e.data)
+case"scale":e.data=Rn(e.data)
 break
-case"matrix":e.data=Mn(e.data.slice(0,4)).concat(Bn(e.data.slice(4)))}return e}function Vn(e){return e.map(Math.round)}function jn(e,t){for(let r=t.length,n=+Math.pow(.1,e).toFixed(e);r--;)if(t[r].toFixed(e)!==t[r]){const a=+t[r].toFixed(e-1)
-t[r]=+Math.abs(a-t[r]).toFixed(e+1)>=n?+t[r].toFixed(e):a}return t}const Un="inlineStyles"
-const Hn="full"
-const Yn=!0
-const Xn={onlyMatchedOnce:!0,removeMatchedSelectors:!0,useMqs:["","screen"],usePseudos:[""]}
-const Kn="inline styles (additional options)"
-const Qn=function(e,t){const r=e.querySelectorAll("style")
+case"matrix":e.data=Rn(e.data.slice(0,4)).concat(Mn(e.data.slice(4)))}return e}function jn(e){return e.map(Math.round)}function Un(e,t){for(let r=t.length,n=+Math.pow(.1,e).toFixed(e);r--;)if(t[r].toFixed(e)!==t[r]){const a=+t[r].toFixed(e-1)
+t[r]=+Math.abs(a-t[r]).toFixed(e+1)>=n?+t[r].toFixed(e):a}return t}const Hn="inlineStyles"
+const Yn="full"
+const Xn=!0
+const Kn={onlyMatchedOnce:!0,removeMatchedSelectors:!0,useMqs:["","screen"],usePseudos:[""]}
+const Qn="inline styles (additional options)"
+const Zn=function(e,t){const r=e.querySelectorAll("style")
 if(null===r)return e
 const n=[]
 let a=[]
@@ -1304,31 +1305,31 @@ if(e.cssAst.children.isEmpty()){const t=e.styleEl.parentNode
 t.spliceContent(t.content.indexOf(e.styleEl),1)
 if("defs"===t.elem&&0===t.content.length){const e=t.parentNode
 e.spliceContent(e.content.indexOf(t),1)}}else ye(e.styleEl,le().generate(e.cssAst))}return e}
-const Zn="mergePaths"
-const $n="perItem"
-const Jn=!0
-const ea="merges multiple paths in one if possible"
-const ta={collapseRepeated:!0,force:!1,leadingZero:!0,negativeExtraSpace:!0,noSpaceAfterFlags:!0}
-const ra=function(e,t){if(!e.isElem()||e.isEmpty())return
+const $n="mergePaths"
+const Jn="perItem"
+const ea=!0
+const ta="merges multiple paths in one if possible"
+const ra={collapseRepeated:!0,force:!1,leadingZero:!0,negativeExtraSpace:!0,noSpaceAfterFlags:!0}
+const na=function(e,t){if(!e.isElem()||e.isEmpty())return
 let r=null
 let n=null
 e.content=e.content.filter((function(e){if(r&&r.isElem("path")&&r.isEmpty()&&r.hasAttr("d")&&e.isElem("path")&&e.isEmpty()&&e.hasAttr("d")){n||(n=Object.keys(r.attrs))
 const a=Object.keys(e.attrs)
 const i=n.length===a.length&&a.every((function(t){return"d"===t||r.hasAttr(t)&&r.attr(t).value===e.attr(t).value}))
-const o=gr(r)
-const s=gr(e)
-if(i&&(t.force||!xr(o,s))){br(r,o.concat(s),t)
+const o=vr(r)
+const s=vr(e)
+if(i&&(t.force||!kr(o,s))){Sr(r,o.concat(s),t)
 return!1}}r=e
 n=null
 return!0}))}
-var na=r(4758)
-const aa="minifyStyles"
-const ia="full"
-const oa=!0
-const sa="minifies styles and removes unused styles based on usage data"
-const la={usage:{force:!1,ids:!0,classes:!0,tags:!0}}
-const ca=function(e,t){const r=da(t=t||{})
-const n=da(t)
+var aa=r(4758)
+const ia="minifyStyles"
+const oa="full"
+const sa=!0
+const la="minifies styles and removes unused styles based on usage data"
+const ca={usage:{force:!1,ids:!0,classes:!0,tags:!0}}
+const da=function(e,t){const r=ua(t=t||{})
+const n=ua(t)
 const a=function(e){return function e(t,r){for(let n=0;n<t.content.length;n++){const a=t.content[n]
 a.content&&e(a,r);(a.isElem("style")&&!a.isEmpty()||a.isElem()&&a.hasAttr("style"))&&r.push(a)}return r}(e,[])}(e)
 r.usage=function(e,t){let r=!0
@@ -1342,22 +1343,22 @@ i.hasAttr("id")&&(n.ids[i.attr("id").value]=!0)
 i.hasAttr("class")&&i.attr("class").value.replace(/^\s+|\s+$/g,"").split(/\s+/).forEach((function(e){n.classes[e]=!0}))
 i.attrs&&Object.keys(i.attrs).some((function(e){return/^on/i.test(e)}))&&(r=!1)}}return n}(e,{ids:Object.create(null),classes:Object.create(null),tags:Object.create(null)})
 !r&&t.usage&&t.usage.force&&(r=!0)
-for(const e in i)if(ua(t,e)){n[e]=Object.keys(i[e])
+for(const e in i)if(pa(t,e)){n[e]=Object.keys(i[e])
 a=!0}return r&&a?n:null}(e,t)
 n.usage=null
 a.forEach((function(e){if(e.isElem("style")){const t=e.content[0].text||e.content[0].cdata||[]
 const n=t.indexOf(">")>=0||t.indexOf("<")>=0?"cdata":"text"
-e.content[0][n]=(0,na.minify)(t,r).css}else{const t=e.attr("style").value
-e.attr("style").value=(0,na.minifyBlock)(t,n).css}}))
+e.content[0][n]=(0,aa.minify)(t,r).css}else{const t=e.attr("style").value
+e.attr("style").value=(0,aa.minifyBlock)(t,n).css}}))
 return e}
-function da(e){const t={}
+function ua(e){const t={}
 for(const r in e)t[r]=e[r]
-return t}function ua(e,t){return"usage"in e==0||!(!e.usage||t in e.usage!=0)||Boolean(e.usage&&e.usage[t])}const pa="moveElemsAttrsToGroup"
-const ma="perItemReverse"
-const fa=!0
-const ha="moves elements attributes to the existing group wrapper"
-const ga={}
-const va=function(e){if(e.isElem("g")&&!e.isEmpty()&&e.content.length>1){let t={}
+return t}function pa(e,t){return"usage"in e==0||!(!e.usage||t in e.usage!=0)||Boolean(e.usage&&e.usage[t])}const ma="moveElemsAttrsToGroup"
+const fa="perItemReverse"
+const ha=!0
+const ga="moves elements attributes to the existing group wrapper"
+const va={}
+const ya=function(e){if(e.isElem("g")&&!e.isEmpty()&&e.content.length>1){let t={}
 let r=!1
 const n=e.hasAttr("clip-path")||e.hasAttr("mask")
 const a=e.content.every((function(e){if(e.isElem()&&e.hasAttr()){if(e.hasAttr("class"))return!1
@@ -1370,72 +1371,72 @@ const i=e.content.every((function(e){return e.isElem(Ce)}))
 a&&e.content.forEach((function(a){for(const o in t)if(!i&&!n||"transform"!==o){a.removeAttr(o)
 if("transform"===o){if(!r){e.hasAttr("transform")?e.attr("transform").value+=" "+t[o].value:e.addAttr(t[o])
 r=!0}}else e.addAttr(t[o])}}))}}
-const ya=Ce.concat(["g","text"])
-const ba="moveGroupAttrsToElems"
-const Sa="perItem"
-const xa=!0
-const ka="moves some group attributes to the content elements"
-const wa={}
-const Ca=function(e){if(e.isElem("g")&&e.hasAttr("transform")&&!e.isEmpty()&&!e.someAttr((function(e){return~Oe.indexOf(e.name)&&~e.value.indexOf("url(")}))&&e.content.every((function(e){return e.isElem(ya)&&!e.hasAttr("id")}))){e.content.forEach((function(t){const r=e.attr("transform")
+const ba=Ce.concat(["g","text"])
+const Sa="moveGroupAttrsToElems"
+const xa="perItem"
+const ka=!0
+const wa="moves some group attributes to the content elements"
+const Ca={}
+const Ta=function(e){if(e.isElem("g")&&e.hasAttr("transform")&&!e.isEmpty()&&!e.someAttr((function(e){return~Oe.indexOf(e.name)&&~e.value.indexOf("url(")}))&&e.content.every((function(e){return e.isElem(ba)&&!e.hasAttr("id")}))){e.content.forEach((function(t){const r=e.attr("transform")
 t.hasAttr("transform")?t.attr("transform").value=r.value+" "+t.attr("transform").value:t.addAttr({name:r.name,local:r.local,prefix:r.prefix,value:r.value})}))
 e.removeAttr("transform")}}
-const Ta="removeComments"
-const Aa="perItem"
-const Ea=!0
-const Oa="removes comments"
-const za={}
-const _a=function(e){if(e.comment&&"!"!==e.comment.charAt(0))return!1}
-const Pa="removeDesc"
-const qa="perItem"
-const La=!0
-const Wa={removeAny:!0}
-const Ba="removes <desc>"
-const Ma=/^(Created with|Created using)/
-const Ra=function(e,t){return!e.isElem("desc")||!(t.removeAny||e.isEmpty()||Ma.test(e.content[0].text))}
-const Ia="removeDoctype"
-const Da="perItem"
-const Na=!0
-const Ga="removes doctype declaration"
-const Fa={}
-const Va=function(e){if(e.doctype)return!1}
-let ja=["http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd","http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd","http://www.inkscape.org/namespaces/inkscape","http://www.bohemiancoding.com/sketch/ns","http://ns.adobe.com/AdobeIllustrator/10.0/","http://ns.adobe.com/Graphs/1.0/","http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/","http://ns.adobe.com/Variables/1.0/","http://ns.adobe.com/SaveForWeb/1.0/","http://ns.adobe.com/Extensibility/1.0/","http://ns.adobe.com/Flows/1.0/","http://ns.adobe.com/ImageReplacement/1.0/","http://ns.adobe.com/GenericCustomNamespace/1.0/","http://ns.adobe.com/XPath/1.0/","http://schemas.microsoft.com/visio/2003/SVGExtensions/","http://taptrix.com/vectorillustrator/svg_extensions","http://www.figma.com/figma/ns","http://purl.org/dc/elements/1.1/","http://creativecommons.org/ns#","http://www.w3.org/1999/02/22-rdf-syntax-ns#","http://www.serif.com/","http://www.vector.evaxdesign.sk"]
-const Ua="removeEditorsNSData"
-const Ha="perItem"
-const Ya=!0
-const Xa="removes editors namespaces, elements and attributes"
-const Ka=[]
-const Qa={additionalNamespaces:[]}
-const Za=function(e,t){Array.isArray(t.additionalNamespaces)&&(ja=ja.concat(t.additionalNamespaces))
-if(e.elem){e.isElem("svg")&&e.eachAttr((function(t){if("xmlns"===t.prefix&&ja.indexOf(t.value)>-1){Ka.push(t.local)
+const Aa="removeComments"
+const Ea="perItem"
+const Oa=!0
+const za="removes comments"
+const _a={}
+const Pa=function(e){if(e.comment&&"!"!==e.comment.charAt(0))return!1}
+const qa="removeDesc"
+const La="perItem"
+const Wa=!0
+const Ba={removeAny:!0}
+const Ma="removes <desc>"
+const Ra=/^(Created with|Created using)/
+const Ia=function(e,t){return!e.isElem("desc")||!(t.removeAny||e.isEmpty()||Ra.test(e.content[0].text))}
+const Da="removeDoctype"
+const Na="perItem"
+const Ga=!0
+const Fa="removes doctype declaration"
+const Va={}
+const ja=function(e){if(e.doctype)return!1}
+let Ua=["http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd","http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd","http://www.inkscape.org/namespaces/inkscape","http://www.bohemiancoding.com/sketch/ns","http://ns.adobe.com/AdobeIllustrator/10.0/","http://ns.adobe.com/Graphs/1.0/","http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/","http://ns.adobe.com/Variables/1.0/","http://ns.adobe.com/SaveForWeb/1.0/","http://ns.adobe.com/Extensibility/1.0/","http://ns.adobe.com/Flows/1.0/","http://ns.adobe.com/ImageReplacement/1.0/","http://ns.adobe.com/GenericCustomNamespace/1.0/","http://ns.adobe.com/XPath/1.0/","http://schemas.microsoft.com/visio/2003/SVGExtensions/","http://taptrix.com/vectorillustrator/svg_extensions","http://www.figma.com/figma/ns","http://purl.org/dc/elements/1.1/","http://creativecommons.org/ns#","http://www.w3.org/1999/02/22-rdf-syntax-ns#","http://www.serif.com/","http://www.vector.evaxdesign.sk"]
+const Ha="removeEditorsNSData"
+const Ya="perItem"
+const Xa=!0
+const Ka="removes editors namespaces, elements and attributes"
+const Qa=[]
+const Za={additionalNamespaces:[]}
+const $a=function(e,t){Array.isArray(t.additionalNamespaces)&&(Ua=Ua.concat(t.additionalNamespaces))
+if(e.elem){e.isElem("svg")&&e.eachAttr((function(t){if("xmlns"===t.prefix&&Ua.indexOf(t.value)>-1){Qa.push(t.local)
 e.removeAttr(t.name)}}))
-e.eachAttr((function(t){Ka.indexOf(t.prefix)>-1&&e.removeAttr(t.name)}))
-if(Ka.indexOf(e.prefix)>-1)return!1}}
-const $a="removeEmptyAttrs"
-const Ja="perItem"
-const ei=!0
-const ti="removes empty attributes"
-const ri={}
-const ni=function(e){e.elem&&e.eachAttr((function(t){""===t.value&&e.removeAttr(t.name)}))}
-const ai=we.container
-const ii="removeEmptyContainers"
-const oi="perItemReverse"
-const si=!0
-const li="removes empty container elements"
-const ci={}
-const di=function(e){return!(e.isElem(ai)&&!e.isElem("svg")&&e.isEmpty()&&(!e.isElem("pattern")||!e.hasAttrLocal("href")))}
-const ui="removeEmptyText"
-const pi="perItem"
-const mi=!0
-const fi="removes empty <text> elements"
-const hi={text:!0,tspan:!0,tref:!0}
-const gi=function(e,t){return!(t.text&&e.isElem("text")&&e.isEmpty())&&!(t.tspan&&e.isElem("tspan")&&e.isEmpty())&&!(t.tref&&e.isElem("tref")&&!e.hasAttrLocal("href"))&&void 0}
-const vi="removeHiddenElems"
-const yi="perItem"
-const bi=!0
-const Si="removes hidden elements (zero sized, with absent attributes)"
-const xi={isHidden:!0,displayNone:!0,opacity0:!0,circleR0:!0,ellipseRX0:!0,ellipseRY0:!0,rectWidth0:!0,rectHeight0:!0,patternWidth0:!0,patternHeight0:!0,imageWidth0:!0,imageHeight0:!0,pathEmptyD:!0,polylineEmptyPoints:!0,polygonEmptyPoints:!0}
-const ki=/M\s*(?:[-+]?(?:\d*\.\d+|\d+(?:\.|(?!\.)))([eE][-+]?\d+)?(?!\d)\s*,?\s*){2}\D*\d/i
-const wi=function(e,t){if(e.elem){if(t.isHidden&&e.hasAttr("visibility","hidden"))return!1
+e.eachAttr((function(t){Qa.indexOf(t.prefix)>-1&&e.removeAttr(t.name)}))
+if(Qa.indexOf(e.prefix)>-1)return!1}}
+const Ja="removeEmptyAttrs"
+const ei="perItem"
+const ti=!0
+const ri="removes empty attributes"
+const ni={}
+const ai=function(e){e.elem&&e.eachAttr((function(t){""===t.value&&e.removeAttr(t.name)}))}
+const ii=we.container
+const oi="removeEmptyContainers"
+const si="perItemReverse"
+const li=!0
+const ci="removes empty container elements"
+const di={}
+const ui=function(e){return!(e.isElem(ii)&&!e.isElem("svg")&&e.isEmpty()&&(!e.isElem("pattern")||!e.hasAttrLocal("href")))}
+const pi="removeEmptyText"
+const mi="perItem"
+const fi=!0
+const hi="removes empty <text> elements"
+const gi={text:!0,tspan:!0,tref:!0}
+const vi=function(e,t){return!(t.text&&e.isElem("text")&&e.isEmpty())&&!(t.tspan&&e.isElem("tspan")&&e.isEmpty())&&!(t.tref&&e.isElem("tref")&&!e.hasAttrLocal("href"))&&void 0}
+const yi="removeHiddenElems"
+const bi="perItem"
+const Si=!0
+const xi="removes hidden elements (zero sized, with absent attributes)"
+const ki={isHidden:!0,displayNone:!0,opacity0:!0,circleR0:!0,ellipseRX0:!0,ellipseRY0:!0,rectWidth0:!0,rectHeight0:!0,patternWidth0:!0,patternHeight0:!0,imageWidth0:!0,imageHeight0:!0,pathEmptyD:!0,polylineEmptyPoints:!0,polygonEmptyPoints:!0}
+const wi=/M\s*(?:[-+]?(?:\d*\.\d+|\d+(?:\.|(?!\.)))([eE][-+]?\d+)?(?!\d)\s*,?\s*){2}\D*\d/i
+const Ci=function(e,t){if(e.elem){if(t.isHidden&&e.hasAttr("visibility","hidden"))return!1
 if(t.displayNone&&e.hasAttr("display","none"))return!1
 if(t.opacity0&&e.hasAttr("opacity","0"))return!1
 if(t.circleR0&&e.isElem("circle")&&e.isEmpty()&&e.hasAttr("r","0"))return!1
@@ -1447,46 +1448,46 @@ if(t.patternWidth0&&e.isElem("pattern")&&e.hasAttr("width","0"))return!1
 if(t.patternHeight0&&e.isElem("pattern")&&e.hasAttr("height","0"))return!1
 if(t.imageWidth0&&e.isElem("image")&&e.hasAttr("width","0"))return!1
 if(t.imageHeight0&&e.isElem("image")&&e.hasAttr("height","0"))return!1
-if(t.pathEmptyD&&e.isElem("path")&&(!e.hasAttr("d")||!ki.test(e.attr("d").value)))return!1
+if(t.pathEmptyD&&e.isElem("path")&&(!e.hasAttr("d")||!wi.test(e.attr("d").value)))return!1
 if(t.polylineEmptyPoints&&e.isElem("polyline")&&!e.hasAttr("points"))return!1
 if(t.polygonEmptyPoints&&e.isElem("polygon")&&!e.hasAttr("points"))return!1}}
-const Ci="removeMetadata"
-const Ti="perItem"
-const Ai=!0
-const Ei="removes <metadata>"
-const Oi={}
-const zi=function(e){return!e.isElem("metadata")}
-const _i="removeNonInheritableGroupAttrs"
-const Pi="perItem"
-const qi=!0
-const Li="removes non-inheritable group’s presentational attributes"
-const Wi={}
-const Bi=function(e){e.isElem("g")&&e.eachAttr((function(t){!~Te.presentation.indexOf(t.name)||~ze.indexOf(t.name)||~_e.indexOf(t.name)||e.removeAttr(t.name)}))}
-const Mi="removeTitle"
-const Ri="perItem"
-const Ii=!0
-const Di="removes <title>"
-const Ni={}
-const Gi=function(e){return!e.isElem("title")}
-const Fi="removeUnknownsAndDefaults"
-const Vi="perItem"
-const ji=!0
-const Ui="removes unknown elements content and attributes, removes attrs with default values"
-const Hi={unknownContent:!0,unknownAttrs:!0,defaultAttrs:!0,uselessOverrides:!0,keepDataAttrs:!0,keepAriaAttrs:!0,keepRoleAttr:!1}
-for(var Yi in Ee){if((Yi=Ee[Yi]).attrsGroups){Yi.attrs=Yi.attrs||[]
-Yi.attrsGroups.forEach((function(e){Yi.attrs=Yi.attrs.concat(Te[e])
+const Ti="removeMetadata"
+const Ai="perItem"
+const Ei=!0
+const Oi="removes <metadata>"
+const zi={}
+const _i=function(e){return!e.isElem("metadata")}
+const Pi="removeNonInheritableGroupAttrs"
+const qi="perItem"
+const Li=!0
+const Wi="removes non-inheritable group’s presentational attributes"
+const Bi={}
+const Mi=function(e){e.isElem("g")&&e.eachAttr((function(t){!~Te.presentation.indexOf(t.name)||~ze.indexOf(t.name)||~_e.indexOf(t.name)||e.removeAttr(t.name)}))}
+const Ri="removeTitle"
+const Ii="perItem"
+const Di=!0
+const Ni="removes <title>"
+const Gi={}
+const Fi=function(e){return!e.isElem("title")}
+const Vi="removeUnknownsAndDefaults"
+const ji="perItem"
+const Ui=!0
+const Hi="removes unknown elements content and attributes, removes attrs with default values"
+const Yi={unknownContent:!0,unknownAttrs:!0,defaultAttrs:!0,uselessOverrides:!0,keepDataAttrs:!0,keepAriaAttrs:!0,keepRoleAttr:!1}
+for(var Xi in Ee){if((Xi=Ee[Xi]).attrsGroups){Xi.attrs=Xi.attrs||[]
+Xi.attrsGroups.forEach((function(e){Xi.attrs=Xi.attrs.concat(Te[e])
 var t=Ae[e]
-if(t){Yi.defaults=Yi.defaults||{}
-for(var r in t)Yi.defaults[r]=t[r]}}))}if(Yi.contentGroups){Yi.content=Yi.content||[]
-Yi.contentGroups.forEach((function(e){Yi.content=Yi.content.concat(we[e])}))}}const Xi=function(e,t){if(e.isElem()&&!e.prefix){var r=e.elem
+if(t){Xi.defaults=Xi.defaults||{}
+for(var r in t)Xi.defaults[r]=t[r]}}))}if(Xi.contentGroups){Xi.content=Xi.content||[]
+Xi.contentGroups.forEach((function(e){Xi.content=Xi.content.concat(we[e])}))}}const Ki=function(e,t){if(e.isElem()&&!e.prefix){var r=e.elem
 t.unknownContent&&!e.isEmpty()&&Ee[r]&&"foreignObject"!==r&&e.content.forEach((function(t,n){t.isElem()&&!t.prefix&&(Ee[r].content&&-1===Ee[r].content.indexOf(t.elem)||!Ee[r].content&&!Ee[t.elem])&&e.content.splice(n,1)}))
 Ee[r]&&Ee[r].attrs&&e.eachAttr((function(n){"xmlns"===n.name||"xml"!==n.prefix&&n.prefix||t.keepDataAttrs&&0===n.name.indexOf("data-")||t.keepAriaAttrs&&0===n.name.indexOf("aria-")||t.keepRoleAttr&&"role"===n.name||(t.unknownAttrs&&-1===Ee[r].attrs.indexOf(n.name)||t.defaultAttrs&&!e.hasAttr("id")&&Ee[r].defaults&&Ee[r].defaults[n.name]===n.value&&(ze.indexOf(n.name)<0||!e.parentNode.computedAttr(n.name))||t.uselessOverrides&&!e.hasAttr("id")&&_e.indexOf(n.name)<0&&ze.indexOf(n.name)>-1&&e.parentNode.computedAttr(n.name,n.value))&&e.removeAttr(n.name)}))}}
-const Ki="removeUnusedNS"
-const Qi="full"
-const Zi=!0
-const $i="removes unused namespaces declaration"
-const Ji={}
-const eo=function(e){let t
+const Qi="removeUnusedNS"
+const Zi="full"
+const $i=!0
+const Ji="removes unused namespaces declaration"
+const eo={}
+const to=function(e){let t
 const r=[]
 function n(e){const t=r.indexOf(e)
 t>-1&&r.splice(t,1)}e=function e(a){let i=0
@@ -1498,90 +1499,90 @@ o.eachAttr((function(e){n(e.prefix)}))}r.length&&o.content&&e(o)
 i++}return a}(e)
 r.length&&r.forEach((function(e){t.removeAttr("xmlns:"+e)}))
 return e}
-const to=we.nonRendering
-const ro="removeUselessDefs"
-const no="perItem"
-const ao=!0
-const io="removes elements in <defs> without id"
-const oo={}
-const so=function(e){if(e.isElem("defs")){e.content&&(e.content=lo(e,[]))
-if(e.isEmpty())return!1}else if(e.isElem(to)&&!e.hasAttr("id"))return!1}
-function lo(e,t){e.content.forEach((function(r){if(r.hasAttr("id")||r.isElem("style")){t.push(r)
-r.parentNode=e}else r.isEmpty()||(r.content=lo(r,t))}))
-return t}const co=we.shape
-const uo="removeUselessStrokeAndFill"
-const po="perItem"
-const mo=!0
-const fo="removes useless stroke and fill attributes"
-const ho={stroke:!0,fill:!0,removeNone:!1,hasStyleOrScript:!1}
-const go=/^stroke/
-const vo=/^fill-/
-const yo=["style","script"]
-const bo=function(e,t){e.isElem(yo)&&(t.hasStyleOrScript=!0)
-if(!t.hasStyleOrScript&&e.isElem(co)&&!e.computedAttr("id")){const r=t.stroke&&e.computedAttr("stroke")
+const ro=we.nonRendering
+const no="removeUselessDefs"
+const ao="perItem"
+const io=!0
+const oo="removes elements in <defs> without id"
+const so={}
+const lo=function(e){if(e.isElem("defs")){e.content&&(e.content=co(e,[]))
+if(e.isEmpty())return!1}else if(e.isElem(ro)&&!e.hasAttr("id"))return!1}
+function co(e,t){e.content.forEach((function(r){if(r.hasAttr("id")||r.isElem("style")){t.push(r)
+r.parentNode=e}else r.isEmpty()||(r.content=co(r,t))}))
+return t}const uo=we.shape
+const po="removeUselessStrokeAndFill"
+const mo="perItem"
+const fo=!0
+const ho="removes useless stroke and fill attributes"
+const go={stroke:!0,fill:!0,removeNone:!1,hasStyleOrScript:!1}
+const vo=/^stroke/
+const yo=/^fill-/
+const bo=["style","script"]
+const So=function(e,t){e.isElem(bo)&&(t.hasStyleOrScript=!0)
+if(!t.hasStyleOrScript&&e.isElem(uo)&&!e.computedAttr("id")){const r=t.stroke&&e.computedAttr("stroke")
 const n=t.fill&&!e.computedAttr("fill","none")
 if(t.stroke&&(!r||"none"===r||e.computedAttr("stroke-opacity","0")||e.computedAttr("stroke-width","0"))){const t=e.parentNode.computedAttr("stroke")
 const r=t&&"none"!==t
-e.eachAttr((function(t){go.test(t.name)&&e.removeAttr(t.name)}))
-r&&e.addAttr({name:"stroke",value:"none",prefix:"",local:"stroke"})}if(t.fill&&(!n||e.computedAttr("fill-opacity","0"))){e.eachAttr((function(t){vo.test(t.name)&&e.removeAttr(t.name)}))
+e.eachAttr((function(t){vo.test(t.name)&&e.removeAttr(t.name)}))
+r&&e.addAttr({name:"stroke",value:"none",prefix:"",local:"stroke"})}if(t.fill&&(!n||e.computedAttr("fill-opacity","0"))){e.eachAttr((function(t){yo.test(t.name)&&e.removeAttr(t.name)}))
 n&&(e.hasAttr("fill")?e.attr("fill").value="none":e.addAttr({name:"fill",value:"none",prefix:"",local:"fill"}))}if(t.removeNone&&(!r||e.hasAttr("stroke")&&"none"===e.attr("stroke").value)&&(!n||e.hasAttr("fill")&&"none"===e.attr("fill").value))return!1}}
-const So="removeViewBox"
-const xo="perItem"
-const ko=!0
-const wo="removes viewBox attribute when possible"
-const Co={}
-const To=["svg","pattern","symbol"]
-const Ao=function(e){if(e.isElem(To)&&e.hasAttr("viewBox")&&e.hasAttr("width")&&e.hasAttr("height")){const t=e.attr("viewBox").value.split(/[ ,]+/g)
+const xo="removeViewBox"
+const ko="perItem"
+const wo=!0
+const Co="removes viewBox attribute when possible"
+const To={}
+const Ao=["svg","pattern","symbol"]
+const Eo=function(e){if(e.isElem(Ao)&&e.hasAttr("viewBox")&&e.hasAttr("width")&&e.hasAttr("height")){const t=e.attr("viewBox").value.split(/[ ,]+/g)
 "0"===t[0]&&"0"===t[1]&&e.attr("width").value.replace(/px$/,"")===t[2]&&e.attr("height").value.replace(/px$/,"")===t[3]&&e.removeAttr("viewBox")}}
-const Eo="removeXMLProcInst"
-const Oo="perItem"
-const zo=!0
-const _o="removes XML processing instructions"
-const Po={}
-const qo=function(e){return!(e.processinginstruction&&"xml"===e.processinginstruction.name)}
-const Lo="sortDefsChildren"
-const Wo="perItem"
-const Bo=!0
-const Mo="Sorts children of <defs> to improve compression"
-const Ro={}
-const Io=function(e){if(e.isElem("defs")){if(e.content){const t=e.content.reduce((function(e,t){t.elem in e?e[t.elem]++:e[t.elem]=1
+const Oo="removeXMLProcInst"
+const zo="perItem"
+const _o=!0
+const Po="removes XML processing instructions"
+const qo={}
+const Lo=function(e){return!(e.processinginstruction&&"xml"===e.processinginstruction.name)}
+const Wo="sortDefsChildren"
+const Bo="perItem"
+const Mo=!0
+const Ro="Sorts children of <defs> to improve compression"
+const Io={}
+const Do=function(e){if(e.isElem("defs")){if(e.content){const t=e.content.reduce((function(e,t){t.elem in e?e[t.elem]++:e[t.elem]=1
 return e}),{})
 e.content.sort((function(e,r){const n=t[r.elem]-t[e.elem]
 if(0!==n)return n
 const a=r.elem.length-e.elem.length
 return 0!==a?a:e.elem!==r.elem?e.elem>r.elem?-1:1:0}))}return!0}}
-const Do=[n,a,i,o,s,l,c,d,u,p,m,f,h,g,v,y,b,S,x,k,w,C,T,A,E,O,z,_,P,q,L,W,B,M]
-const No=Ge
-No.Config=(e={plugins:Do})=>J(e)
-const Go="addAttributesToSVGElement"
-const Fo="full"
-const Vo=!1
-const jo="adds attributes to an outer <svg> element"
-const Uo={}
-const Ho=function(e,t){if(!t||!Array.isArray(t.attributes)&&!t.attribute){console.error('Error in plugin "addAttributesToSVGElement": absent parameters.\nIt should have a list of "attributes" or one "attribute".\nConfig example:\n\nplugins:\n- addAttributesToSVGElement:\n    attribute: "mySvg"\n\nplugins:\n- addAttributesToSVGElement:\n    attributes: ["mySvg", "size-big"]\n\nplugins:\n- addAttributesToSVGElement:\n    attributes:\n        - focusable: false\n        - data-image: icon')
+const No=[n,a,i,o,s,l,c,d,u,p,m,f,h,g,v,y,b,S,x,k,w,C,T,A,E,O,z,_,P,q,L,W,B,M]
+const Go=Ge
+Go.Config=(e={plugins:No})=>J(e)
+const Fo="addAttributesToSVGElement"
+const Vo="full"
+const jo=!1
+const Uo="adds attributes to an outer <svg> element"
+const Ho={}
+const Yo=function(e,t){if(!t||!Array.isArray(t.attributes)&&!t.attribute){console.error('Error in plugin "addAttributesToSVGElement": absent parameters.\nIt should have a list of "attributes" or one "attribute".\nConfig example:\n\nplugins:\n- addAttributesToSVGElement:\n    attribute: "mySvg"\n\nplugins:\n- addAttributesToSVGElement:\n    attributes: ["mySvg", "size-big"]\n\nplugins:\n- addAttributesToSVGElement:\n    attributes:\n        - focusable: false\n        - data-image: icon')
 return e}const r=t.attributes||[t.attribute]
 const n=e.content[0]
 n.isElem("svg")&&r.forEach((function(e){"string"==typeof e?n.hasAttr(e)||n.addAttr({name:e,prefix:"",local:e}):"object"==typeof e&&Object.keys(e).forEach((function(t){n.hasAttr(t)||n.addAttr({name:t,value:e[t],prefix:"",local:t})}))}))
 return e}
-const Yo="addClassesToSVGElement"
-const Xo="full"
-const Ko=!1
-const Qo="adds classnames to an outer <svg> element"
-const Zo={}
-const $o=function(e,t){if(!t||!(Array.isArray(t.classNames)&&t.classNames.some(String)||t.className)){console.error('Error in plugin "addClassesToSVGElement": absent parameters.\nIt should have a list of classes in "classNames" or one "className".\nConfig example:\n\nplugins:\n- addClassesToSVGElement:\n    className: "mySvg"\n\nplugins:\n- addClassesToSVGElement:\n    classNames: ["mySvg", "size-big"]\n')
+const Xo="addClassesToSVGElement"
+const Ko="full"
+const Qo=!1
+const Zo="adds classnames to an outer <svg> element"
+const $o={}
+const Jo=function(e,t){if(!t||!(Array.isArray(t.classNames)&&t.classNames.some(String)||t.className)){console.error('Error in plugin "addClassesToSVGElement": absent parameters.\nIt should have a list of classes in "classNames" or one "className".\nConfig example:\n\nplugins:\n- addClassesToSVGElement:\n    className: "mySvg"\n\nplugins:\n- addClassesToSVGElement:\n    classNames: ["mySvg", "size-big"]\n')
 return e}const r=t.classNames||[t.className]
 const n=e.content[0]
 n.isElem("svg")&&n.class.add.apply(n.class,r)
 return e}
-const Jo="cleanupListOfValues"
-const es="perItem"
-const ts=!1
-const rs="rounds list of values to the fixed precision"
-const ns={floatPrecision:3,leadingZero:!0,defaultPx:!0,convertToPx:!0}
-const as=/^([-+]?\d*\.?\d+([eE][-+]?\d+)?)(px|pt|pc|mm|cm|m|in|ft|em|ex|%)?$/
-const is=/\s+,?\s*|,\s*/
-const os={cm:96/2.54,mm:96/25.4,in:96,pt:4/3,pc:16}
-const ss=function(e,t){e.hasAttr("points")&&r(e.attrs.points)
+const es="cleanupListOfValues"
+const ts="perItem"
+const rs=!1
+const ns="rounds list of values to the fixed precision"
+const as={floatPrecision:3,leadingZero:!0,defaultPx:!0,convertToPx:!0}
+const is=/^([-+]?\d*\.?\d+([eE][-+]?\d+)?)(px|pt|pc|mm|cm|m|in|ft|em|ex|%)?$/
+const os=/\s+,?\s*|,\s*/
+const ss={cm:96/2.54,mm:96/25.4,in:96,pt:4/3,pc:16}
+const ls=function(e,t){e.hasAttr("points")&&r(e.attrs.points)
 e.hasAttr("enable-background")&&r(e.attrs["enable-background"])
 e.hasAttr("viewBox")&&r(e.attrs.viewBox)
 e.hasAttr("stroke-dasharray")&&r(e.attrs["stroke-dasharray"])
@@ -1593,59 +1594,59 @@ function r(e){let r
 let n
 let a
 let i
-const o=e.value.split(is)
+const o=e.value.split(os)
 const s=[]
-o.forEach((function(e){a=e.match(as)
+o.forEach((function(e){a=e.match(is)
 i=e.match(/new/)
 if(a){r=+(+a[1]).toFixed(t.floatPrecision)
 n=a[3]||""
-if(t.convertToPx&&n&&n in os){const e=+(os[n]*a[1]).toFixed(t.floatPrecision)
+if(t.convertToPx&&n&&n in ss){const e=+(ss[n]*a[1]).toFixed(t.floatPrecision)
 if(String(e).length<a[0].length){r=e
 n="px"}}t.leadingZero&&(r=Ne(r))
 t.defaultPx&&"px"===n&&(n="")
 s.push(r+n)}else i?s.push("new"):e&&s.push(e)}))
 const l=s.join(" ")
 e.value=l}}
-const ls="prefixIds"
-const cs="perItem"
-const ds=!1
-const us={delim:"__",prefixIds:!0,prefixClassNames:!0}
-const ps="prefix IDs"
-const ms=/^#(.*)$/
-let fs=null
-const hs=function(e){return e&&e.value&&e.value.length>0}
-const gs=function(e){const t=function(e){const t=e.match(ms)
+const cs="prefixIds"
+const ds="perItem"
+const us=!1
+const ps={delim:"__",prefixIds:!0,prefixClassNames:!0}
+const ms="prefix IDs"
+const fs=/^#(.*)$/
+let hs=null
+const gs=function(e){return e&&e.value&&e.value.length>0}
+const vs=function(e){const t=function(e){const t=e.match(fs)
 return null!==t&&t[1]}(e)
-return!!t&&"#"+fs(t)}
-const vs=function(e){if(!hs(e))return
-const t=gs(e.value)
+return!!t&&"#"+hs(t)}
+const ys=function(e){if(!gs(e))return
+const t=vs(e.value)
 t&&(e.value=t)}
-const ys=function(e){if(!hs(e))return
+const bs=function(e){if(!gs(e))return
 const t=function(e){const t=/url\((.*?)\)/gi.exec(e)
 return null!==t&&t[1]}(e.value)
 if(!t)return
-const r=gs(t)
+const r=vs(t)
 r&&(e.value="url("+r+")")}
-const bs=function(e){if(!hs(e))return
+const Ss=function(e){if(!gs(e))return
 const t=e.value.split("; ").map((function(e){if((e=e.trim()).endsWith(".end")||e.endsWith(".start")){const t=e.split(".")
 const r=t[0]
 const n=t[1]
-let a=gs(`#${r}`)
+let a=vs(`#${r}`)
 if(!a)return e
 a=a.slice(1)
 return`${a}.${n}`}return e}))
 e.value=t.join("; ")}
-const Ss=function(e,t,r){if(r.multipassCount&&r.multipassCount>0)return e
+const xs=function(e,t,r){if(r.multipassCount&&r.multipassCount>0)return e
 let n="prefix"
 t.prefix?n="function"==typeof t.prefix?t.prefix(e,r):t.prefix:!1===t.prefix?n=!1:r&&r.path&&r.path.length>0&&(n=r.path.split(/[/\\]/).pop())
-fs=function(e){return function(e){return e.replace(/[. ]/g,"_")}(!1===n?e:n+t.delim+e)}
+hs=function(e){return function(e){return e.replace(/[. ]/g,"_")}(!1===n?e:n+t.delim+e)}
 if("style"===e.elem){if(e.isEmpty())return e
 const r=e.content[0].text||e.content[0].cdata||[]
 let n={}
 try{n=le().parse(r,{parseValue:!0,parseCustomProperty:!1})}catch(t){console.warn("Warning: Parse error of styles of <style/> element, skipped. Error details: "+t)
 return e}let a=""
-le().walk(n,(function(e){if((t.prefixIds&&"IdSelector"===e.type||t.prefixClassNames&&"ClassSelector"===e.type)&&e.name)e.name=fs(e.name)
-else if("Url"===e.type&&e.value.value&&e.value.value.length>0){a=gs(((e="")=>{const{length:t}=e
+le().walk(n,(function(e){if((t.prefixIds&&"IdSelector"===e.type||t.prefixClassNames&&"ClassSelector"===e.type)&&e.name)e.name=hs(e.name)
+else if("Url"===e.type&&e.value.value&&e.value.value.length>0){a=vs(((e="")=>{const{length:t}=e
 if(0!==t){const r=e.charCodeAt(0)
 const n=e.charCodeAt(t-1)
 const a=39===r||34===r
@@ -1655,27 +1656,27 @@ if(!a)return
 e.value.value=a}}))
 e.content[0].text=le().generate(n)
 return e}if(!e.attrs)return e
-t.prefixIds&&(a=e.attrs.id,hs(a)&&(a.value=fs(a.value)))
+t.prefixIds&&(a=e.attrs.id,gs(a)&&(a.value=hs(a.value)))
 var a
-t.prefixClassNames&&function(e){hs(e)&&(e.value=e.value.split(/\s+/).map(fs).join(" "))}(e.attrs.class)
-vs(e.attrs.href)
-vs(e.attrs["xlink:href"])
-for(const t of Oe)ys(e.attrs[t])
-bs(e.attrs.begin)
-bs(e.attrs.end)
+t.prefixClassNames&&function(e){gs(e)&&(e.value=e.value.split(/\s+/).map(hs).join(" "))}(e.attrs.class)
+ys(e.attrs.href)
+ys(e.attrs["xlink:href"])
+for(const t of Oe)bs(e.attrs[t])
+Ss(e.attrs.begin)
+Ss(e.attrs.end)
 return e}
-const xs="removeAttributesBySelector"
-const ks="perItem"
-const ws=!1
-const Cs="removes attributes of elements that match a css selector"
-const Ts={}
-const As=function(e,t){(Array.isArray(t.selectors)?t.selectors:[t]).map((function(t){e.matches(t.selector)&&e.removeAttr(t.attributes)}))}
-const Es="removeAttrs"
-const Os="perItem"
-const zs=!1
-const _s="removes specified attributes"
-const Ps={elemSeparator:":",preserveCurrentColor:!1,attrs:[]}
-const qs=function(e,t){Array.isArray(t.attrs)||(t.attrs=[t.attrs])
+const ks="removeAttributesBySelector"
+const ws="perItem"
+const Cs=!1
+const Ts="removes attributes of elements that match a css selector"
+const As={}
+const Es=function(e,t){(Array.isArray(t.selectors)?t.selectors:[t]).map((function(t){e.matches(t.selector)&&e.removeAttr(t.attributes)}))}
+const Os="removeAttrs"
+const zs="perItem"
+const _s=!1
+const Ps="removes specified attributes"
+const qs={elemSeparator:":",preserveCurrentColor:!1,attrs:[]}
+const Ls=function(e,t){Array.isArray(t.attrs)||(t.attrs=[t.attrs])
 if(e.isElem()){const r="string"==typeof t.elemSeparator?t.elemSeparator:":"
 const n="boolean"==typeof t.preserveCurrentColor&&t.preserveCurrentColor
 t.attrs.map((function(e){-1===e.indexOf(r)?e=[".*",r,e,r,".*"].join(""):e.split(r).length<3&&(e=[e,r,".*"].join(""))
@@ -1683,73 +1684,73 @@ return e.split(r).map((function(e){"*"===e&&(e=".*")
 return new RegExp(["^",e,"$"].join(""),"i")}))})).forEach((function(t){t[0].test(e.elem)&&e.eachAttr((function(r){const a=r.name
 const i=r.value
 n&&"fill"===a&&"currentColor"===i||n&&"stroke"===a&&"currentColor"===i||t[1].test(a)&&t[2].test(r.value)&&e.removeAttr(a)}))}))}}
-const Ls="removeDimensions"
-const Ws="perItem"
-const Bs=!1
-const Ms="removes width and height in presence of viewBox (opposite to removeViewBox, disable it first)"
-const Rs={}
-const Is=function(e){if(e.isElem("svg"))if(e.hasAttr("viewBox")){e.removeAttr("width")
+const Ws="removeDimensions"
+const Bs="perItem"
+const Ms=!1
+const Rs="removes width and height in presence of viewBox (opposite to removeViewBox, disable it first)"
+const Is={}
+const Ds=function(e){if(e.isElem("svg"))if(e.hasAttr("viewBox")){e.removeAttr("width")
 e.removeAttr("height")}else if(e.hasAttr("width")&&e.hasAttr("height")&&!isNaN(Number(e.attr("width").value))&&!isNaN(Number(e.attr("height").value))){e.addAttr({name:"viewBox",value:"0 0 "+Number(e.attr("width").value)+" "+Number(e.attr("height").value),prefix:"",local:"viewBox"})
 e.removeAttr("width")
 e.removeAttr("height")}}
-const Ds="removeElementsByAttr"
-const Ns="perItem"
-const Gs=!1
-const Fs="removes arbitrary elements by ID or className (disabled by default)"
-const Vs={id:[],class:[]}
-const js=function(e,t){["id","class"].forEach((function(e){Array.isArray(t[e])||(t[e]=[t[e]])}))
+const Ns="removeElementsByAttr"
+const Gs="perItem"
+const Fs=!1
+const Vs="removes arbitrary elements by ID or className (disabled by default)"
+const js={id:[],class:[]}
+const Us=function(e,t){["id","class"].forEach((function(e){Array.isArray(t[e])||(t[e]=[t[e]])}))
 if(!e.isElem())return
 const r=e.attr("id")
 if(r)return-1===t.id.indexOf(r.value)
 const n=e.attr("class")
 return n?!new RegExp(t.class.join("|")).test(n.value):void 0}
-const Us="removeOffCanvasPaths"
-const Hs="perItem"
-const Ys=!1
-const Xs="removes elements that are drawn outside of the viewbox (disabled by default)"
-const Ks={}
-let Qs
+const Hs="removeOffCanvasPaths"
+const Ys="perItem"
+const Xs=!1
+const Ks="removes elements that are drawn outside of the viewbox (disabled by default)"
+const Qs={}
 let Zs
-const $s=function(e){if(e.isElem("path")&&e.hasAttr("d")&&void 0!==Qs){if(Js(e)||function(e){const t=/M\s*(-?\d*\.?\d+)(?!\d)\s*(-?\d*\.?\d+)/g
+let $s
+const Js=function(e){if(e.isElem("path")&&e.hasAttr("d")&&void 0!==Zs){if(el(e)||function(e){const t=/M\s*(-?\d*\.?\d+)(?!\d)\s*(-?\d*\.?\d+)/g
 let r
-for(;null!==(r=t.exec(e));)if(r[1]>=Qs.left&&r[1]<=Qs.right&&r[2]>=Qs.top&&r[2]<=Qs.bottom)return!0
+for(;null!==(r=t.exec(e));)if(r[1]>=Zs.left&&r[1]<=Zs.right&&r[2]>=Zs.top&&r[2]<=Zs.bottom)return!0
 return!1}(e.attr("d").value))return!0
-let t=gr(e)
+let t=vr(e)
 if(2===t.length){t=JSON.parse(JSON.stringify(t))
-t.push({instruction:"z"})}return xr(Zs,t)}e.isElem("svg")&&function(e){let t=""
+t.push({instruction:"z"})}return kr($s,t)}e.isElem("svg")&&function(e){let t=""
 e.hasAttr("viewBox")?t=e.attr("viewBox").value:e.hasAttr("height")&&e.hasAttr("width")&&(t="0 0 "+e.attr("width").value+" "+e.attr("height").value)
 t=t.replace(/[,+]|px/g," ").replace(/\s+/g," ").replace(/^\s*|\s*$/g,"")
 const r=/^(-?\d*\.?\d+) (-?\d*\.?\d+) (\d*\.?\d+) (\d*\.?\d+)$/.exec(t)
 if(!r)return
-Qs={left:parseFloat(r[1]),top:parseFloat(r[2]),right:parseFloat(r[1])+parseFloat(r[3]),bottom:parseFloat(r[2])+parseFloat(r[4])}
+Zs={left:parseFloat(r[1]),top:parseFloat(r[2]),right:parseFloat(r[1])+parseFloat(r[3]),bottom:parseFloat(r[2])+parseFloat(r[4])}
 const n=new ie({elem:"path",prefix:"",local:"path"})
 n.addAttr({name:"d",prefix:"",local:"d",value:"M"+r[1]+" "+r[2]+"h"+r[3]+"v"+r[4]+"H"+r[1]+"z"})
-Zs=gr(n)}(e)
+$s=vr(n)}(e)
 return!0}
-function Js(e){return e.hasAttr("transform")||e.parentNode&&Js(e.parentNode)}const el="removeRasterImages"
-const tl="perItem"
-const rl=!1
-const nl="removes raster images (disabled by default)"
-const al={}
-const il=function(e){if(e.isElem("image")&&e.hasAttrLocal("href",/(\.|image\/)(jpg|png|gif)/))return!1}
-const ol="removeScriptElement"
-const sl="perItem"
-const ll=!1
-const cl="removes <script> elements (disabled by default)"
-const dl={}
-const ul=function(e){return!e.isElem("script")}
-const pl="removeStyleElement"
-const ml="perItem"
-const fl=!1
-const hl="removes <style> element (disabled by default)"
-const gl={}
-const vl=function(e){return!e.isElem("style")}
-const yl="removeXMLNS"
-const bl="perItem"
-const Sl=!1
-const xl="removes xmlns attribute (for inline svg, disabled by default)"
-const kl={}
-const wl=function(e){e.isElem("svg")&&e.hasAttr("xmlns")&&e.removeAttr("xmlns")}
+function el(e){return e.hasAttr("transform")||e.parentNode&&el(e.parentNode)}const tl="removeRasterImages"
+const rl="perItem"
+const nl=!1
+const al="removes raster images (disabled by default)"
+const il={}
+const ol=function(e){if(e.isElem("image")&&e.hasAttrLocal("href",/(\.|image\/)(jpg|png|gif)/))return!1}
+const sl="removeScriptElement"
+const ll="perItem"
+const cl=!1
+const dl="removes <script> elements (disabled by default)"
+const ul={}
+const pl=function(e){return!e.isElem("script")}
+const ml="removeStyleElement"
+const fl="perItem"
+const hl=!1
+const gl="removes <style> element (disabled by default)"
+const vl={}
+const yl=function(e){return!e.isElem("style")}
+const bl="removeXMLNS"
+const Sl="perItem"
+const xl=!1
+const kl="removes xmlns attribute (for inline svg, disabled by default)"
+const wl={}
+const Cl=function(e){e.isElem("svg")&&e.hasAttr("xmlns")&&e.removeAttr("xmlns")}
 
 ;/**
  * @license
@@ -1827,22 +1828,22 @@ const wl=function(e){e.isElem("svg")&&e.hasAttr("xmlns")&&e.removeAttr("xmlns")}
  * ОБЕСПЕЧЕНИЕМ ИЛИ ИСПОЛЬЗОВАНИЕМ ПРОГРАММНОГО
  * ОБЕСПЕЧЕНИЯ
  * ИЛИ ИНЫМИ ДЕЙСТВИЯМИ С ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ.
- */const Cl="reusePaths"
-const Tl="full"
-const Al=!1
-const El="Finds <path> elements with the same d, fill, and stroke, and converts them to <use> elements referencing a single <path> def."
-const Ol={}
-const zl=function(e){const t=new Map
+ */const Tl="reusePaths"
+const Al="full"
+const El=!1
+const Ol="Finds <path> elements with the same d, fill, and stroke, and converts them to <use> elements referencing a single <path> def."
+const zl={}
+const _l=function(e){const t=new Map
 let r=0
 const n=[]
-Pl(e,(e=>{if(!e.isElem("path")||!e.hasAttr("d"))return
+ql(e,(e=>{if(!e.isElem("path")||!e.hasAttr("d"))return
 const a=e.attr("d").value
 const i=e.hasAttr("fill")&&e.attr("fill").value||""
 const o=a+";s:"+(e.hasAttr("stroke")&&e.attr("stroke").value||"")+";f:"+i
 const s=t.get(o)
 if(s){if(!s.reused){s.reused=!0
 s.elem.hasAttr("id")||s.elem.addAttr({name:"id",local:"id",prefix:"",value:"reuse-"+r++})
-n.push(s.elem)}e=_l(e,s.elem.attr("id").value)}else t.set(o,{elem:e,reused:!1})}))
+n.push(s.elem)}e=Pl(e,s.elem.attr("id").value)}else t.set(o,{elem:e,reused:!1})}))
 const a=new ie({elem:"defs",prefix:"",local:"defs",content:[],attrs:[]},e)
 e.content[0].spliceContent(0,0,a)
 for(let e of n){const t=e.style
@@ -1854,21 +1855,21 @@ e.style=t
 e.class=r
 n.removeAttr("transform")
 a.spliceContent(0,0,n)
-e=_l(e,n.attr("id").value)
+e=Pl(e,n.attr("id").value)
 e.removeAttr("id")}return e}
-function _l(e,t){e.renameElem("use")
+function Pl(e,t){e.renameElem("use")
 e.removeAttr("d")
 e.removeAttr("stroke")
 e.removeAttr("fill")
 e.addAttr({name:"xlink:href",local:"xlink:href",prefix:"none",value:"#"+t})
 delete e.pathJS
-return e}function Pl(e,t){if(!e.isEmpty())for(const r of e.content){t(r)
-Pl(r,t)}}const ql="sortAttrs"
-const Ll="perItem"
-const Wl=!1
-const Bl="sorts element attributes (disabled by default)"
-const Ml={order:["id","width","height","x","x1","x2","y","y1","y2","cx","cy","r","fill","stroke","marker","d","points"]}
-const Rl=function(e,t){const r=[]
+return e}function ql(e,t){if(!e.isEmpty())for(const r of e.content){t(r)
+ql(r,t)}}const Ll="sortAttrs"
+const Wl="perItem"
+const Bl=!1
+const Ml="sorts element attributes (disabled by default)"
+const Rl={order:["id","width","height","x","x1","x2","y","y1","y2","cx","cy","r","fill","stroke","marker","d","points"]}
+const Il=function(e,t){const r=[]
 const n={}
 const a=t.order.length+1
 const i=t.xmlnsOrder||"front"
@@ -1880,7 +1881,7 @@ for(let a=0;a<t.order.length;a++){e.name===t.order[a]?n=a:0===e.name.indexOf(t.o
 r.name===t.order[a]?o=a:0===r.name.indexOf(t.order[a]+"-")&&(o=a+.5)}return n!==o?n-o:e.name<r.name?-1:1}))
 r.forEach((function(e){n[e.name]=e}))
 e.attrs=n}}
-const Il=Object.assign(No,{SVGO_LITE:Ge,CONFIG_LITE:J,PLUGINS_DEFAULT_LIST:Do,PLUGINS_MAP:$})},7544:e=>{e.exports={trueFunc:function(){return!0},falseFunc:function(){return!1}}},732:e=>{"use strict"
+const Dl=Object.assign(Go,{SVGO_LITE:Ge,CONFIG_LITE:J,PLUGINS_DEFAULT_LIST:No,PLUGINS_MAP:$})},7544:e=>{e.exports={trueFunc:function(){return!0},falseFunc:function(){return!1}}},732:e=>{"use strict"
 e.exports=function(e){!function(e){if(!e)throw new TypeError("Expected implementation")
 var r=t.filter((function(t){return"function"!=typeof e[t]}))
 if(r.length){var n="("+r.join(", ")+")"

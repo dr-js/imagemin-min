@@ -41,5 +41,8 @@ export {
   configBufferProcessorAsyncPngquant,
   configBufferProcessorAsyncSvgo,
 
-  configBufferProcessorAsync
+  configBufferProcessorAsync,
+
+  fileTypeFromBuffer,
+  isSvg
 }
