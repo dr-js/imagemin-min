@@ -1,9 +1,7 @@
 name: ci-test
 
 on:
-  push:
-    branches:
-      - '**'
+  push: { branches: [ "**" ] }
 
 jobs:
   build:
@@ -11,22 +9,17 @@ jobs:
       fail-fast: false # allow all test to run to the end
       matrix:
         os: [ ubuntu-latest, windows-latest, macos-latest ]
-        node-version: [ 14.x, 15.x ]
+        node-version: [ 14.x, 16.x ]
 
-    runs-on: ${{ matrix.os }}
+    runs-on: "${{ matrix.os }}"
 
     steps:
-      - name: Setup Git repo
-        uses: actions/checkout@v2 # https://github.com/actions/checkout
-
-      - name: Setup Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1 # https://github.com/actions/setup-node
-        with:
-          node-version: ${{ matrix.node-version }}
+      - uses: actions/checkout@v2 # https://github.com/actions/checkout
+      - uses: actions/setup-node@v2 # https://github.com/actions/setup-node
+        with: { node-version: "${{ matrix.node-version }}" }
 
       - name: Patch & log CI info
-        run: npx @dr-js/core@^0.4 -eI .github/ci-patch.js
+        run: npx @dr-js/dev@^0.4 -eI .github/ci-patch.js
 
       - run: npm ci
-
       - run: npm test
