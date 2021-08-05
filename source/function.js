@@ -1,6 +1,6 @@
 import { join } from 'path'
-import { run } from '@dr-js/core/module/node/system/Run'
-import { setupStreamPipe, waitStreamStopAsync, bufferToReadableStream } from '@dr-js/core/module/node/data/Stream'
+import { run } from '@dr-js/core/module/node/run.js'
+import { bufferToReadableStream, quickRunletFromStream } from '@dr-js/core/module/node/data/Stream.js'
 import { fromBuffer as fileTypeFromBuffer } from 'file-type'
 import isSvg from 'is-svg'
 
@@ -14,32 +14,20 @@ const selectExecutable = (selectMap = {}, relativeToPath = '.') => {
   throw new Error(`unsupported env ${platformArchTagCurrent}`)
 }
 
-const quickRunAsync = async (command, argList, inputBuffer = null) => {
-  const { subProcess, promise, stdoutPromise, stderrPromise } = run({
-    command,
-    argList,
-    option: inputBuffer ? { stdio: 'pipe' } : {},
-    quiet: true
+const quickRunAsync = async (argList, inputBuffer = null) => {
+  const { subProcess, promise, stdoutPromise, stderrPromise } = run(argList, {
+    quiet: true,
+    ...(inputBuffer && { stdio: 'pipe' })
   })
   try {
     inputBuffer
       ? await Promise.all([
-        waitStreamStopAsync(setupStreamPipe(bufferToReadableStream(inputBuffer), subProcess.stdin)),
+        quickRunletFromStream(bufferToReadableStream(inputBuffer), subProcess.stdin),
         promise
       ])
       : await promise
     return [ await stdoutPromise, await stderrPromise ] // result in buffer
-  } catch (error) {
-    // console.error('[STDOUT]', String(await stdoutPromise))
-    // console.error('[STDERR]', String(await stderrPromise))
-    throw Object.assign(error, {
-      inputBuffer,
-      command,
-      argList,
-      stdoutBuffer: await stdoutPromise,
-      stderrBuffer: await stderrPromise
-    })
-  }
+  } catch (error) { throw Object.assign(error, { inputBuffer }) }
 }
 
 const createBufferProcessorAsync = async (
@@ -50,21 +38,22 @@ const createBufferProcessorAsync = async (
   const command = selectExecutable(SELECT_MAP, SELECT_PATH_ROOT)
 
   // sanity test
-  const [ stdoutBuffer, stderrBuffer ] = await quickRunAsync(command, TEST_ARG_LIST)
+  const [ stdoutBuffer, stderrBuffer ] = await quickRunAsync([ command, ...TEST_ARG_LIST ])
 
   if (
     !String(stdoutBuffer).includes(TEST_EXPECT_OUTPUT) &&
     !String(stderrBuffer).includes(TEST_EXPECT_OUTPUT)
-  ) throw new Error(`expect test run output: "${TEST_EXPECT_OUTPUT}", but get: [STDOUT] ${String(stdoutBuffer)}\n[STDERR] ${String(stderrBuffer)}`)
+  ) {
+    throw new Error(`expect test run output: "${TEST_EXPECT_OUTPUT}", but get: [STDOUT] ${String(stdoutBuffer)}\n[STDERR] ${String(stderrBuffer)}`)
+  }
 
   return async (buffer) => {
-    const [ stdoutBuffer ] = await quickRunAsync(command, ARG_LIST, buffer)
+    const [ stdoutBuffer ] = await quickRunAsync([ command, ...ARG_LIST ], buffer)
     return stdoutBuffer
   }
 }
 
 export {
-  selectExecutable,
   createBufferProcessorAsync,
   fileTypeFromBuffer,
   isSvg

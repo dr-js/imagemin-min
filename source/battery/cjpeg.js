@@ -1,4 +1,4 @@
-import { createBufferProcessorAsync } from '../function'
+import { createBufferProcessorAsync } from '../function.js'
 
 // [REFERENCE]
 // - https://github.com/mozilla/mozjpeg

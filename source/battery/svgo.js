@@ -1,4 +1,4 @@
-import { optimize } from './svgo-dist-browser'
+import { optimize } from './svgo-dist-browser.js'
 
 // [REFERENCE]
 // - https://github.com/svg/svgo/tree/v2.3.1#api-usage
