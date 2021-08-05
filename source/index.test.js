@@ -22,7 +22,7 @@ describe('Index', () => {
       configBufferProcessorAsync, bufferProcessorAsync
     })
     await testBufferProcessorAsync({
-      TEST_TAG: 'all-cvg',
+      TEST_TAG: 'all-svg',
       PATH_SOURCE_BUFFER: PATH_TEST_BUFFER_SVG,
       configBufferProcessorAsync, bufferProcessorAsync
     })

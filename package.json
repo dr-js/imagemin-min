@@ -27,6 +27,7 @@
     "// test ========================": "",
     "test-dev": "dr-dev --EE BABEL_ENV=dev -E -- dr-dev --TR @babel/register -T source/battery/cjpeg.test.js",
     "test-source": "dr-dev --TR @babel/register -T source/ --TFS .test.js",
+    "test-output": "dr-dev -T output-gitignore/ --TFS .test.js",
     "// =============================": "",
     "test": "npm run script-pack-test",
     "lint": "eslint ./source/ ./script/",
