@@ -6,7 +6,7 @@
   "author": "dr-js",
   "license": "MIT",
   "repository": "github:dr-js/imagemin-min",
-  "main": "./library/index",
+  "main": "./library/index.js",
   "bin": {
     "imagemin-min": "bin/min-in-place.js",
     "imagemin-min-test-boot": "bin/test-boot.js",
@@ -14,10 +14,10 @@
   },
   "scripts": {
     "// script ======================": "",
-    "script-pack": "node -r @babel/register ./script quiet pack",
-    "script-pack-test": "node -r @babel/register ./script verbose pack test",
-    "script-publish": "node -r @babel/register ./script pack publish",
-    "script-publish-dev": "node -r @babel/register ./script pack publish-dev",
+    "script-pack": "node -r @babel/register ./script/pack.js quiet pack",
+    "script-pack-test": "node -r @babel/register ./script/pack.js verbose pack test",
+    "script-publish": "node -r @babel/register ./script/pack.js pack publish",
+    "script-publish-dev": "node -r @babel/register ./script/pack.js pack publish-dev",
     "script-generate-spec": "node -r @babel/register ./script/generateSpec",
     "script-generate-battery-svgo": "node -r @babel/register ./script/generateBatterySVGO.js",
     "// build =======================": "",
