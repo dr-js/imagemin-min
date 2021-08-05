@@ -1,26 +1,19 @@
-import { SVGO_LITE, PLUGINS_DEFAULT_LIST } from './svgo-libsvgo-webpack-SVGO'
+import { optimize } from './svgo-dist-browser'
 
 // [REFERENCE]
-// - https://github.com/svg/svgo
-// - https://github.com/dr-js/libsvgo
-// - https://github.com/imagemin/imagemin-svgo/blob/master/index.js
+// - https://github.com/svg/svgo/tree/v2.3.1#api-usage
+// - https://github.com/imagemin/imagemin-svgo/blob/v9.0.0/index.js
 
 const OPTION_DEFAULT = { // same default as `imagemin-svgo`
-  plugins: PLUGINS_DEFAULT_LIST,
   multipass: true
 }
 
 const configBufferProcessorAsync = async (option = OPTION_DEFAULT) => async (buffer, string = String(buffer)) => {
-  const { data } = await (
-    new SVGO_LITE(option)
-      .optimize(string)
-  )
+  const { data } = optimize(string, option)
   return Buffer.from(data)
 }
 
 export {
-  SVGO_LITE,
-  PLUGINS_DEFAULT_LIST,
-
+  OPTION_DEFAULT,
   configBufferProcessorAsync
 }

@@ -14,4 +14,6 @@
 + 📄 [source/battery/pngquant.js](source/battery/pngquant.js)
   - `DEFAULT_ARG_LIST`, `SELECT_MAP`, `SELECT_PATH_ROOT`, `TEST_ARG_LIST`, `TEST_EXPECT_OUTPUT`, `configBufferProcessorAsync`
 + 📄 [source/battery/svgo.js](source/battery/svgo.js)
-  - `PLUGINS_DEFAULT_LIST`, `SVGO_LITE`, `configBufferProcessorAsync`
+  - `OPTION_DEFAULT`, `configBufferProcessorAsync`
++ 📄 [source/battery/svgo-dist-browser.js](source/battery/svgo-dist-browser.js)
+  - `createContentItem`, `extendDefaultPlugins`, `optimize`

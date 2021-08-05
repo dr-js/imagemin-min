@@ -24,14 +24,13 @@ currently bundled image optimizer:
 - jpg: [MozJPEG][l:mozjpeg] (pre-built binary)
 - gif: [Gifsicle][l:gifsicle] (pre-built binary)
 - png: [Pngquant][l:pngquant] (pre-built binary)
-- svg: [SVGO][l:svgo] (from [libsvgo][l:libsvgo])
+- svg: [SVGO][l:svgo] (dist browser bundle)
 
 [l:imagemin]: https://github.com/imagemin
 [l:mozjpeg]: https://github.com/mozilla/mozjpeg
 [l:gifsicle]: https://github.com/kohler/gifsicle
 [l:pngquant]: https://github.com/kornelski/pngquant
 [l:svgo]: https://github.com/svg/svgo
-[l:libsvgo]: https://github.com/dr-js/libsvgo
 
 [//]: # (NON_PACKAGE_CONTENT)
 

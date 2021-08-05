@@ -5,9 +5,9 @@ import { dependencies } from '../package-lock.json'
 const PATH_ROOT = resolve(__dirname, '..')
 const fromRoot = (...args) => resolve(PATH_ROOT, ...args)
 
-const { version: VERSION_LIBSVGO } = dependencies[ 'libsvgo' ]
-writeFileSync(fromRoot('./source/battery/svgo-libsvgo-webpack-SVGO.js'), [
+const { version: VERSION_SVGO } = dependencies[ 'svgo' ]
+writeFileSync(fromRoot('./source/battery/svgo-dist-browser.js'), [
   '/* eslint-disable */',
-  `/* libsvgo@${VERSION_LIBSVGO} */`,
-  String(readFileSync(fromRoot('./node_modules/libsvgo/webpack/SVGO.js')))
+  `/* svgo@${VERSION_SVGO} */`,
+  String(readFileSync(fromRoot('./node_modules/svgo/dist/svgo.browser.js')))
 ].join('\n'))
