@@ -1,6 +1,6 @@
-import { doThrowAsync } from '@dr-js/core/module/common/verify'
-import { PATH_TEST_BUFFER_JPG, PATH_TEST_BUFFER_NON_IMAGE, testBufferProcessorAsync } from './common.test/function'
-import { configBufferProcessorAsync } from './cjpeg'
+import { doThrowAsync } from '@dr-js/core/module/common/verify.js'
+import { PATH_TEST_BUFFER_JPG, PATH_TEST_BUFFER_NON_IMAGE, testBufferProcessorAsync } from './common.test/function.js'
+import { configBufferProcessorAsync } from './cjpeg.js'
 
 const { describe, it } = global
 

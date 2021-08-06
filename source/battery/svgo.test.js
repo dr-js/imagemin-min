@@ -1,6 +1,6 @@
-import { doThrowAsync } from '@dr-js/core/module/common/verify'
-import { PATH_TEST_BUFFER_SVG, PATH_TEST_BUFFER_NON_IMAGE, testBufferProcessorAsync } from './common.test/function'
-import { configBufferProcessorAsync } from './svgo'
+import { doThrowAsync } from '@dr-js/core/module/common/verify.js'
+import { PATH_TEST_BUFFER_SVG, PATH_TEST_BUFFER_NON_IMAGE, testBufferProcessorAsync } from './common.test/function.js'
+import { configBufferProcessorAsync } from './svgo.js'
 
 const { describe, it } = global
 

@@ -1,8 +1,8 @@
-import { configBufferProcessorAsync as configBufferProcessorAsyncCjpeg } from './battery/cjpeg'
-import { configBufferProcessorAsync as configBufferProcessorAsyncGifsicle } from './battery/gifsicle'
-import { configBufferProcessorAsync as configBufferProcessorAsyncPngquant } from './battery/pngquant'
-import { configBufferProcessorAsync as configBufferProcessorAsyncSvgo } from './battery/svgo'
-import { fileTypeFromBuffer, isSvg } from './function'
+import { configBufferProcessorAsync as configBufferProcessorAsyncCjpeg } from './battery/cjpeg.js'
+import { configBufferProcessorAsync as configBufferProcessorAsyncGifsicle } from './battery/gifsicle.js'
+import { configBufferProcessorAsync as configBufferProcessorAsyncPngquant } from './battery/pngquant.js'
+import { configBufferProcessorAsync as configBufferProcessorAsyncSvgo } from './battery/svgo.js'
+import { fileTypeFromBuffer, isSvg } from './function.js'
 
 const configBufferProcessorAsync = async ({
   onDetectFail = async (ext, buffer, string) => { throw new Error(`unknown buffer type, detected ext: ${ext}, buffer size: ${buffer.length}B`) },

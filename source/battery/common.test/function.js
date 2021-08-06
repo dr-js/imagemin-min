@@ -2,10 +2,10 @@
 
 import { resolve } from 'path'
 import { promises as fsAsync } from 'fs'
-import { strictEqual } from '@dr-js/core/module/common/verify'
-import { time, binary } from '@dr-js/core/module/common/format'
-import { createStepper } from '@dr-js/core/module/common/time'
-import { createDirectory } from '@dr-js/core/module/node/file/Directory'
+import { strictEqual } from '@dr-js/core/module/common/verify.js'
+import { time, binary } from '@dr-js/core/module/common/format.js'
+import { createStepper } from '@dr-js/core/module/common/time.js'
+import { createDirectory } from '@dr-js/core/module/node/fs/Directory.js'
 
 const { info = console.log } = global
 

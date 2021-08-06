@@ -1,12 +1,12 @@
 {
   "private": true,
   "name": "imagemin-min",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "Like imagemin but batteries-included",
   "author": "dr-js",
   "license": "MIT",
   "repository": "github:dr-js/imagemin-min",
-  "main": "./library/index",
+  "main": "./library/index.js",
   "bin": {
     "imagemin-min": "bin/min-in-place.js",
     "imagemin-min-test-boot": "bin/test-boot.js",
@@ -14,10 +14,10 @@
   },
   "scripts": {
     "// script ======================": "",
-    "script-pack": "node -r @babel/register ./script quiet pack",
-    "script-pack-test": "node -r @babel/register ./script verbose pack test",
-    "script-publish": "node -r @babel/register ./script pack publish",
-    "script-publish-dev": "node -r @babel/register ./script pack publish-dev",
+    "script-pack": "node -r @babel/register ./script/pack.js quiet pack",
+    "script-pack-test": "node -r @babel/register ./script/pack.js verbose pack test",
+    "script-publish": "node -r @babel/register ./script/pack.js pack publish",
+    "script-publish-dev": "node -r @babel/register ./script/pack.js pack publish-dev",
     "script-generate-spec": "node -r @babel/register ./script/generateSpec",
     "script-generate-battery-svgo": "node -r @babel/register ./script/generateBatterySVGO.js",
     "// build =======================": "",
@@ -27,6 +27,7 @@
     "// test ========================": "",
     "test-dev": "dr-dev --EE BABEL_ENV=dev -E -- dr-dev --TR @babel/register -T source/battery/cjpeg.test.js",
     "test-source": "dr-dev --TR @babel/register -T source/ --TFS .test.js",
+    "test-output": "dr-dev -T output-gitignore/ --TFS .test.js",
     "// =============================": "",
     "test": "npm run script-pack-test",
     "lint": "eslint ./source/ ./script/",
@@ -37,11 +38,11 @@
     "npm": ">=6.14"
   },
   "devDependencies": {
-    "@dr-js/core": "0.4.4-dev.0",
-    "@dr-js/dev": "0.4.3-dev.9",
-    "@dr-js/dev-web": "0.4.3-dev.9",
-    "file-type": "^16.1.0",
-    "is-svg": "^4.2.1",
-    "libsvgo": "^1.3.4"
+    "@dr-js/core": "^0.4.14",
+    "@dr-js/dev": "^0.4.17",
+    "@dr-js/dev-web": "^0.4.17",
+    "file-type": "^16.5.3",
+    "is-svg": "^4.3.1",
+    "svgo": "^2.3.1"
   }
 }
