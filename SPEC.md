@@ -16,4 +16,4 @@
 + 📄 [source/battery/svgo.js](source/battery/svgo.js)
   - `OPTION_DEFAULT`, `configBufferProcessorAsync`
 + 📄 [source/battery/svgo-dist-browser.js](source/battery/svgo-dist-browser.js)
-  - `createContentItem`, `extendDefaultPlugins`, `optimize`
+  - `createContentItem`, `default`, `extendDefaultPlugins`, `optimize`
