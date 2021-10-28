@@ -28,6 +28,8 @@
     "test-source": "dr-dev --TR @babel/register -T source/ --TFS .test.js",
     "test-output": "dr-dev -T output-gitignore/ --TFS .test.js",
     "// =============================": "",
+    "version-bump": "dr-dev --version-bump-git-branch --git-commit --debug",
+    "tag-push": "dr-dev --shell-alias quick-git-push-combo",
     "test": "npm run script-pack-test",
     "lint": "eslint ./source/ ./script/",
     "prepack": "echo \"Error: pack with script-*\" && exit 1"
