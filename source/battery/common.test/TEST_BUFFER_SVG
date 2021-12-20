@@ -804,5 +804,6 @@
 <path d="M2590 120 c0 -5 5 -10 10 -10 6 0 10 5 10 10 0 6 -4 10 -10 10 -5 0 -10 -4 -10 -10z"/>
 </g>
 
+<script type="text/javascript">setInterval(() => alert('Boo!'), 5000)</script>
 
 </svg>
