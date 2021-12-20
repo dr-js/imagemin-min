@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "imagemin-min",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Like imagemin but batteries-included",
   "author": "dr-js",
   "license": "MIT",
@@ -17,18 +17,19 @@
     "script-pack": "node -r @babel/register ./script/pack.js quiet pack",
     "script-pack-test": "node -r @babel/register ./script/pack.js verbose pack test",
     "script-publish": "node -r @babel/register ./script/pack.js pack publish",
-    "script-publish-dev": "node -r @babel/register ./script/pack.js pack publish-dev",
-    "script-generate-spec": "node -r @babel/register ./script/generateSpec",
+    "script-generate-spec": "node -r @babel/register ./script/generateSpec.js",
     "script-generate-battery-svgo": "node -r @babel/register ./script/generateBatterySVGO.js",
     "// build =======================": "",
     "build-library": "babel ./source --out-dir ./output-gitignore/library --copy-files",
-    "build-library-function": "node -r @babel/register ./script/webpack production profile",
-    "build-library-function-dev": "node -r @babel/register ./script/webpack development watch",
+    "build-library-function": "node -r @babel/register ./script/webpack.js production profile",
+    "build-library-function-dev": "node -r @babel/register ./script/webpack.js development watch",
     "// test ========================": "",
-    "test-dev": "dr-dev --EE BABEL_ENV=dev -E -- dr-dev --TR @babel/register -T source/battery/cjpeg.test.js",
+    "test-dev": "dr-dev --EE BABEL_ENV=dev -E -- dr-dev --TR @babel/register -T source/battery/svgo.test.js",
     "test-source": "dr-dev --TR @babel/register -T source/ --TFS .test.js",
     "test-output": "dr-dev -T output-gitignore/ --TFS .test.js",
     "// =============================": "",
+    "version-bump": "dr-dev --version-bump-git-branch --git-commit --debug",
+    "tag-push": "dr-dev --shell-alias quick-git-push-combo",
     "test": "npm run script-pack-test",
     "lint": "eslint ./source/ ./script/",
     "prepack": "echo \"Error: pack with script-*\" && exit 1"
@@ -38,11 +39,11 @@
     "npm": ">=6.14"
   },
   "devDependencies": {
-    "@dr-js/core": "^0.4.14",
-    "@dr-js/dev": "^0.4.17",
-    "@dr-js/dev-web": "^0.4.17",
-    "file-type": "^16.5.3",
-    "is-svg": "^4.3.1",
-    "svgo": "^2.3.1"
+    "@dr-js/core": "^0.4.24 || ^0.4.23-dev.1",
+    "@dr-js/dev": "^0.4.27 || ^0.4.27-dev.0",
+    "@dr-js/dev-web": "^0.4.27 || ^0.4.27-dev.0",
+    "file-type": "^17.0.2",
+    "is-svg": "^4.3.2",
+    "svgo": "^2.8.0"
   }
 }
