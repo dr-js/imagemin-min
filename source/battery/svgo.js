@@ -5,7 +5,6 @@ import { optimize } from './svgo-dist-browser.js'
 // - https://github.com/imagemin/imagemin-svgo/blob/v9.0.0/index.js
 
 const OPTION_DEFAULT = { // same default as `imagemin-svgo`
-  multipass: true,
   plugins: [
     { name: 'preset-default' }, // enable default preset
     { name: 'removeScriptElement' } // enable builtin plugin not included in default preset
