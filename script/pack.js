@@ -1,9 +1,9 @@
-import { runKit, argvFlag } from '@dr-js/core/module/node/kit.js'
+const { runKit, argvFlag } = require('@dr-js/core/library/node/kit.js')
 
-import { getSourceJsFileListFromPathList } from '@dr-js/dev/module/node/filePreset.js'
-import { initOutput, packOutput, clearOutput, verifyNoGitignore, verifyGitStatusClean, verifyPackageVersionStrict, publishPackage } from '@dr-js/dev/module/output.js'
-import { getTerserOption, minifyFileListWithTerser } from '@dr-js/dev/module/minify.js'
-import { processFileList, fileProcessorBabel } from '@dr-js/dev/module/fileProcessor.js'
+const { getSourceJsFileListFromPathList } = require('@dr-js/dev/library/node/filePreset.js')
+const { initOutput, packOutput, clearOutput, verifyNoGitignore, verifyGitStatusClean, verifyPackageVersionStrict, publishPackage } = require('@dr-js/dev/library/output.js')
+const { getTerserOption, minifyFileListWithTerser } = require('@dr-js/dev/library/minify.js')
+const { processFileList, fileProcessorBabel } = require('@dr-js/dev/library/fileProcessor.js')
 
 runKit(async (kit) => {
   const processOutput = async () => {
@@ -26,18 +26,15 @@ runKit(async (kit) => {
   if (!argvFlag('pack')) return
 
   const isPublish = argvFlag('publish')
+  const isTest = isPublish || argvFlag('test')
   isPublish && verifyPackageVersionStrict(packageJSON.version)
-  kit.padLog('generate spec')
+
   kit.RUN('npm run script-generate-spec')
-  kit.padLog('generate battery-svgo')
   kit.RUN('npm run script-generate-battery-svgo')
-  kit.padLog('build library')
   kit.RUN('npm run build-library')
-  kit.padLog('build library-function')
   kit.RUN('npm run build-library-function')
 
   await processOutput({ kit })
-  const isTest = argvFlag('test', 'publish')
   isTest && kit.padLog('lint source')
   isTest && kit.RUN('npm run lint')
   isTest && await processOutput({ kit }) // once more

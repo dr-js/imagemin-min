@@ -1,11 +1,9 @@
-import { runKit } from '@dr-js/core/module/node/kit.js'
-import { writeTextSync } from '@dr-js/core/module/node/fs/File'
+const { runKit } = require('@dr-js/core/library/node/kit.js')
+const { writeTextSync } = require('@dr-js/core/library/node/fs/File.js')
 
-import { collectSourceJsRouteMap } from '@dr-js/dev/module/node/export/parsePreset.js'
-import { generateExportInfo } from '@dr-js/dev/module/node/export/generate.js'
-import { /* getMarkdownFileLink, renderMarkdownBlockQuote, */ renderMarkdownAutoAppendHeaderLink, renderMarkdownExportPath } from '@dr-js/dev/module/node/export/renderMarkdown.js'
-
-// import { formatUsage } from 'source-bin/option'
+const { collectSourceJsRouteMap } = require('@dr-js/dev/library/node/export/parsePreset.js')
+const { generateExportInfo } = require('@dr-js/dev/library/node/export/generate.js')
+const { renderMarkdownAutoAppendHeaderLink, renderMarkdownExportPath } = require('@dr-js/dev/library/node/export/renderMarkdown.js')
 
 runKit(async (kit) => {
   kit.padLog('generate exportInfoMap')
@@ -19,10 +17,6 @@ runKit(async (kit) => {
     ...renderMarkdownAutoAppendHeaderLink(
       '#### Export Path',
       ...renderMarkdownExportPath({ exportInfoMap, rootPath: kit.fromRoot() })
-      // '',
-      // '#### Bin Option Format',
-      // getMarkdownFileLink('source-bin/option.js'),
-      // ...renderMarkdownBlockQuote(formatUsage())
     ),
     ''
   ].join('\n'))

@@ -1,10 +1,8 @@
-import { runKit } from '@dr-js/core/module/node/kit.js'
-import { editText } from '@dr-js/core/module/node/fs/File.js'
-
-import { dependencies } from '../package-lock.json'
+const { runKit } = require('@dr-js/core/library/node/kit.js')
+const { editText } = require('@dr-js/core/library/node/fs/File.js')
 
 runKit(async (kit) => {
-  const { version: VERSION_SVGO } = dependencies[ 'svgo' ]
+  const VERSION_SVGO = require(kit.fromRoot('package-lock.json'))[ 'packages' ][ 'node_modules/svgo' ][ 'version' ]
   await editText(
     (string) => [ '/* eslint-disable */', `/* svgo@${VERSION_SVGO} */`, string ].join('\n'),
     kit.fromRoot('./node_modules/svgo/dist/svgo.browser.js'),

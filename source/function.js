@@ -17,17 +17,16 @@ const selectExecutable = (selectMap = {}, relativeToPath = '.') => {
 const quickRunAsync = async (argList, inputBuffer = null) => {
   const { subProcess, promise, stdoutPromise, stderrPromise } = run(argList, {
     quiet: true,
+    describeError: false,
     ...(inputBuffer && { stdio: 'pipe' })
   })
-  try {
-    inputBuffer
-      ? await Promise.all([
-        quickRunletFromStream(bufferToReadableStream(inputBuffer), subProcess.stdin),
-        promise
-      ])
-      : await promise
-    return [ await stdoutPromise, await stderrPromise ] // result in buffer
-  } catch (error) { throw Object.assign(error, { inputBuffer }) }
+  inputBuffer
+    ? await Promise.all([
+      quickRunletFromStream(bufferToReadableStream(inputBuffer), subProcess.stdin),
+      promise
+    ])
+    : await promise
+  return [ await stdoutPromise, await stderrPromise ] // result in buffer
 }
 
 const createBufferProcessorAsync = async (
@@ -39,13 +38,10 @@ const createBufferProcessorAsync = async (
 
   // sanity test
   const [ stdoutBuffer, stderrBuffer ] = await quickRunAsync([ command, ...TEST_ARG_LIST ])
-
   if (
     !String(stdoutBuffer).includes(TEST_EXPECT_OUTPUT) &&
     !String(stderrBuffer).includes(TEST_EXPECT_OUTPUT)
-  ) {
-    throw new Error(`expect test run output: "${TEST_EXPECT_OUTPUT}", but get: [STDOUT] ${String(stdoutBuffer)}\n[STDERR] ${String(stderrBuffer)}`)
-  }
+  ) throw new Error(`expect test run output: "${TEST_EXPECT_OUTPUT}", but get: [STDOUT] ${String(stdoutBuffer)}\n[STDERR] ${String(stderrBuffer)}`)
 
   return async (buffer) => {
     const [ stdoutBuffer ] = await quickRunAsync([ command, ...ARG_LIST ], buffer)
