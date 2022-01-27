@@ -1,11 +1,11 @@
-/* this file contain no test, just for export common test function */
+/* this file contains no test, just for export common test function */
 
 import { resolve } from 'path'
-import { promises as fsAsync } from 'fs'
 import { strictEqual } from '@dr-js/core/module/common/verify.js'
 import { time, binary } from '@dr-js/core/module/common/format.js'
 import { createStepper } from '@dr-js/core/module/common/time.js'
-import { createDirectory } from '@dr-js/core/module/node/fs/Directory.js'
+import { readBufferSync, writeBufferSync } from '@dr-js/core/module/node/fs/File.js'
+import { createDirectorySync } from '@dr-js/core/module/node/fs/Directory.js'
 
 const { info = console.log } = global
 
@@ -21,7 +21,7 @@ const testBufferProcessorAsync = async ({
   configBufferProcessorAsync, bufferProcessorAsync,
   stepper = createStepper()
 }) => {
-  if (!SOURCE_BUFFER) SOURCE_BUFFER = await fsAsync.readFile(PATH_SOURCE_BUFFER)
+  if (!SOURCE_BUFFER) SOURCE_BUFFER = readBufferSync(PATH_SOURCE_BUFFER)
   if (!bufferProcessorAsync) bufferProcessorAsync = await configBufferProcessorAsync()
   info(`[${TEST_TAG}] done prepare (+${time(stepper())})`)
 
@@ -29,8 +29,8 @@ const testBufferProcessorAsync = async ({
   info(`[${TEST_TAG}] done process: ${binary(SOURCE_BUFFER.length)}B -> ${binary(OUTPUT_BUFFER.length)}B (+${time(stepper())})`)
 
   // for inspection when error
-  __DEV__ && await createDirectory(resolve(__dirname, 'test-gitignore'))
-  __DEV__ && await fsAsync.writeFile(resolve(__dirname, 'test-gitignore', `[${TEST_TAG}]OUTPUT_BUFFER`), OUTPUT_BUFFER)
+  __DEV__ && createDirectorySync(resolve(__dirname, 'test-gitignore'))
+  __DEV__ && writeBufferSync(resolve(__dirname, 'test-gitignore', `[${TEST_TAG}]OUTPUT_BUFFER`), OUTPUT_BUFFER)
 
   strictEqual(OUTPUT_BUFFER.length < SOURCE_BUFFER.length, true, `[${TEST_TAG}] output should be smaller than source`)
 
