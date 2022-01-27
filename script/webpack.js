@@ -1,5 +1,5 @@
-import { runKit } from '@dr-js/core/module/node/kit.js'
-import { compileWithWebpack, commonFlag } from '@dr-js/dev/module/webpack.js'
+const { runKit } = require('@dr-js/core/library/node/kit.js')
+const { compileWithWebpack, commonFlag } = require('@dr-js/dev/library/webpack.js')
 
 runKit(async (kit) => {
   const { mode, isWatch, profileOutput, getCommonWebpackConfig } = await commonFlag({ kit })
