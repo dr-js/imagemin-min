@@ -13,6 +13,7 @@ const PATH_TEST_BUFFER_JPG = resolve(__dirname, 'TEST_BUFFER_JPG')
 const PATH_TEST_BUFFER_PNG = resolve(__dirname, 'TEST_BUFFER_PNG')
 const PATH_TEST_BUFFER_GIF = resolve(__dirname, 'TEST_BUFFER_GIF')
 const PATH_TEST_BUFFER_SVG = resolve(__dirname, 'TEST_BUFFER_SVG')
+const PATH_TEST_BUFFER_WEBP = resolve(__dirname, 'TEST_BUFFER_WEBP')
 const PATH_TEST_BUFFER_NON_IMAGE = resolve(__dirname, 'TEST_BUFFER_NON_IMAGE')
 
 const testBufferProcessorAsync = async ({
@@ -38,6 +39,6 @@ const testBufferProcessorAsync = async ({
 }
 
 export {
-  PATH_TEST_BUFFER_JPG, PATH_TEST_BUFFER_PNG, PATH_TEST_BUFFER_GIF, PATH_TEST_BUFFER_SVG, PATH_TEST_BUFFER_NON_IMAGE,
+  PATH_TEST_BUFFER_JPG, PATH_TEST_BUFFER_PNG, PATH_TEST_BUFFER_GIF, PATH_TEST_BUFFER_SVG, PATH_TEST_BUFFER_WEBP, PATH_TEST_BUFFER_NON_IMAGE,
   testBufferProcessorAsync
 }
