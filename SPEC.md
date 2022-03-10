@@ -6,8 +6,10 @@
 + 📄 [source/function.js](source/function.js)
   - `createBufferProcessorAsync`, `fileTypeFromBuffer`, `isSvg`
 + 📄 [source/index.js](source/index.js)
-  - `configBufferProcessorAsync`, `configBufferProcessorAsyncCjpeg`, `configBufferProcessorAsyncGifsicle`, `configBufferProcessorAsyncPngquant`, `configBufferProcessorAsyncSvgo`, `fileTypeFromBuffer`, `isSvg`
+  - `configBufferProcessorAsync`, `configBufferProcessorAsyncCjpeg`, `configBufferProcessorAsyncCwebp`, `configBufferProcessorAsyncGifsicle`, `configBufferProcessorAsyncPngquant`, `configBufferProcessorAsyncSvgo`, `fileTypeFromBuffer`, `isSvg`
 + 📄 [source/battery/cjpeg.js](source/battery/cjpeg.js)
+  - `DEFAULT_ARG_LIST`, `SELECT_MAP`, `SELECT_PATH_ROOT`, `TEST_ARG_LIST`, `TEST_EXPECT_OUTPUT`, `configBufferProcessorAsync`
++ 📄 [source/battery/cwebp.js](source/battery/cwebp.js)
   - `DEFAULT_ARG_LIST`, `SELECT_MAP`, `SELECT_PATH_ROOT`, `TEST_ARG_LIST`, `TEST_EXPECT_OUTPUT`, `configBufferProcessorAsync`
 + 📄 [source/battery/gifsicle.js](source/battery/gifsicle.js)
   - `DEFAULT_ARG_LIST`, `SELECT_MAP`, `SELECT_PATH_ROOT`, `TEST_ARG_LIST`, `TEST_EXPECT_OUTPUT`, `configBufferProcessorAsync`

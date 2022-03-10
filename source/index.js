@@ -2,6 +2,7 @@ import { configBufferProcessorAsync as configBufferProcessorAsyncCjpeg } from '.
 import { configBufferProcessorAsync as configBufferProcessorAsyncGifsicle } from './battery/gifsicle.js'
 import { configBufferProcessorAsync as configBufferProcessorAsyncPngquant } from './battery/pngquant.js'
 import { configBufferProcessorAsync as configBufferProcessorAsyncSvgo } from './battery/svgo.js'
+import { configBufferProcessorAsync as configBufferProcessorAsyncCwebp } from './battery/cwebp.js'
 import { fileTypeFromBuffer, isSvg } from './function.js'
 
 const configBufferProcessorAsync = async ({
@@ -10,12 +11,14 @@ const configBufferProcessorAsync = async ({
   configCjpeg,
   configGifsicle,
   configPngquant,
-  configSvgo
+  configSvgo,
+  configCwebp
 } = {}) => {
   const bufferProcessorAsyncCjpeg = await configBufferProcessorAsyncCjpeg(configCjpeg)
   const bufferProcessorAsyncGifsicle = await configBufferProcessorAsyncGifsicle(configGifsicle)
   const bufferProcessorAsyncPngquant = await configBufferProcessorAsyncPngquant(configPngquant)
   const bufferProcessorAsyncSvgo = await configBufferProcessorAsyncSvgo(configSvgo)
+  const bufferProcessorAsyncCwebp = await configBufferProcessorAsyncCwebp(configCwebp)
 
   return async (buffer) => {
     const { ext } = (await fileTypeFromBuffer(buffer)) || {}
@@ -26,6 +29,8 @@ const configBufferProcessorAsync = async ({
         return bufferProcessorAsyncGifsicle(buffer)
       case 'png':
         return bufferProcessorAsyncPngquant(buffer)
+      case 'webp':
+        return bufferProcessorAsyncCwebp(buffer)
     }
 
     const string = String(buffer)
@@ -40,6 +45,7 @@ export {
   configBufferProcessorAsyncGifsicle,
   configBufferProcessorAsyncPngquant,
   configBufferProcessorAsyncSvgo,
+  configBufferProcessorAsyncCwebp,
 
   configBufferProcessorAsync,
 

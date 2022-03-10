@@ -5,6 +5,7 @@ const { unlinkSync, existsSync } = require('fs')
 const BatteryCjpeg = require('../library/battery/cjpeg.js')
 const BatteryGifsicle = require('../library/battery/gifsicle.js')
 const BatteryPngquant = require('../library/battery/pngquant.js')
+const BatteryCwebp = require('../library/battery/cwebp.js')
 
 const platformArchTagCurrent = `${process.platform}|${process.arch}`
 const trimExecutable = (selectMap = {}, relativeToPath = '.') => {
@@ -21,4 +22,5 @@ const trimExecutable = (selectMap = {}, relativeToPath = '.') => {
 trimExecutable(BatteryCjpeg.SELECT_MAP, BatteryCjpeg.SELECT_PATH_ROOT)
 trimExecutable(BatteryGifsicle.SELECT_MAP, BatteryGifsicle.SELECT_PATH_ROOT)
 trimExecutable(BatteryPngquant.SELECT_MAP, BatteryPngquant.SELECT_PATH_ROOT)
+trimExecutable(BatteryCwebp.SELECT_MAP, BatteryCwebp.SELECT_PATH_ROOT)
 console.log('[trim-battery] done')

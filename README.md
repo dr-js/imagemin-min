@@ -24,12 +24,14 @@ currently bundled image optimizer:
 - jpg: [MozJPEG][l:mozjpeg] (pre-built binary)
 - gif: [Gifsicle][l:gifsicle] (pre-built binary)
 - png: [Pngquant][l:pngquant] (pre-built binary)
+- webp: [cwebp][l:cwebp] (pre-built binary)
 - svg: [SVGO][l:svgo] (dist browser bundle)
 
 [l:imagemin]: https://github.com/imagemin
 [l:mozjpeg]: https://github.com/mozilla/mozjpeg
 [l:gifsicle]: https://github.com/kohler/gifsicle
 [l:pngquant]: https://github.com/kornelski/pngquant
+[l:cwebp]: https://developers.google.com/speed/webp
 [l:svgo]: https://github.com/svg/svgo
 
 [//]: # (NON_PACKAGE_CONTENT)
