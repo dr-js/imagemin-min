@@ -2,6 +2,7 @@
 
 const { readFileSync, writeFileSync } = require('fs')
 const { configBufferProcessorAsync } = require('../library/index.js')
+const { name: packageName, version: packageVersion } = require('../package.json')
 
 const [
   , // node
@@ -9,7 +10,13 @@ const [
   ...fileList
 ] = process.argv
 
-configBufferProcessorAsync()
+!fileList.length && console.log(`[min-in-place|${packageName}@${packageVersion}] process each image file in-place
+USAGE:
+  imagemin-min-in-place file.png file.svg file.webp ...
+  imagemin-min file.png file.svg file.webp ...
+`)
+
+fileList.length && configBufferProcessorAsync()
   .then(async (bufferProcessorAsync) => {
     console.log(`[min-in-place] min ${fileList.length} file...`)
     for (const file of fileList) {

@@ -9,6 +9,7 @@
   "main": "./library/index.js",
   "bin": {
     "imagemin-min": "bin/min-in-place.js",
+    "imagemin-min-in-place": "bin/min-in-place.js",
     "imagemin-min-test-boot": "bin/test-boot.js",
     "imagemin-min-trim-battery": "bin/trim-battery.js"
   },
