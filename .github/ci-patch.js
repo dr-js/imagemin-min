@@ -8,7 +8,7 @@ runKit(async (kit) => {
   // kit.RUN_SUDO_NPM([ 'config', '--global', 'set', 'cache', kit.fromHome('.npm/') ])
   //
   // kit.padLog('Patch install "@dr-js/dev" globally')
-  // kit.RUN_SUDO_NPM('install --global @dr-js/dev@0.4')
+  // kit.RUN_SUDO_NPM('install --global @dr-js/dev@0.5')
 
   kit.padLog('Patch install "@min-pack/npm" globally')
   kit.RUN_SUDO_NPM('install --no-fund --no-audit --global @min-pack/npm@0.1')
