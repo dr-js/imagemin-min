@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const { readFileSync, writeFileSync } = require('fs')
-const { configBufferProcessorAsync } = require('../library/index.js')
+const { configBufferProcessorAsync } = require('../library/index.js') // NOTE: compiled output
 const { name: packageName, version: packageVersion } = require('../package.json')
 
 const [
