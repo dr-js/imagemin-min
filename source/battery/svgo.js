@@ -5,9 +5,10 @@ import { optimize } from './svgo-dist-browser.js'
 // - https://github.com/imagemin/imagemin-svgo/blob/v9.0.0/index.js
 
 const OPTION_DEFAULT = { // same default as `imagemin-svgo`
+  floatPrecision: 2, // customize plugin option for `cleanupNumericValues`
   plugins: [
-    { name: 'preset-default' }, // enable default preset
-    { name: 'removeScriptElement' } // enable builtin plugin not included in default preset
+    'preset-default',
+    'removeScriptElement' // enable builtin plugin not included in default preset
   ]
 }
 
