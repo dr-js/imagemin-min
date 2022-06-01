@@ -2,10 +2,10 @@
 
 const { join } = require('path')
 const { unlinkSync, existsSync } = require('fs')
-const BatteryCjpeg = require('../library/battery/cjpeg.js')
-const BatteryGifsicle = require('../library/battery/gifsicle.js')
-const BatteryPngquant = require('../library/battery/pngquant.js')
-const BatteryCwebp = require('../library/battery/cwebp.js')
+const BatteryCjpeg = require('../library/battery/cjpeg.js') // NOTE: compiled output
+const BatteryGifsicle = require('../library/battery/gifsicle.js') // NOTE: compiled output
+const BatteryPngquant = require('../library/battery/pngquant.js') // NOTE: compiled output
+const BatteryCwebp = require('../library/battery/cwebp.js') // NOTE: compiled output
 
 const platformArchTagCurrent = `${process.platform}|${process.arch}`
 const trimExecutable = (selectMap = {}, relativeToPath = '.') => {
