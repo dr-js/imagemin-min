@@ -7,6 +7,7 @@ import { createBufferProcessorAsync } from '../function.js'
 
 const SELECT_MAP = {
   'linux|x64': 'cjpeg-linux-x64-3.3.1',
+  'linux|arm64': 'cjpeg-linux-arm64-3.3.1',
   'win32': 'cjpeg-win32-x86-3.1.exe',
   'darwin|x64': 'cjpeg-darwin-x64-3.3.1'
 }

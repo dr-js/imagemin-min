@@ -7,6 +7,7 @@ import { createBufferProcessorAsync } from '../function.js'
 
 const SELECT_MAP = {
   'linux|x64': 'cwebp-linux-x64-1.2.2',
+  'linux|arm64': 'cwebp-linux-arm64-1.2.1',
   'win32|x64': 'cwebp-no-wic-win32-x64-1.2.2.exe',
   'darwin|x64': 'cwebp-darwin-x64-1.2.1' // 'cwebp-darwin-x64-1.2.2' will error with: `dyld[35361]: Library not loaded: /opt/local/lib/libjpeg.8.dylib`
 }
