@@ -16,7 +16,7 @@ Like [imagemin][l:imagemin] but batteries-included
 [l:size]: https://packagephobia.now.sh/result?p=imagemin-min
 
 currently support:
-- Ubuntu 18.04 (x64)
+- Debian 11 (x64/arm64)
 - Windows 10 (x64)
 - MacOS latest (x64)
 
