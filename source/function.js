@@ -1,4 +1,4 @@
-import { join } from 'path'
+import { join } from 'node:path'
 import { run } from '@dr-js/core/module/node/run.js'
 import { bufferToReadableStream, quickRunletFromStream } from '@dr-js/core/module/node/data/Stream.js'
 import { fileTypeFromBuffer } from 'file-type'

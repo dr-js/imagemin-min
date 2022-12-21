@@ -7,6 +7,7 @@ import { createBufferProcessorAsync } from '../function.js'
 
 const SELECT_MAP = {
   'linux|x64': 'pngquant-linux-x64-2.10.1',
+  'linux|arm64': 'pngquant-linux-arm64-2.17.0',
   'win32|x64': 'pngquant-win32-x64-2.12.0.exe',
   'darwin|x64': 'pngquant-darwin-x64-2.12.5'
 }

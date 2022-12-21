@@ -7,6 +7,7 @@ import { createBufferProcessorAsync } from '../function.js'
 
 const SELECT_MAP = {
   'linux|x64': 'gifsicle-linux-x64-1.92',
+  'linux|arm64': 'gifsicle-linux-arm64-1.93',
   'win32|x64': 'gifsicle-win32-x64-1.92.exe',
   'darwin|x64': 'gifsicle-darwin-x64-1.92'
 }

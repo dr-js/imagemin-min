@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const { join } = require('path')
-const { unlinkSync, existsSync } = require('fs')
+const { join } = require('node:path')
+const { unlinkSync, existsSync } = require('node:fs')
 const BatteryCjpeg = require('../library/battery/cjpeg.js') // NOTE: compiled output
 const BatteryGifsicle = require('../library/battery/gifsicle.js') // NOTE: compiled output
 const BatteryPngquant = require('../library/battery/pngquant.js') // NOTE: compiled output

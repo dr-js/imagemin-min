@@ -1,6 +1,6 @@
 /* this file contains no test, just for export common test function */
 
-import { resolve } from 'path'
+import { resolve } from 'node:path'
 import { strictEqual } from '@dr-js/core/module/common/verify.js'
 import { time, binary } from '@dr-js/core/module/common/format.js'
 import { createStepper } from '@dr-js/core/module/common/time.js'
