@@ -1,4 +1,4 @@
-import { replaceAll } from '@dr-js/core/module/common/string.js'
+// import { replaceAll } from '@dr-js/core/module/common/string.js'
 import { optimize } from './svgo-dist-browser.js'
 
 // [REFERENCE]
@@ -25,6 +25,11 @@ const configBufferProcessorAsync = async (option = OPTION_DEFAULT) => async (buf
   }
   return Buffer.from(resultString)
 }
+
+// TODO: later use `String.replaceAll` (nodejs >= 15)
+const REGEXP_ESCAPE_REGEXP = /[.*+?^${}()|[\]\\]/g
+const escapeRegExp = string => string.replace(REGEXP_ESCAPE_REGEXP, '\\$&')
+const replaceAll = (string, fromString, to) => string.replace(new RegExp(escapeRegExp(fromString), 'g'), to)
 
 export {
   OPTION_DEFAULT,
