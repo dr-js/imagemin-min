@@ -1,6 +1,6 @@
 
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="924px" height="720px" viewBox="0 0 9240 7200" preserveAspectRatio="xMidYMid meet">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="924px" height="720px" viewBox="0 0 9240 7200" preserveAspectRatio="xMidYMid meet">
 <g id="layer101" fill="#241f08" stroke="none">
 <path d="M0 3600 l0 -3600 4620 0 4620 0 0 3600 0 3600 -4620 0 -4620 0 0 -3600z"/>
 </g>
@@ -804,6 +804,10 @@
 <path d="M2590 120 c0 -5 5 -10 10 -10 6 0 10 5 10 10 0 6 -4 10 -10 10 -5 0 -10 -4 -10 -10z"/>
 </g>
 
+<!-- bad inline png -->
+<image id="img" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMXvf/PwAGnQMR4CJUOAAAAABJRU5ErkJggg==" width="12" height="34"/>
+
+<!-- scrpit -->
 <script type="text/javascript">setInterval(() => alert('Boo!'), 5000)</script>
 
 </svg>

@@ -10,7 +10,7 @@ Like [imagemin][l:imagemin] but batteries-included
 [i:npm]: https://img.shields.io/npm/v/imagemin-min
 [i:npm-dev]: https://img.shields.io/npm/v/imagemin-min/dev
 [l:npm]: https://npm.im/imagemin-min
-[i:ci]: https://img.shields.io/github/workflow/status/dr-js/imagemin-min/ci-test-tag
+[i:ci]: https://img.shields.io/github/actions/workflow/status/dr-js/imagemin-min/.github/workflows/ci-test-tag.yml
 [l:ci]: https://github.com/dr-js/imagemin-min/actions?query=workflow:ci-test-tag
 [i:size]: https://packagephobia.now.sh/badge?p=imagemin-min
 [l:size]: https://packagephobia.now.sh/result?p=imagemin-min
