@@ -16,7 +16,7 @@
   "scripts": {
     "// repo ========================": "",
     "version-bump": "dr-dev --version-bump-git-branch --git-commit --debug",
-    "tag-push": "dr-dev --shell-alias quick-git-push-combo",
+    "tag-push": "dr-dev --version-bump-push-check --git-commit",
     "// script ======================": "",
     "script-pack": "node ./script/pack.js pack",
     "script-pack-test": "npm run script-pack -- verbose test",
@@ -41,10 +41,10 @@
     "npm": ">=6.14"
   },
   "devDependencies": {
-    "@dr-js/core": "^0.5.6",
-    "@dr-js/dev": "^0.5.3",
-    "@dr-js/dev-web": "^0.5.3",
-    "file-type": "^18.0.0",
+    "@dr-js/core": "^0.5.7",
+    "@dr-js/dev": "^0.5.5",
+    "@dr-js/dev-web": "^0.5.5",
+    "file-type": "^18.2.0",
     "is-svg": "^4.3.2",
     "svgo": "^3.0.2"
   }
