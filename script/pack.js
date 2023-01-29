@@ -17,11 +17,7 @@ runKit(async (kit) => {
   await verifyNoGitignore({ path: kit.fromRoot('source'), kit })
   const packageJSON = await initOutput({
     kit,
-    copyMapPathList: [
-      [ 'source-bin/min-in-place.js', 'bin/min-in-place.js' ],
-      [ 'source-bin/test-boot.js', 'bin/test-boot.js' ],
-      [ 'source-bin/trim-battery.js', 'bin/trim-battery.js' ]
-    ]
+    copyMapPathList: [ [ 'source-bin/', 'bin/' ] ]
   })
   if (!argvFlag('pack')) return
 
