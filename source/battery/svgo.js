@@ -1,4 +1,3 @@
-// import { replaceAll } from '@dr-js/core/module/common/string.js'
 import { optimize } from './svgo-dist-browser.js'
 
 // [REFERENCE]
@@ -21,15 +20,10 @@ const configBufferProcessorAsync = async (option = OPTION_DEFAULT) => async (buf
     //   - [20230117] Chrome will not render SVG with bad data url inside a <img> tag (direct open is fine)
     //     https://stackoverflow.com/questions/10737166/chrome-not-rendering-svg-referenced-via-img-element/52226069#52226069
     //     https://css-tricks.com/forums/topic/svg-css-background-image-not-showing-in-chrome/#post-244623
-    resultString = replaceAll(resultString, 'xlink:href="data:img/png;base64,iVB', 'xlink:href="data:image/png;base64,iVB')
+    resultString = resultString.replaceAll('xlink:href="data:img/png;base64,iVB', 'xlink:href="data:image/png;base64,iVB')
   }
   return Buffer.from(resultString)
 }
-
-// TODO: later use `String.replaceAll` (nodejs >= 15)
-const REGEXP_ESCAPE_REGEXP = /[.*+?^${}()|[\]\\]/g
-const escapeRegExp = string => string.replace(REGEXP_ESCAPE_REGEXP, '\\$&')
-const replaceAll = (string, fromString, to) => string.replace(new RegExp(escapeRegExp(fromString), 'g'), to)
 
 export {
   OPTION_DEFAULT,
