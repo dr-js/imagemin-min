@@ -6,7 +6,7 @@ import { createStepper } from '@dr-js/core/module/common/time'
 import { readBufferSync } from '@dr-js/core/module/node/fs/File'
 import { binary, time } from '@dr-js/core/module/common/format'
 
-const { describe, it } = global
+const { describe, it, info = console.log } = global
 
 const testSharpAsync = async ({
   TEST_TAG,

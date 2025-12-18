@@ -5,7 +5,7 @@
 [![i:size]][l:size]
 [![i:npm-dev]][l:npm]
 
-Like [imagemin][l:imagemin] but batteries-included
+Like [imagemin][l:imagemin] but mostly batteries-included
 
 [i:npm]: https://img.shields.io/npm/v/imagemin-min
 [i:npm-dev]: https://img.shields.io/npm/v/imagemin-min/dev
@@ -16,15 +16,11 @@ Like [imagemin][l:imagemin] but batteries-included
 [l:size]: https://packagephobia.now.sh/result?p=imagemin-min
 
 currently support:
-- Debian 11 (x64/arm64)
-- Windows 10 (x64)
-- MacOS latest (x64)
+- Debian/Alpine Linux (x64/arm64)
 
 currently bundled image optimizer:
-- jpg: [MozJPEG][l:mozjpeg] (pre-built binary)
-- gif: [Gifsicle][l:gifsicle] (pre-built binary)
-- png: [Pngquant][l:pngquant] (pre-built binary)
-- webp: [cwebp][l:cwebp] (pre-built binary)
+- png/jpg/webp: [@min-pack/sharp][l:mp-sharp] repack of [sharp][l:sharp] with pre-built binary
+- gif: [Gifsicle][l:gifsicle] (try system binary, then fallback to `@min-pack/sharp`)
 - svg: [SVGO][l:svgo] (dist browser bundle)
 
 CLI commands:
@@ -32,10 +28,9 @@ CLI commands:
 - `imagemin-min-test-boot`: test binary working on current platform
 
 [l:imagemin]: https://github.com/imagemin
-[l:mozjpeg]: https://github.com/mozilla/mozjpeg
+[l:mp-sharp]: https://github.com/dr-js/min-pack/blob/master/min-pack-sharp
+[l:sharp]: https://www.npmjs.com/package/sharp
 [l:gifsicle]: https://github.com/kohler/gifsicle
-[l:pngquant]: https://github.com/kornelski/pngquant
-[l:cwebp]: https://developers.google.com/speed/webp
 [l:svgo]: https://github.com/svg/svgo
 
 [//]: # (NON_PACKAGE_CONTENT)

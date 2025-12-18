@@ -15,7 +15,7 @@ const configMinPackSharp = () => {
     imgMeta, // = await getImgMeta(imgBuf),
     skipMain = false, skipThumb = false,
     maxThumbW = 160, maxThumbH = 160
-  }) => {
+  } = {}) => {
     const { format, autoOrient: { width, height } } = imgMeta || await getImgMeta(imgBuf)
     if (!_allowedFmt.has(format)) throw new Error(`[imagemin-min|sharp] bad format: ${format}`)
 
@@ -38,7 +38,10 @@ const configMinPackSharp = () => {
     }
   }
 
-  return { Sharp, getImgMeta, processImg }
+  return {
+    Sharp, getImgMeta, processImg,
+    run: async (buffer) => await processImg(buffer, { skipThumb: true }).mainBuf
+  }
 }
 
 const _allowedFmt = new Set([ 'png', 'jpeg', 'webp', 'gif', 'svg' ])

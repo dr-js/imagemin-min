@@ -1,37 +1,36 @@
 import { configMinPackSharp } from './battery/sharp.js'
-import { configBufferProcessorAsync as configBufferProcessorAsyncGifsicle } from './battery/gifsicle.js'
-import { configBufferProcessorAsync as configBufferProcessorAsyncSvgo } from './battery/svgo.js'
+import { configGifsicleProcessor } from './battery/gifsicle.js'
+import { configSvgoProcessor } from './battery/svgo.js'
 
-const configBufferProcessorAsync = async ({
-  onDetectFail = async (ext, buffer, string) => { throw new Error(`unknown buffer type, detected ext: ${ext}, buffer size: ${buffer.length}B`) },
-
+const configImageProcessor = ({
   configGifsicle,
   configSvgo
 } = {}) => {
-  const { getImgMeta, processImg } = configMinPackSharp()
-  const bufferProcessorAsyncGifsicle = await configBufferProcessorAsyncGifsicle(configGifsicle)
-  const bufferProcessorAsyncSvgo = await configBufferProcessorAsyncSvgo(configSvgo)
+  const mpSharp = configMinPackSharp()
+  const pGifsicle = configGifsicleProcessor(configGifsicle)
+  const pSvgo = configSvgoProcessor(configSvgo)
 
-  return async (buffer) => {
-    const imgMeta = await getImgMeta(buffer)
+  const run = async (buffer) => {
+    const imgMeta = await mpSharp.getImgMeta(buffer)
     switch (imgMeta.format) {
       case 'png':
       case 'jpeg':
       case 'webp':
-        return (await processImg(buffer, { imgMeta, skipThumb: true })).mainBuf
+        return (await mpSharp.processImg(buffer, { imgMeta, skipThumb: true })).mainBuf
       case 'gif':
-        return bufferProcessorAsyncGifsicle(buffer)
+        return pGifsicle.check() ? pGifsicle.run(buffer) : (await mpSharp.processImg(buffer, { imgMeta, skipThumb: true })).mainBuf
       case 'svg':
-        return bufferProcessorAsyncSvgo(buffer)
+        return pSvgo.run(buffer)
     }
-
-    return onDetectFail(imgMeta.format, buffer, String(buffer))
+    throw new Error(`unsupported image format, detected: ${imgMeta.format}, buffer size: ${buffer.length}B`)
   }
+
+  return { run }
 }
 
 export {
-  configBufferProcessorAsyncGifsicle,
-  configBufferProcessorAsyncSvgo,
+  configGifsicleProcessor,
+  configSvgoProcessor,
 
-  configBufferProcessorAsync
+  configImageProcessor
 }

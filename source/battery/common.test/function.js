@@ -16,17 +16,17 @@ const PATH_TEST_BUFFER_SVG = resolve(__dirname, 'TEST_BUFFER_SVG')
 const PATH_TEST_BUFFER_WEBP = resolve(__dirname, 'TEST_BUFFER_WEBP')
 const PATH_TEST_BUFFER_NON_IMAGE = resolve(__dirname, 'TEST_BUFFER_NON_IMAGE')
 
-const testBufferProcessorAsync = async ({
+const testBufferProcessorAsync = async (configBufferProcessor, {
   TEST_TAG,
   SOURCE_BUFFER, PATH_SOURCE_BUFFER,
-  configBufferProcessorAsync, bufferProcessorAsync,
   stepper = createStepper()
 }) => {
   if (!SOURCE_BUFFER) SOURCE_BUFFER = readBufferSync(PATH_SOURCE_BUFFER)
-  if (!bufferProcessorAsync) bufferProcessorAsync = await configBufferProcessorAsync()
+  const { check, run } = configBufferProcessor()
+  if (check && !check()) return info(`[${TEST_TAG}] skip, no support (+${time(stepper())})`)
   info(`[${TEST_TAG}] done prepare (+${time(stepper())})`)
 
-  const OUTPUT_BUFFER = await bufferProcessorAsync(SOURCE_BUFFER)
+  const OUTPUT_BUFFER = await run(SOURCE_BUFFER)
   info(`[${TEST_TAG}] done process: ${binary(SOURCE_BUFFER.length)}B -> ${binary(OUTPUT_BUFFER.length)}B (+${time(stepper())})`)
 
   // for inspection when error
@@ -35,7 +35,7 @@ const testBufferProcessorAsync = async ({
 
   strictEqual(OUTPUT_BUFFER.length < SOURCE_BUFFER.length, true, `[${TEST_TAG}] output should be smaller than source`)
 
-  return { bufferProcessorAsync, OUTPUT_BUFFER }
+  return { OUTPUT_BUFFER }
 }
 
 export {

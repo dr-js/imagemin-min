@@ -1,11 +1,5 @@
 #!/usr/bin/env node
 
-const { configBufferProcessorAsync } = require('../library/index.js') // NOTE: compiled output
+const { testBoot } = require('./min-in-place.js')
 
-configBufferProcessorAsync().then(
-  () => console.log('[test-boot] pass'),
-  (error) => {
-    console.error('[test-boot]', error)
-    process.exitCode = 1
-  }
-)
+testBoot()
