@@ -4,9 +4,9 @@
 
 #### Export Path
 + 📄 [source/function.js](source/function.js)
-  - `createBufferProcessorAsync`, `fileTypeFromBuffer`, `isSvg`
+  - `createBufferProcessorAsync`
 + 📄 [source/index.js](source/index.js)
-  - `configBufferProcessorAsync`, `configBufferProcessorAsyncGifsicle`, `configBufferProcessorAsyncSvgo`, `fileTypeFromBuffer`, `isSvg`
+  - `configBufferProcessorAsync`, `configBufferProcessorAsyncGifsicle`, `configBufferProcessorAsyncSvgo`
 + 📄 [source/battery/gifsicle.js](source/battery/gifsicle.js)
   - `DEFAULT_ARG_LIST`, `SELECT_MAP`, `SELECT_PATH_ROOT`, `TEST_ARG_LIST`, `TEST_EXPECT_OUTPUT`, `configBufferProcessorAsync`
 + 📄 [source/battery/sharp.js](source/battery/sharp.js)

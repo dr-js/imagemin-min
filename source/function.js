@@ -1,8 +1,6 @@
 import { join } from 'node:path'
 import { run } from '@dr-js/core/module/node/run.js'
 import { bufferToReadableStream, quickRunletFromStream } from '@dr-js/core/module/node/data/Stream.js'
-import { fileTypeFromBuffer } from 'file-type'
-import isSvg from 'is-svg'
 
 // TODO: HACK: NOTE: only do package import here, and later this will be webpack-ed to cut dependency
 
@@ -50,7 +48,5 @@ const createBufferProcessorAsync = async (
 }
 
 export {
-  createBufferProcessorAsync,
-  fileTypeFromBuffer,
-  isSvg
+  createBufferProcessorAsync
 }
