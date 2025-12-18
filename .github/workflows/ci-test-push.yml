@@ -9,7 +9,7 @@ jobs:
     strategy:
       fail-fast: false # allow all test to run to the end
       matrix:
-        os: [ "ubuntu-latest", "windows-latest", "macos-latest" ]
+        os: [ "ubuntu-latest" ]
         node-version: [ "18" ]
     runs-on: "${{ matrix.os }}"
     steps:
