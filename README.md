@@ -30,7 +30,6 @@ currently bundled image optimizer:
 CLI commands:
 - `imagemin-min-in-place file.png file.svg file.webp ...`: process each image file in-place (`imagemin-min file.png file.svg file.webp ...` also work)
 - `imagemin-min-test-boot`: test binary working on current platform
-- `imagemin-min-trim-battery`: drop binary for other platforms to save space (non-revert-able)
 
 [l:imagemin]: https://github.com/imagemin
 [l:mozjpeg]: https://github.com/mozilla/mozjpeg
