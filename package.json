@@ -30,6 +30,7 @@
     "build-library-function-dev": "node ./script/webpack.js development watch",
     "// test ========================": "",
     "test-dev": "dr-dev --EE BABEL_ENV=dev -E -- dr-dev --TR @babel/register -T source/battery/svgo.test.js",
+    "test-dev-sharp": "dr-dev --EE BABEL_ENV=dev -E -- dr-dev --TR @babel/register -T source/battery/sharp.test.js",
     "test-source": "dr-dev --TR @babel/register -T source/ --TFS .test.js",
     "test-output": "dr-dev -T output-gitignore/ --TFS .test.js",
     "// =============================": "",
