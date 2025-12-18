@@ -1,6 +1,8 @@
 import { optimize } from './svgo-dist-browser.js'
 
 // [REFERENCE]
+// - https://svgo.dev/docs/usage/
+// - https://svgo.dev/docs/migrations/migration-from-v3-to-v4/
 // - https://github.com/svg/svgo/tree/v2.3.1#api-usage
 // - https://github.com/imagemin/imagemin-svgo/blob/v9.0.0/index.js
 
@@ -9,7 +11,9 @@ const OPTION_DEFAULT = { // same default as `imagemin-svgo`
   floatPrecision: 2, // customize plugin option for `cleanupNumericValues`
   plugins: [
     'preset-default',
-    'removeScriptElement' // enable builtin plugin not included in default preset
+    // 'removeViewBox', // keep viewBox (svgo@3 will default remove, svgo@4 will default keep)
+    'removeTitle',
+    'removeScripts' // enable builtin plugin not included in default preset
   ]
 }
 

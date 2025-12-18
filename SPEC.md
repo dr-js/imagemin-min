@@ -14,4 +14,4 @@
 + 📄 [source/battery/svgo.js](source/battery/svgo.js)
   - `OPTION_DEFAULT`, `configBufferProcessorAsync`
 + 📄 [source/battery/svgo-dist-browser.js](source/battery/svgo-dist-browser.js)
-  - `default`, `optimize`
+  - `VERSION`, `_collections`, `builtinPlugins`, `mapNodesToParents`, `optimize`, `querySelector`, `querySelectorAll`
