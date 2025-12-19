@@ -5,7 +5,9 @@ import { tryRequire } from '@dr-js/core/module/env/tryRequire.js'
 // - https://github.com/lovell/sharp
 // - https://github.com/dr-js/min-pack/blob/master/min-pack-sharp
 
-const configMinPackSharp = () => {
+const configMinPackSharp = ({
+  maxThumbW: _maxTW = 160, maxThumbH: _maxTH = 160
+} = {}) => {
   const Sharp = tryRequire('@min-pack/sharp') // console.log(Sharp.versions)
   if (!Sharp) throw new Error('[imagemin-min|sharp] expect package "@min-pack/sharp"')
 
@@ -14,7 +16,7 @@ const configMinPackSharp = () => {
   const processImg = async (imgBuf, {
     imgMeta, // = await getImgMeta(imgBuf),
     skipMain = false, skipThumb = false,
-    maxThumbW = 160, maxThumbH = 160
+    maxThumbW = _maxTW, maxThumbH = _maxTH
   } = {}) => {
     const { format, autoOrient: { width, height } } = imgMeta || await getImgMeta(imgBuf)
     if (!_allowedFmt.has(format)) throw new Error(`[imagemin-min|sharp] bad format: ${format}`)
@@ -40,7 +42,7 @@ const configMinPackSharp = () => {
 
   return {
     Sharp, getImgMeta, processImg,
-    run: async (buffer) => await processImg(buffer, { skipThumb: true }).mainBuf
+    run: async (buffer, imgMeta) => (await processImg(buffer, { imgMeta, skipThumb: true })).mainBuf
   }
 }
 

@@ -3,22 +3,23 @@ import { configGifsicleProcessor } from './battery/gifsicle.js'
 import { configSvgoProcessor } from './battery/svgo.js'
 
 const configImageProcessor = ({
+  configSharp,
   configGifsicle,
   configSvgo
 } = {}) => {
-  const mpSharp = configMinPackSharp()
+  const pSharp = configMinPackSharp(configSharp)
   const pGifsicle = configGifsicleProcessor(configGifsicle)
   const pSvgo = configSvgoProcessor(configSvgo)
 
   const run = async (buffer) => {
-    const imgMeta = await mpSharp.getImgMeta(buffer)
+    const imgMeta = await pSharp.getImgMeta(buffer)
     switch (imgMeta.format) {
       case 'png':
       case 'jpeg':
       case 'webp':
-        return (await mpSharp.processImg(buffer, { imgMeta, skipThumb: true })).mainBuf
+        return pSharp.run(buffer, imgMeta)
       case 'gif':
-        return pGifsicle.check() ? pGifsicle.run(buffer) : (await mpSharp.processImg(buffer, { imgMeta, skipThumb: true })).mainBuf
+        return pGifsicle.check() ? pGifsicle.run(buffer) : pSharp.run(buffer, imgMeta)
       case 'svg':
         return pSvgo.run(buffer)
     }
@@ -29,6 +30,7 @@ const configImageProcessor = ({
 }
 
 export {
+  configMinPackSharp,
   configGifsicleProcessor,
   configSvgoProcessor,
 

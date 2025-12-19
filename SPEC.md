@@ -6,7 +6,7 @@
 + 📄 [source/function.js](source/function.js)
   - `createArgListPack`, `probeSync`, `quickRunAsync`
 + 📄 [source/index.js](source/index.js)
-  - `configGifsicleProcessor`, `configImageProcessor`, `configSvgoProcessor`
+  - `configGifsicleProcessor`, `configImageProcessor`, `configMinPackSharp`, `configSvgoProcessor`
 + 📄 [source/battery/gifsicle.js](source/battery/gifsicle.js)
   - `configGifsicleProcessor`
 + 📄 [source/battery/sharp.js](source/battery/sharp.js)
