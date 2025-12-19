@@ -1,0 +1,14 @@
+name: "ci-on-push"
+
+on: { push: { branches: [ "**" ] } }
+
+jobs:
+  "test-on-push": # job id
+    timeout-minutes: 15
+    runs-on: "ubuntu-24.04"
+    steps:
+      - { uses: "actions/checkout@v6" } # https://github.com/actions/checkout
+      - { uses: "actions/setup-node@v6", with: { node-version: "22" } } # https://github.com/actions/setup-node
+      - run: npm i -g @dr-js/core@0.5 @dr-js/dev@0.5 && dr-dev -eI .github/ci-patch.js
+      - run: npm ci --omit=optional
+      - run: npm test

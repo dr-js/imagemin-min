@@ -1,0 +1,26 @@
+name: "ci-on-tag"
+
+on: { push: { tags: [ "v*" ] } } # use `v0.0.0` tag pattern # https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#onpushbranchestagsbranches-ignoretags-ignore
+
+jobs:
+  "test-on-tag": # job id
+    timeout-minutes: 15
+    runs-on: "ubuntu-24.04"
+    steps:
+      - { uses: "actions/checkout@v6" } # https://github.com/actions/checkout
+      - { uses: "actions/setup-node@v6", with: { node-version: "20" } } # https://github.com/actions/setup-node
+      - run: npm i -g @dr-js/core@0.5 @dr-js/dev@0.5 && dr-dev -eI .github/ci-patch.js
+      - run: npm ci --omit=optional
+      - run: npm test
+
+  "publish-on-tag": # job id
+    needs: [ "test-on-tag" ] # https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idneeds
+    timeout-minutes: 15
+    runs-on: "ubuntu-24.04"
+    steps:
+      - { uses: "actions/checkout@v6" } # https://github.com/actions/checkout
+      - { uses: "actions/setup-node@v6", with: { node-version: "24" } } # https://github.com/actions/setup-node
+      - run: npm i -g @dr-js/core@0.5 @dr-js/dev@0.5 && dr-dev -eI .github/ci-patch.js
+      - run: npm ci --omit=optional
+      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN_DR_JS }}" > .npmrc
+      - run: npm run script-publish
