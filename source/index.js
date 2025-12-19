@@ -23,7 +23,7 @@ const configImageProcessor = ({
       case 'svg':
         return pSvgo.run(buffer)
     }
-    throw new Error(`unsupported image format, detected: ${imgMeta.format}, buffer size: ${buffer.length}B`)
+    throw new Error(`unsupported image format, detected: ${imgMeta.format}, buffer size: ${buffer.byteLength}B`)
   }
 
   return { run }

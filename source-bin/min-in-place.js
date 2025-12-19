@@ -32,12 +32,12 @@ const minInPlace = async () => {
   console.log(`[min-in-place] min ${fileList.length} file...`)
   for (const file of fileList) {
     const buffer = readFileSync(file)
-    console.log(`- ${buffer.length}B - file ${file}`)
+    console.log(`- ${buffer.byteLength}B - file ${file}`)
     const bufferMin = await run(buffer)
-    if (buffer.length <= bufferMin.length) console.log(`  ! ${bufferMin.length}B - skip bloat`)
+    if (buffer.byteLength <= bufferMin.byteLength) console.log(`  ! ${bufferMin.byteLength}B - skip bloat`)
     else {
       writeFileSync(file, bufferMin)
-      console.log(`  - ${bufferMin.length}B`)
+      console.log(`  - ${bufferMin.byteLength}B`)
     }
   }
 }
