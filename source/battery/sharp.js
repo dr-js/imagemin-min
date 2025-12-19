@@ -1,4 +1,4 @@
-import { tryRequire } from '@dr-js/core/module/env/tryRequire.js'
+import Sharp from '@min-pack/sharp'
 
 // [REFERENCE]
 // - https://sharp.pixelplumbing.com/
@@ -8,9 +8,6 @@ import { tryRequire } from '@dr-js/core/module/env/tryRequire.js'
 const configMinPackSharp = ({
   maxThumbW: _maxTW = 160, maxThumbH: _maxTH = 160
 } = {}) => {
-  const Sharp = tryRequire('@min-pack/sharp') // console.log(Sharp.versions)
-  if (!Sharp) throw new Error('[imagemin-min|sharp] expect package "@min-pack/sharp"')
-
   const getImgMeta = async (imgBuf) => Sharp(imgBuf).metadata() // { format, pages, loop, hasAlpha, autoOrient: { width, height } } // format: png | jpeg | webp | gif | svg
 
   const processImg = async (imgBuf, {
