@@ -1,20 +1,22 @@
-import { createBufferProcessorAsync } from '../function.js'
+import { probeSync, createArgListPack, quickRunAsync } from '../function.js'
 
 // [REFERENCE]
-// - https://github.com/kohler/gifsicle
+// - https://packages.debian.org/trixie/gifsicle # version 1.96-1 (2025/12)
+// - https://pkgs.alpinelinux.org/packages?name=gifsicle&branch=v3.23 # version 1.96-r0 (2025/12)
+// - https://github.com/kohler/gifsicle # version 1.96 (2025/12)
 // - https://github.com/imagemin/gifsicle-bin/tree/master/vendor
 // - https://github.com/imagemin/imagemin-gifsicle/blob/master/index.js
 
-const SELECT_MAP = {
-  'linux|x64': 'gifsicle-linux-x64-1.92',
-  'linux|arm64': 'gifsicle-linux-arm64-1.93',
-  'win32|x64': 'gifsicle-win32-x64-1.92.exe',
-  'darwin|x64': 'gifsicle-darwin-x64-1.92'
-}
-const SELECT_PATH_ROOT = __dirname
+// NOTE: now just try use system binary, no bundled binary
 
-const TEST_ARG_LIST = [ '--version' ]
-const TEST_EXPECT_OUTPUT = 'LCDF Gifsicle 1.' // LCDF Gifsicle 1.92
+// $ gifsicle --version
+//   LCDF Gifsicle 1.92
+const { /* getArgs, setArgs, */ check, verify } = createArgListPack(
+  () => probeSync([ 'gifsicle', '--version' ], 'LCDF Gifsicle 1.')
+    ? [ 'gifsicle' ]
+    : undefined,
+  'expect "gifsicle" in PATH'
+)
 
 const DEFAULT_ARG_LIST = [
   // '--optimize=1', //                               size bloat          |  ~0.32s, 3.9MB -> 4.2MB
@@ -31,15 +33,15 @@ const DEFAULT_ARG_LIST = [
   '--no-warnings', '--no-app-extensions'
 ]
 
-const configBufferProcessorAsync = async (argList = DEFAULT_ARG_LIST) => createBufferProcessorAsync(
-  SELECT_MAP, SELECT_PATH_ROOT,
-  TEST_ARG_LIST, TEST_EXPECT_OUTPUT,
-  argList
-)
+const configGifsicleProcessor = (argList = DEFAULT_ARG_LIST) => {
+  const run = async (buffer) => {
+    const [ stdoutBuffer ] = await quickRunAsync([ ...verify(), ...argList ], buffer)
+    return stdoutBuffer
+  }
+
+  return { check, verify, run }
+}
 
 export {
-  SELECT_MAP, SELECT_PATH_ROOT,
-  TEST_ARG_LIST, TEST_EXPECT_OUTPUT,
-  DEFAULT_ARG_LIST,
-  configBufferProcessorAsync
+  configGifsicleProcessor
 }

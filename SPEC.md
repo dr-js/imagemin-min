@@ -4,18 +4,14 @@
 
 #### Export Path
 + 📄 [source/function.js](source/function.js)
-  - `createBufferProcessorAsync`, `fileTypeFromBuffer`, `isSvg`
+  - `createArgListPack`, `probeSync`, `quickRunAsync`
 + 📄 [source/index.js](source/index.js)
-  - `configBufferProcessorAsync`, `configBufferProcessorAsyncCjpeg`, `configBufferProcessorAsyncCwebp`, `configBufferProcessorAsyncGifsicle`, `configBufferProcessorAsyncPngquant`, `configBufferProcessorAsyncSvgo`, `fileTypeFromBuffer`, `isSvg`
-+ 📄 [source/battery/cjpeg.js](source/battery/cjpeg.js)
-  - `DEFAULT_ARG_LIST`, `SELECT_MAP`, `SELECT_PATH_ROOT`, `TEST_ARG_LIST`, `TEST_EXPECT_OUTPUT`, `configBufferProcessorAsync`
-+ 📄 [source/battery/cwebp.js](source/battery/cwebp.js)
-  - `DEFAULT_ARG_LIST`, `SELECT_MAP`, `SELECT_PATH_ROOT`, `TEST_ARG_LIST`, `TEST_EXPECT_OUTPUT`, `configBufferProcessorAsync`
+  - `configGifsicleProcessor`, `configImageProcessor`, `configMinPackSharp`, `configSvgoProcessor`
 + 📄 [source/battery/gifsicle.js](source/battery/gifsicle.js)
-  - `DEFAULT_ARG_LIST`, `SELECT_MAP`, `SELECT_PATH_ROOT`, `TEST_ARG_LIST`, `TEST_EXPECT_OUTPUT`, `configBufferProcessorAsync`
-+ 📄 [source/battery/pngquant.js](source/battery/pngquant.js)
-  - `DEFAULT_ARG_LIST`, `SELECT_MAP`, `SELECT_PATH_ROOT`, `TEST_ARG_LIST`, `TEST_EXPECT_OUTPUT`, `configBufferProcessorAsync`
+  - `configGifsicleProcessor`
++ 📄 [source/battery/sharp.js](source/battery/sharp.js)
+  - `configMinPackSharp`
 + 📄 [source/battery/svgo.js](source/battery/svgo.js)
-  - `OPTION_DEFAULT`, `configBufferProcessorAsync`
+  - `OPTION_DEFAULT`, `configSvgoProcessor`
 + 📄 [source/battery/svgo-dist-browser.js](source/battery/svgo-dist-browser.js)
-  - `default`, `optimize`
+  - `VERSION`, `_collections`, `builtinPlugins`, `mapNodesToParents`, `optimize`, `querySelector`, `querySelectorAll`

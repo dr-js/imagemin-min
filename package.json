@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "imagemin-min",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Like imagemin but batteries-included",
   "author": "dr-js",
   "license": "MIT",
@@ -10,9 +10,7 @@
   "bin": {
     "imagemin-min": "bin/min-in-place.js",
     "imagemin-min-in-place": "bin/min-in-place.js",
-    "imagemin-min-test-boot": "bin/test-boot.js",
-    "imagemin-min-trim-battery": "bin/trim-battery.js",
-    "imagemin-min-trim-battery-non-linux": "bin/trim-battery.non-linux.js"
+    "imagemin-min-test-boot": "bin/test-boot.js"
   },
   "scripts": {
     "// repo ========================": "",
@@ -29,24 +27,28 @@
     "build-library-function": "node ./script/webpack.js production profile",
     "build-library-function-dev": "node ./script/webpack.js development watch",
     "// test ========================": "",
-    "test-dev": "dr-dev --EE BABEL_ENV=dev -E -- dr-dev --TR @babel/register -T source/battery/svgo.test.js",
+    "test-dev": "dr-dev --EE BABEL_ENV=dev -E -- dr-dev --TR @babel/register -T source/index.test.js",
+    "test-dev-svgo": "dr-dev --EE BABEL_ENV=dev -E -- dr-dev --TR @babel/register -T source/battery/svgo.test.js",
+    "test-dev-sharp": "dr-dev --EE BABEL_ENV=dev -E -- dr-dev --TR @babel/register -T source/battery/sharp.test.js",
+    "test-dev-gifsicle": "dr-dev --EE BABEL_ENV=dev -E -- dr-dev --TR @babel/register -T source/battery/gifsicle.test.js",
     "test-source": "dr-dev --TR @babel/register -T source/ --TFS .test.js",
     "test-output": "dr-dev -T output-gitignore/ --TFS .test.js",
     "// =============================": "",
     "test": "npm run script-pack-test",
-    "lint": "eslint ./source/ ./script/",
+    "lint": "ESLINT_USE_FLAT_CONFIG=false eslint ./source/ ./script/",
     "prepack": "echo \"Error: pack with script-*\" && exit 1"
   },
   "engines": {
     "node": ">=18.12",
     "npm": ">=8.19"
   },
+  "peerDependencies": {
+    "@min-pack/sharp": "^0.34.5"
+  },
   "devDependencies": {
-    "@dr-js/core": "^0.5.9",
-    "@dr-js/dev": "^0.5.8",
-    "@dr-js/dev-web": "^0.5.8",
-    "file-type": "^18.4.0",
-    "is-svg": "^5.0.0",
-    "svgo": "^3.0.2"
+    "@dr-js/core": "^0.5.17",
+    "@dr-js/dev": "^0.5.14",
+    "@dr-js/dev-web": "^0.5.14",
+    "svgo": "4.0.0"
   }
 }

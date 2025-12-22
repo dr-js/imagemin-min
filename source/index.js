@@ -1,54 +1,38 @@
-import { configBufferProcessorAsync as configBufferProcessorAsyncCjpeg } from './battery/cjpeg.js'
-import { configBufferProcessorAsync as configBufferProcessorAsyncGifsicle } from './battery/gifsicle.js'
-import { configBufferProcessorAsync as configBufferProcessorAsyncPngquant } from './battery/pngquant.js'
-import { configBufferProcessorAsync as configBufferProcessorAsyncSvgo } from './battery/svgo.js'
-import { configBufferProcessorAsync as configBufferProcessorAsyncCwebp } from './battery/cwebp.js'
-import { fileTypeFromBuffer, isSvg } from './function.js'
+import { configMinPackSharp } from './battery/sharp.js'
+import { configGifsicleProcessor } from './battery/gifsicle.js'
+import { configSvgoProcessor } from './battery/svgo.js'
 
-const configBufferProcessorAsync = async ({
-  onDetectFail = async (ext, buffer, string) => { throw new Error(`unknown buffer type, detected ext: ${ext}, buffer size: ${buffer.length}B`) },
-
-  configCjpeg,
+const configImageProcessor = ({
+  configSharp,
   configGifsicle,
-  configPngquant,
-  configSvgo,
-  configCwebp
+  configSvgo
 } = {}) => {
-  const bufferProcessorAsyncCjpeg = await configBufferProcessorAsyncCjpeg(configCjpeg)
-  const bufferProcessorAsyncGifsicle = await configBufferProcessorAsyncGifsicle(configGifsicle)
-  const bufferProcessorAsyncPngquant = await configBufferProcessorAsyncPngquant(configPngquant)
-  const bufferProcessorAsyncSvgo = await configBufferProcessorAsyncSvgo(configSvgo)
-  const bufferProcessorAsyncCwebp = await configBufferProcessorAsyncCwebp(configCwebp)
+  const pSharp = configMinPackSharp(configSharp)
+  const pGifsicle = configGifsicleProcessor(configGifsicle)
+  const pSvgo = configSvgoProcessor(configSvgo)
 
-  return async (buffer) => {
-    const { ext } = (await fileTypeFromBuffer(buffer)) || {}
-    switch (ext) {
-      case 'jpg':
-        return bufferProcessorAsyncCjpeg(buffer)
-      case 'gif':
-        return bufferProcessorAsyncGifsicle(buffer)
+  const run = async (buffer) => {
+    const imgMeta = await pSharp.getImgMeta(buffer)
+    switch (imgMeta.format) {
       case 'png':
-        return bufferProcessorAsyncPngquant(buffer)
+      case 'jpeg':
       case 'webp':
-        return bufferProcessorAsyncCwebp(buffer)
+        return pSharp.run(buffer, imgMeta)
+      case 'gif':
+        return pGifsicle.check() ? pGifsicle.run(buffer) : pSharp.run(buffer, imgMeta)
+      case 'svg':
+        return pSvgo.run(buffer)
     }
-
-    const string = String(buffer)
-    if (isSvg(string)) return bufferProcessorAsyncSvgo(buffer, string)
-
-    return onDetectFail(ext, buffer, string)
+    throw new Error(`unsupported image format, detected: ${imgMeta.format}, buffer size: ${buffer.byteLength}B`)
   }
+
+  return { run }
 }
 
 export {
-  configBufferProcessorAsyncCjpeg,
-  configBufferProcessorAsyncGifsicle,
-  configBufferProcessorAsyncPngquant,
-  configBufferProcessorAsyncSvgo,
-  configBufferProcessorAsyncCwebp,
+  configMinPackSharp,
+  configGifsicleProcessor,
+  configSvgoProcessor,
 
-  configBufferProcessorAsync,
-
-  fileTypeFromBuffer,
-  isSvg
+  configImageProcessor
 }
