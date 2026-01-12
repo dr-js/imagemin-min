@@ -10,7 +10,7 @@
 + 📄 [source/battery/gifsicle.js](source/battery/gifsicle.js)
   - `configGifsicleProcessor`
 + 📄 [source/battery/sharp.js](source/battery/sharp.js)
-  - `configMinPackSharp`
+  - `configMinPackSharp`, `loadSharp`, `loadSharpDefault`, `loadSharpFallback`
 + 📄 [source/battery/svgo.js](source/battery/svgo.js)
   - `OPTION_DEFAULT`, `configSvgoProcessor`
 + 📄 [source/battery/svgo-dist-browser.js](source/battery/svgo-dist-browser.js)

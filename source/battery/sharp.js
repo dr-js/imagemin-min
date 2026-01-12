@@ -1,29 +1,55 @@
-import Sharp from '@min-pack/sharp'
-
 // [REFERENCE]
 // - https://sharp.pixelplumbing.com/
 // - https://github.com/lovell/sharp
 // - https://github.com/dr-js/min-pack/blob/master/min-pack-sharp
 
+let _Sharp
+const loadSharp = async () => {
+  if (_Sharp) return _Sharp
+  try {
+    return (_Sharp = await loadSharpDefault())
+  } catch (error) { console.warn(`failed to load default Sharp, try fallback. error: ${error}`) }
+  try {
+    return (_Sharp = await loadSharpFallback())
+  } catch (error) { console.warn(`failed to load fallback Sharp. error: ${error}`) }
+  throw new Error('failed to load Sharp')
+}
+const loadSharpDefault = async () => {
+  try {
+    return (await import('@min-pack/sharp')).default // v0.34, support x86-64-v2 and aarch64/arm64
+  } catch (error) { throw new Error(`failed to load '@min-pack/sharp'. error: ${error}`) }
+}
+const loadSharpFallback = async () => {
+  try {
+    return (await import('@min-pack/sharp-x86-64-v1')).default // v0.33, only for x86-64-v1 support
+  } catch (error) { throw new Error(`failed to load '@min-pack/sharp-x86-64-v1'. error: ${error}`) }
+}
+
 const configMinPackSharp = ({
-  maxThumbW: _maxTW = 160, maxThumbH: _maxTH = 160
+  maxThumbW: _maxTW = 160, maxThumbH: _maxTH = 160,
+  __SHARP_OVERRIDE__
 } = {}) => {
-  const getImgMeta = async (imgBuf) => Sharp(imgBuf).metadata() // { format, pages, loop, hasAlpha, autoOrient: { width, height } } // format: png | jpeg | webp | gif | svg
+  const _sharp = async () => (__SHARP_OVERRIDE__ || await loadSharp())
+
+  const getImgMeta = async (imgBuf) => (await _sharp())(imgBuf).metadata() // { format, pages, loop, hasAlpha, autoOrient: { width, height } } // format: png | jpeg | webp | gif | svg
 
   const processImg = async (imgBuf, {
     imgMeta, // = await getImgMeta(imgBuf),
     skipMain = false, skipThumb = false,
     maxThumbW = _maxTW, maxThumbH = _maxTH
   } = {}) => {
-    const { format, autoOrient: { width, height } } = imgMeta || await getImgMeta(imgBuf)
+    const {
+      format,
+      width: _w, height: _h, autoOrient: { width, height } = { width: _w, height: _h } // TODO: patch `autoOrient` is added in sharp@0.34
+    } = imgMeta || await getImgMeta(imgBuf)
     if (!_allowedFmt.has(format)) throw new Error(`[imagemin-min|sharp] bad format: ${format}`)
 
     const isAnimated = format === 'gif'
     const pplMain = skipMain ? undefined
-      : Sharp(imgBuf, { autoOrient: true, animated: isAnimated }) // https://sharp.pixelplumbing.com/api-constructor#parameters
+      : (await _sharp())(imgBuf, { autoOrient: true, animated: isAnimated }) // https://sharp.pixelplumbing.com/api-constructor#parameters
     const pplThumb = skipThumb ? undefined
       : pplMain && !isAnimated ? pplMain.clone()
-        : Sharp(imgBuf, { autoOrient: true })
+        : (await _sharp())(imgBuf, { autoOrient: true })
     const [ main, thumb ] = await Promise.all([
       skipMain ? undefined : format !== 'svg' ? await _toFormat(pplMain) : { data: imgBuf, info: { format, width, height } },
       skipThumb ? undefined : await _toPngThumb(pplThumb, maxThumbW, maxThumbH)
@@ -38,7 +64,7 @@ const configMinPackSharp = ({
   }
 
   return {
-    Sharp, getImgMeta, processImg,
+    getImgMeta, processImg,
     run: async (buffer, imgMeta) => (await processImg(buffer, { imgMeta, skipThumb: true })).mainBuf
   }
 }
@@ -57,4 +83,7 @@ const _toPngThumb = (pipeline, maxThumbW, maxThumbH) => pipeline
   .png({ force: true, palette: true }) // comparable to `pngquant`
   .toBuffer({ resolveWithObject: true })
 
-export { configMinPackSharp }
+export {
+  loadSharp, loadSharpDefault, loadSharpFallback,
+  configMinPackSharp
+}
