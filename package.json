@@ -43,7 +43,8 @@
     "npm": ">=8.19"
   },
   "peerDependencies": {
-    "@min-pack/sharp": "^0.34.5"
+    "@min-pack/sharp": "^0.34.5",
+    "@min-pack/sharp-x86-64-v1": "^0.33.5"
   },
   "devDependencies": {
     "@dr-js/core": "^0.5.17",
