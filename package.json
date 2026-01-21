@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "imagemin-min",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Like imagemin but batteries-included",
   "author": "dr-js",
   "license": "MIT",
