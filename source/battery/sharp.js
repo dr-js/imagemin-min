@@ -25,13 +25,17 @@ const loadSharpFallback = async () => {
   } catch (error) { throw new Error(`failed to load '@min-pack/sharp-x86-64-v1'. error: ${error}`) }
 }
 
+const SHARP_OPT = {
+  limitInputPixels: 30000 * 30000 // default for v0.34 is 16383 * 16383
+}
+
 const configMinPackSharp = ({
   maxThumbW: _maxTW = 160, maxThumbH: _maxTH = 160,
   __SHARP_OVERRIDE__
 } = {}) => {
   const _sharp = async () => (__SHARP_OVERRIDE__ || await loadSharp())
 
-  const getImgMeta = async (imgBuf) => (await _sharp())(imgBuf).metadata() // { format, pages, loop, hasAlpha, autoOrient: { width, height } } // format: png | jpeg | webp | gif | svg
+  const getImgMeta = async (imgBuf) => (await _sharp())(imgBuf, SHARP_OPT).metadata() // { format, pages, loop, hasAlpha, autoOrient: { width, height } } // format: png | jpeg | webp | gif | svg
 
   const processImg = async (imgBuf, {
     imgMeta, // = await getImgMeta(imgBuf),
@@ -46,10 +50,10 @@ const configMinPackSharp = ({
 
     const isAnimated = format === 'gif'
     const pplMain = skipMain ? undefined
-      : (await _sharp())(imgBuf, { autoOrient: true, animated: isAnimated }) // https://sharp.pixelplumbing.com/api-constructor#parameters
+      : (await _sharp())(imgBuf, { autoOrient: true, animated: isAnimated, ...SHARP_OPT }) // https://sharp.pixelplumbing.com/api-constructor#parameters
     const pplThumb = skipThumb ? undefined
       : pplMain && !isAnimated ? pplMain.clone()
-        : (await _sharp())(imgBuf, { autoOrient: true })
+        : (await _sharp())(imgBuf, { autoOrient: true, ...SHARP_OPT })
     const [ main, thumb ] = await Promise.all([
       skipMain ? undefined : format !== 'svg' ? await _toFormat(pplMain) : { data: imgBuf, info: { format, width, height } },
       skipThumb ? undefined : await _toPngThumb(pplThumb, maxThumbW, maxThumbH)
